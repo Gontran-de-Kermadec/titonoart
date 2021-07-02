@@ -1,0 +1,35 @@
+header {
+    margin-bottom: 30px;
+}
+.header-flex {
+    display: flex;
+}
+
+.header-flex a {
+    text-decoration: none;
+    color: black;
+    width: 20%;
+    /* height: 150px; */
+}
+.header-flex .header__logo {
+    height: 150px;
+}
+.header-flex a img {
+    width: auto;
+    height: 100%;
+}
+
+nav {
+    width: 70%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,74 @@
+.about {
+    margin: 0 30px;
+}
+.about__child {
+    margin: 3rem 0;
+}
+.about img {
+    width: 400px;
+    height: auto;
+}
+.about__origin {
+    display: flex;
+    text-align: justify;
+}
+.about__origin--children {
+    margin: 0 1.1rem;
+    /* width: 33%; */
+}
+.about__origin--second p:nth-child(5) {
+    font-weight: bold;
+}
+.about__origin p {
+    margin: 15px 0;
+    font-size: 1.3em;
+}
+.about__origin--bold {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 4rem;
+}
+.about__origin--trou {
+    text-align: center;
+}
+#about__origin--trou {
+    height: 200px;
+    width: auto;
+}
+.about__origin--title,
+h1 {
+    text-align: center;
+}
+/* .about__feature {
+    width: 33%;
+} */
+/* .about__features h3 {
+    text-align: center;
+} */
+
+.about__valeur h3,
+.about__support h3 {
+    /* text-align: center; */
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.about__valeur,
+.about__support {
+    columns: 3 300px;
+    column-gap: 3em;
+    /* text-align: center; */
+}
+.about__valeur p:nth-child(odd) {
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+}
+.about__support p:nth-child(3), 
+.about__support p:nth-child(5) {
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+}
+.about__demarche img {
+    width: 100px;
+    height: auto;
+}
