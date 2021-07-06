@@ -1,5 +1,49 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
 .carousel img {
-    width: 95vw;
+    width: 100vw;
     height: 500px;
     object-fit: cover;
+}
+/* .img-width {
+    width: 95vw;
+    height: 500px;
+    object-fit: cover; 
+} */
+.slide-img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: -100;
+    transition: opacity 0.5s;
+}
+.img-active {
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+.carousel__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/* .carousel__arrow img {
+    width: 3em;
+    height: 3em;
+} */
+.carousel__arrow .fas {
+    transform: scale(5);
+    color: black;
+}
+.left-arrow {
+    /* transform: rotate(180deg); */
+    left: 1em;
+}
+.right-arrow {
+    right: 1em;
 }
