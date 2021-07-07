@@ -41,8 +41,11 @@
 	color: black;
 }
 .left-arrow {
-	transform: rotate(180deg);
+	/* transform: rotate(180deg); */
 	left: 1em;
+}
+.left-arrow svg {
+	transform: rotate(180deg);
 }
 .right-arrow {
 	right: 1em;
