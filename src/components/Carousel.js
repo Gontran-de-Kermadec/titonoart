@@ -1,31 +1,39 @@
 import { useState, useEffect } from "react";
-import papillon from "../images/papillon.jpg";
-import img1 from "../images/slider1.jpg";
-import img2 from "../images/slider2.jpg";
-import img3 from "../images/slider3.jpg";
+// import papillon from "../images/papillon.jpg";
+// import img1 from "../images/slider1.jpg";
+// import img2 from "../images/slider2.jpg";
+// import img3 from "../images/slider3.jpg";
 // import arrow from '../images/arrow2.svg';
 import "../style/Carousel.css";
 
 function Carousel() {
-	const imgArray = [papillon, img1, img2, img3];
+	// const imgArray = [papillon, img1, img2, img3];
+	const imgArray = [
+		"/images/slider0.jpg",
+		"/images/slider1.jpg",
+		"/images/slider2.jpg",
+		"/images/slider3.jpg",
+	];
 	const [slideIndex, setSlideIndex] = useState(0);
 	console.log(slideIndex, setSlideIndex);
 	const nextSlide = () => {
 		if (slideIndex !== imgArray.length - 1) {
+			// if (slideIndex !== index) {
 			setSlideIndex(slideIndex + 1);
 		} else if (slideIndex === imgArray.length - 1) {
+			// } else if (slideIndex === index) {
 			setSlideIndex(0);
 		}
 	};
-	const prevSlide = () => {
-		if (slideIndex !== 0) {
-			setSlideIndex(slideIndex - 1);
-		} else if (slideIndex === 0) {
-			setSlideIndex(imgArray.length - 1);
-		}
-	};
+	// const prevSlide = () => {
+	// 	if (slideIndex !== 0) {
+	// 		setSlideIndex(slideIndex - 1);
+	// 	} else if (slideIndex === 0) {
+	// 		setSlideIndex(imgArray.length - 1);
+	// 	}
+	// };
 	useEffect(() => {
-		const interval = 8000;
+		const interval = 6000;
 		const timer = setTimeout(() => {
 			nextSlide();
 		}, interval);
@@ -46,11 +54,10 @@ function Carousel() {
 					</div>
 				);
 			})}
-			<button
+			{/* <button
 				className="carousel__arrow left-arrow"
 				onClick={() => prevSlide()}
 			>
-				{/* <i className="fas fa-chevron-left"></i> */}
 				<svg
 					className="test-svg"
 					xmlns="http://www.w3.org/2000/svg"
@@ -65,12 +72,11 @@ function Carousel() {
 						stroke="#fff"
 					/>
 				</svg>
-			</button>
-			<button
+			</button> */}
+			{/* <button
 				className="carousel__arrow right-arrow"
 				onClick={() => nextSlide()}
 			>
-				{/* <i className="fas fa-chevron-right"></i> */}
 				<svg
 					className="test-svg"
 					xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +91,7 @@ function Carousel() {
 						stroke="#fff"
 					/>
 				</svg>
-			</button>
+			</button> */}
 		</div>
 	);
 }
