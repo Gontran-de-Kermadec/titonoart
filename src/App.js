@@ -10,6 +10,9 @@ import Origin from "./components/about-subsections/Origin";
 import Support from "./components/about-subsections/Support";
 import Valeurs from "./components/about-subsections/Valeurs";
 import Demarche from "./components/about-subsections/Demarche";
+import Deco from "./components/creation-collections/Deco";
+import Art from "./components/creation-collections/Art";
+import Bar from "./components/creation-collections/Bar";
 
 function App() {
 	return (
@@ -25,6 +28,9 @@ function App() {
 				<Route path="/about/support" exact component={Support} />
 				<Route path="/about/valeurs" exact component={Valeurs} />
 				<Route path="/about/demarche" exact component={Demarche} />
+				<Route path="/creation/deco" exact component={Deco} />
+				<Route path="/creation/art" exact component={Art} />
+				<Route path="/creation/bar" exact component={Bar} />
 			</Router>
 		</div>
 	);

@@ -5,22 +5,30 @@ import { useState, useEffect } from "react";
 // import img3 from "../images/slider3.jpg";
 // import arrow from '../images/arrow2.svg';
 import "../style/Carousel.css";
-
-function Carousel() {
+// const imgArray = [
+// 	"/images/slider0.jpg",
+// 	"/images/slider1.jpg",
+// 	"/images/slider2.jpg",
+// 	"/images/slider3.jpg",
+// ];
+function Carousel(imgs) {
+	console.log(imgs.imgs.length);
 	// const imgArray = [papillon, img1, img2, img3];
-	const imgArray = [
-		"/images/slider0.jpg",
-		"/images/slider1.jpg",
-		"/images/slider2.jpg",
-		"/images/slider3.jpg",
-	];
+	// const imgArray = [
+	// 	"/images/slider0.jpg",
+	// 	"/images/slider1.jpg",
+	// 	"/images/slider2.jpg",
+	// 	"/images/slider3.jpg",
+	// ];
 	const [slideIndex, setSlideIndex] = useState(0);
 	console.log(slideIndex, setSlideIndex);
 	const nextSlide = () => {
-		if (slideIndex !== imgArray.length - 1) {
+		// if (slideIndex !== imgArray.length - 1) {
+		if (slideIndex !== imgs.imgs.length - 1) {
 			// if (slideIndex !== index) {
 			setSlideIndex(slideIndex + 1);
-		} else if (slideIndex === imgArray.length - 1) {
+			// } else if (slideIndex === imgArray.length - 1) {
+		} else if (slideIndex === imgs.imgs.length - 1) {
 			// } else if (slideIndex === index) {
 			setSlideIndex(0);
 		}
@@ -43,8 +51,9 @@ function Carousel() {
 
 	return (
 		<div className="carousel">
-			{imgArray.map((obj, i) => {
-				console.log(obj);
+			{/* {imgArray.map((obj, i) => { */}
+			{imgs.imgs.map((obj, i) => {
+				//console.log(obj);
 				return (
 					<div
 						key={i}
