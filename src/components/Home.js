@@ -12,7 +12,7 @@ function Home() {
 	];
 	return (
 		<div>
-			<Carousel imgs={imgArray} />
+			<Carousel imgs={imgArray} mode="auto" />
 			<p>Où retrouver nos créations</p>
 			<div className="app-partenaire">
 				<a href="https://www.colibri-spirit.com/" target="__blank">

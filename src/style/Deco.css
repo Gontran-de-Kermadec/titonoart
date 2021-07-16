@@ -10,22 +10,17 @@
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 100;
-	/* display: none; */
 }
-/* .img__container .false + .deco__lightbox { */
 .deco__lightbox.false {
 	display: none;
 }
-/* .img__container .true + .deco__lightbox { */
 .deco__lightbox.true {
 	display: block;
 }
-/* .true.deco__lightbox {
-	display: block;
-} */
-.false.deco__lightbox {
+
+/* .false.deco__lightbox {
 	display: none;
-}
+} */
 .deco__lightbox .carousel {
 	top: 50%;
 	left: 50%;
