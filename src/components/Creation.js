@@ -5,6 +5,8 @@ import papillon from "../images/papillon1.jpg";
 import { Link } from "react-router-dom";
 import voilier2 from "../images/voilier2.jpg";
 import "../style/Creation.css";
+import longueteau from "../images/longueteau.jpg";
+import longueteau2 from "../images/longueteau2.jpg";
 
 function Creation() {
 	return (
@@ -51,28 +53,19 @@ function Creation() {
 						</figure>
 					</Link>
 				</div>
-				{/* <div className="single__creation">
-					<h2>Collection Pirate</h2>
-					<figure>
-						<img
-							src={bar}
-							onMouseEnter={(e) => (e.currentTarget.src = voilier2)}
-							onMouseLeave={(e) => (e.currentTarget.src = bar)}
-							alt="tonneau bar"
-						></img>
-					</figure>
-				</div> */}
-				{/* <div className="single__creation">
-					<h2>Collection Lotus</h2>
-					<figure>
-						<img
-							src={papillon}
-							onMouseEnter={(e) => (e.currentTarget.src = bar)}
-							onMouseLeave={(e) => (e.currentTarget.src = papillon)}
-							alt="tonneau papillon"
-						></img>
-					</figure>
-				</div> */}
+				<div className="single__creation">
+					<h2>Collection À votre image</h2>
+					<Link to="/creation/yourself">
+						<figure>
+							<img
+								src={longueteau}
+								onMouseEnter={(e) => (e.currentTarget.src = longueteau2)}
+								onMouseLeave={(e) => (e.currentTarget.src = longueteau)}
+								alt="tonneau papillon"
+							></img>
+						</figure>
+					</Link>
+				</div>
 			</div>
 		</div>
 	);
