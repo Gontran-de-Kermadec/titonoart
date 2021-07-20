@@ -1,6 +1,7 @@
 .deco__container {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .deco__lightbox {
 	position: fixed;
@@ -34,4 +35,17 @@
 .deco__container img {
 	height: 400px;
 	width: auto;
+}
+
+@media (max-width: 768px) {
+	.deco__container {
+		display: initial;
+	}
+	.deco__lightbox .carousel {
+		width: 95vw;
+	}
+	.deco__lightbox .carousel img {
+		width: 95vw;
+		height: 100vh;
+	}
 }

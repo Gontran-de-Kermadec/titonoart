@@ -64,7 +64,7 @@ function Carousel(props) {
 					onClick={() => prevSlide()}
 				>
 					<svg
-						className="test-svg"
+						className="carousel__svg"
 						xmlns="http://www.w3.org/2000/svg"
 						data-name="Layer 1"
 						viewBox="0 0 100 100"
@@ -83,7 +83,7 @@ function Carousel(props) {
 					onClick={() => nextSlide()}
 				>
 					<svg
-						className="test-svg"
+						className="carousel__svg"
 						xmlns="http://www.w3.org/2000/svg"
 						data-name="Layer 1"
 						viewBox="0 0 100 100"

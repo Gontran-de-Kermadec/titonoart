@@ -1,18 +1,13 @@
 .carousel {
 	position: relative;
 	overflow: hidden;
-	height: 500px;
+	height: 600px;
 }
 .carousel img {
 	width: 100vw;
 	height: 500px;
 	object-fit: cover;
 }
-/* .img-width {
-    width: 95vw;
-    height: 500px;
-    object-fit: cover; 
-} */
 .slide-img {
 	position: absolute;
 	top: 0;
@@ -32,16 +27,12 @@
 	border: none;
 	cursor: pointer;
 }
-/* .carousel__arrow img {
-    width: 3em;
-    height: 3em;
-} */
+
 .carousel__arrow .fas {
 	transform: scale(5);
 	color: black;
 }
 .left-arrow {
-	/* transform: rotate(180deg); */
 	left: 1em;
 }
 .left-arrow svg {
@@ -54,6 +45,26 @@
 	color: blue;
 	width: 100px;
 }
-.test-svg {
+.carousel__svg {
 	width: 150px;
+}
+
+/*response section*/
+@media (max-width: 425px) {
+	.carousel__svg {
+		width: 50px;
+	}
+}
+@media (min-width: 425px) and (max-width: 768px) {
+	.carousel__svg {
+		width: 100px;
+	}
+}
+@media (max-width: 768px) {
+	.left-arrow {
+		left: 0;
+	}
+	.right-arrow {
+		right: 0;
+	}
 }

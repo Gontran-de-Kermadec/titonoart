@@ -91,12 +91,12 @@ function Header() {
 							// height="2480.000000pt"
 							height="100"
 							// viewBox="0 0 3508.000000 2480.000000"
-							viewBox="0 0 2200 1500"
+							viewBox="0 0 2800 1500"
 							preserveAspectRatio="xMidYMid meet"
 						>
 							<g
 								//transform="translate(0.000000,2480.000000) scale(0.1,-0.1)"
-								transform="translate(-650,2480) scale(0.1,-0.14)"
+								transform="translate(-650,2480) scale(0.12,-0.14)"
 								fill="#000000"
 								stroke="none"
 							>
@@ -232,6 +232,22 @@ l0 26 673 0 c459 0 685 -4 712 -11z m-3585 -671 c260 -370 474 -678 477 -685
 						<div className="line"></div>
 					</div>
 					<div className="mobile__menu">
+						<div className="mobile__menu--close" onClick={() => toggleMenu()}>
+							<svg
+								aria-hidden="true"
+								focusable="false"
+								data-prefix="fas"
+								data-icon="times"
+								role="img"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 352 512"
+							>
+								<path
+									fill="#000"
+									d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+								></path>
+							</svg>
+						</div>
 						<nav className="mobile__menu--nav">
 							<ul>
 								<Link to="/creation">
