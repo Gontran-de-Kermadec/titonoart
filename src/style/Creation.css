@@ -3,7 +3,10 @@
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.creation img {
+.single__creation {
+	margin: 0 2rem;
+}
+.single__creation img {
 	height: 400px;
 	width: auto;
 }

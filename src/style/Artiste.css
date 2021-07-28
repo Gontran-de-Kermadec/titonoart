@@ -1,0 +1,55 @@
+.artiste {
+	margin: 0 2rem;
+}
+.artiste h2 {
+	margin: 3rem 0;
+}
+.artiste__feature {
+	display: flex;
+	justify-content: space-around;
+	text-align: left;
+	margin: 2rem 0;
+}
+.artiste__feature:nth-child(2n) {
+	flex-direction: row-reverse;
+}
+.feature__txt {
+	width: 50%;
+	align-self: center;
+	font-size: 1.5rem;
+}
+.feature__title {
+	margin: 0.5rem 0;
+	font-weight: bolder;
+}
+.feature__img {
+	width: 400px;
+	border-radius: 1rem;
+}
+/* .artiste__features p {
+	margin-bottom: 2rem;
+} */
+
+/*responsive mobile section*/
+@media (max-width: 768px) {
+	.artiste__feature {
+		display: initial;
+		text-align: center;
+	}
+	.feature__txt {
+		width: 100%;
+		margin: 2rem 0;
+	}
+	.feature__img--container {
+		display: none;
+	}
+}
+/*responsive tablet section*/
+@media (min-width: 769px) and (max-width: 1023px) {
+	.feature__txt {
+		font-size: 1.2rem;
+	}
+	.feature__img {
+		width: 300px;
+	}
+}

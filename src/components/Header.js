@@ -28,60 +28,24 @@ function Header() {
 					</Link>
 					<nav className="large-screen-menu">
 						<ul>
-							<Link to="/creation">
-								<li>Créations</li>
-							</Link>
 							<Link to="/about">
 								<li>À propos</li>
 							</Link>
-							<Link to="/robin">
+							<Link to="/artiste">
 								<li>Artiste</li>
+							</Link>
+							<Link to="/creation">
+								<li>Créations</li>
 							</Link>
 							<Link to="/contact">
 								<li>Contact</li>
 							</Link>
 						</ul>
 					</nav>
-					{/* <div className="xs-screen-menu" onClick={(e) => toggleMenu(e)}>
-						<div className="xs-menu-title">
-							Menu
-							<svg
-								className="arrow"
-								xmlns="http://www.w3.org/2000/svg"
-								data-name="Layer 1"
-								viewBox="0 0 100 100"
-								x="0px"
-								y="0px"
-							>
-								<polygon
-									points="36.66 18.63 33.12 22.17 60.21 49.26 33.34 76.13 36.88 79.67 63.77 52.77 67.4 49.37 36.66 18.63"
-									fill="#000"
-									stroke="#fff"
-								/>
-							</svg>
-						</div>
-						<nav>
-							<ul className="xs-screen-list">
-								<Link to="/creation">
-									<li>Créations</li>
-								</Link>
-								<Link to="/about">
-									<li>À propos</li>
-								</Link>
-								<Link to="/robin">
-									<li>Artiste</li>
-								</Link>
-								<Link to="/contact">
-									<li>Contact</li>
-								</Link>
-							</ul>
-						</nav>
-					</div> */}
 				</div>
-				<p>"Fût de chêne français transformé en véritable oeuvre d'art"</p>
+				<p>"Fûts de chêne français transformés en véritables oeuvres d'art"</p>
 				<div className="mobile__version">
 					<Link to="/" className="header__logo">
-						{/* <img src={Logo} alt="Logo" /> */}
 						<svg
 							className="mobile__svg"
 							version="1.0"
@@ -250,14 +214,14 @@ l0 26 673 0 c459 0 685 -4 712 -11z m-3585 -671 c260 -370 474 -678 477 -685
 						</div>
 						<nav className="mobile__menu--nav">
 							<ul>
-								<Link to="/creation">
-									<li onClick={() => toggleMenu()}>Créations</li>
-								</Link>
 								<Link to="/about">
 									<li onClick={() => toggleMenu()}>À propos</li>
 								</Link>
-								<Link to="/robin">
+								<Link to="/artiste">
 									<li onClick={() => toggleMenu()}>Artiste</li>
+								</Link>
+								<Link to="/creation">
+									<li onClick={() => toggleMenu()}>Créations</li>
 								</Link>
 								<Link to="/contact">
 									<li onClick={() => toggleMenu()}>Contact</li>

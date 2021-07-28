@@ -14,7 +14,7 @@ function Creation() {
 			<h1>Créations</h1>
 			<div className="creation__container">
 				<div className="single__creation">
-					<h2>Collection Art</h2>
+					<h2>Art</h2>
 					<Link to="/creation/art">
 						<figure>
 							<img
@@ -28,7 +28,7 @@ function Creation() {
 					</Link>
 				</div>
 				<div className="single__creation">
-					<h2>Collection Bar</h2>
+					<h2>Bar</h2>
 					<Link to="/creation/bar">
 						<figure>
 							<img
@@ -41,7 +41,7 @@ function Creation() {
 					</Link>
 				</div>
 				<div className="single__creation">
-					<h2>Collection Déco</h2>
+					<h2>Déco</h2>
 					<Link to="/creation/deco">
 						<figure>
 							<img
@@ -54,7 +54,7 @@ function Creation() {
 					</Link>
 				</div>
 				<div className="single__creation">
-					<h2>Collection À votre image</h2>
+					<h2>À votre image</h2>
 					<Link to="/creation/yourself">
 						<figure>
 							<img

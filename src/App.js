@@ -3,7 +3,7 @@ import Creation from "./components/Creation";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Robin from "./components/Robin";
+import Artiste from "./components/Artiste";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Origin from "./components/about-subsections/Origin";
@@ -24,7 +24,7 @@ function App() {
 				<Route path="/creation" exact component={Creation} />
 				<Route path="/about" exact component={About} />
 				<Route path="/contact" exact component={Contact} />
-				<Route path="/robin" exact component={Robin} />
+				<Route path="/artiste" exact component={Artiste} />
 				<Route path="/about/origin" exact component={Origin} />
 				<Route path="/about/support" exact component={Support} />
 				<Route path="/about/valeurs" exact component={Valeurs} />

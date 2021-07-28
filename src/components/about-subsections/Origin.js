@@ -2,7 +2,7 @@ function Origin() {
 	return (
 		<div className=" content__subsections content__origin">
 			<p className="about__origin--bold">
-				création unique & singulière peinte à la main avec inspiration qui
+				créations uniques & singulières peintes à la main avec inspiration qui
 				illuminera votre intérieur.
 			</p>
 			{/* <div className="about__origin--trou">

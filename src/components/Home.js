@@ -1,5 +1,5 @@
 import Carousel from "./Carousel";
-import Contact from "./Contact";
+import "../style/Home.css";
 import colibri from "../images/colibri.svg";
 import popup from "../images/popup.svg";
 
@@ -13,18 +13,20 @@ function Home() {
 	return (
 		<div>
 			<Carousel imgs={imgArray} mode="auto" />
-			<p>Où retrouver nos créations</p>
-			<div className="app-partenaire">
+			<div className="homepage__partenaire">
+				<p>Où retrouver nos créations</p>
 				<a href="https://www.colibri-spirit.com/" target="__blank">
 					<img src={colibri} alt="logo"></img>
-					{/* <p>Colibri Spirit</p> */}
 				</a>
 				<a href="https://popupstory.fr/" target="__blank">
 					<img src={popup} alt="logo"></img>
-					{/* <p>Popup Story</p> */}
 				</a>
 			</div>
-			<Contact />
+			<div className="homepage__contact">
+				<h2>Contactez-nous</h2>
+				<a href="mailto:titonoart@gmail.com">titonoart@gmail.com</a>
+				<br />
+			</div>
 		</div>
 	);
 }

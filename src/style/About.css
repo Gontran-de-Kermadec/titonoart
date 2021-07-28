@@ -2,16 +2,27 @@
 	margin: 0 30px;
 }
 /*section réservée au différentes parties de la page*/
+.about__introduction p {
+	font-size: 1.1rem;
+	margin: 1rem;
+}
 .about__subsection {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	height: 10rem;
-	border: solid;
-	margin: 2rem 0;
+	border: solid 1px rgb(151, 149, 149);
+	width: 90vw;
+	margin: 2rem auto;
+	transition: 0.2s ease-in-out;
+	/* margin: 2rem 0; */
 }
 .about__subsection:nth-child(2n) {
 	flex-direction: row-reverse;
+}
+.about__subsection:hover {
+	transform: scale(1.03);
+	transition: 0.3s ease-in-out;
 }
 .bg-img {
 	background-image: url(../images/about-fut.jpg);
@@ -24,10 +35,10 @@
 .about__subsection h3 {
 	width: 30%;
 	align-self: center;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 }
 
-.subsection__overlay {
+/* .subsection__overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -56,7 +67,7 @@
 .about__subsection:hover .subsection__overlay {
 	opacity: 1;
 	transition: opacity 0.5s;
-}
+} */
 
 /*responsive section*/
 @media (max-width: 600px) {

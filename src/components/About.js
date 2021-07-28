@@ -24,45 +24,42 @@ function About() {
 			</div>
 			<div>
 				<div className="about__subsections">
-					<div className="about__subsection">
+					<Link className="about__subsection" to="/about/origin">
+						{/* <div className="about__subsection"> */}
 						<h3>L'origine</h3>
 						<div className="bg-img"></div>
-						<div className="subsection__overlay">
-							<Link to="/about/origin">
-								<button className="overlay-btn">En savoir plus</button>
-							</Link>
-						</div>
-					</div>
-					<div className="about__subsection">
+						{/* </div> */}
+					</Link>
+					<Link to="/about/support" className="about__subsection">
+						{/* <div className="about__subsection"> */}
 						<h3>Notre support</h3>
 						<div className="bg-img"></div>
-						<div className="subsection__overlay">
-							<Link to="/about/support">
+						{/* <div className="subsection__overlay">
 								<button className="overlay-btn">En savoir plus</button>
-							</Link>
-						</div>
-					</div>
-					<div className="about__subsection">
+						</div> */}
+						{/* </div> */}
+					</Link>
+					<Link to="/about/valeurs" className="about__subsection">
+						{/* <div className="about__subsection"> */}
 						<h3>Nos valeurs</h3>
 						<div className="bg-img"></div>
-						<div className="subsection__overlay">
-							<Link to="/about/valeurs">
+						{/* <div className="subsection__overlay">
 								<button className="overlay-btn">En savoir plus</button>
-							</Link>
-						</div>
-					</div>
-					<div className="about__subsection">
+						</div> */}
+						{/* </div> */}
+					</Link>
+					<Link to="/about/demarche" className="about__subsection">
+						{/* <div className="about__subsection"> */}
 						<h3>
 							Notre démarche :<br />
 							Eco - responsable
 						</h3>
 						<div className="bg-img"></div>
-						<div className="subsection__overlay">
-							<Link to="/about/demarche">
+						{/* <div className="subsection__overlay">
 								<button className="overlay-btn">En savoir plus</button>
-							</Link>
-						</div>
-					</div>
+						</div> */}
+						{/* </div> */}
+					</Link>
 				</div>
 			</div>
 		</div>

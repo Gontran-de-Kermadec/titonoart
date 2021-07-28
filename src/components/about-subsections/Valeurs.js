@@ -1,13 +1,11 @@
 const Valeurs = () => {
 	return (
 		<div className="about__child about__valeur">
-			<h3>
-				Nos valeurs :<br /> convictions
-			</h3>
+			<h3>Nos valeurs :</h3>
 			<p>L'HUMAIN</p>
 			<p>
 				Toujours soucieux d’un excellent relationnel, nous favorisons les
-				échanges humain et de proximité.
+				échanges humains et de proximité.
 			</p>
 			<p>LA PASSION</p>
 			<p>

@@ -12,7 +12,8 @@ function Support() {
 			<p>
 				Nous travaillons uniquement avec des barriques déjà utilisées pour le
 				vieillissement du vin. Ce cépage n’a pas abîmé le bois. Il l’a
-				Naturellement imprégné des ubtils arômes de fruits rouges et vanillés.
+				naturellement imprégné des subtils arômes de fruits rouges et de
+				vanilles.
 			</p>
 			<p>
 				Nous permettons à ce jeune fût de perdurer dans le temps et de devenir
