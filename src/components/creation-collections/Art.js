@@ -1,5 +1,5 @@
 import voilier from "../../images/voilier.jpg";
-import voilier2 from "../../images/voilier2.jpg";
+// import voilier2 from "../../images/voilier2.jpg";
 import Carousel from "../Carousel";
 
 const Art = () => {
@@ -30,8 +30,8 @@ const Art = () => {
 					<img
 						src={voilier}
 						alt="tonneau d'un papillon"
-						onMouseEnter={(e) => (e.currentTarget.src = voilier2)}
-						onMouseLeave={(e) => (e.currentTarget.src = voilier)}
+						// onMouseEnter={(e) => (e.currentTarget.src = voilier2)}
+						// onMouseLeave={(e) => (e.currentTarget.src = voilier)}
 					/>
 					<figcaption>Titre à definir</figcaption>
 				</figure>
