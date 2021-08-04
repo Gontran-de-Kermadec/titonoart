@@ -16,15 +16,20 @@ function Creation() {
 				<div className="single__creation">
 					<h2>Art</h2>
 					<Link to="/creation/art">
-						<figure>
-							<img
-								src={voilier}
-								onMouseEnter={(e) => (e.currentTarget.src = voilier2)}
-								onMouseLeave={(e) => (e.currentTarget.src = voilier)}
-								alt="tonneau d'un voilier"
-							></img>
-							<figcaption>Nuances sur la Baie #001</figcaption>
-						</figure>
+						<div className="single__creation-card">
+							<figure>
+								<div className="creation__img-container">
+									<img
+										src={voilier}
+										onMouseEnter={(e) => (e.currentTarget.src = voilier2)}
+										onMouseLeave={(e) => (e.currentTarget.src = voilier)}
+										alt="tonneau d'un voilier"
+									></img>
+								</div>
+								<figcaption>Nuances sur la Baie #001</figcaption>
+							</figure>
+							<button>En savoir plus</button>
+						</div>
 					</Link>
 				</div>
 				<div className="single__creation">
@@ -37,6 +42,7 @@ function Creation() {
 								onMouseLeave={(e) => (e.currentTarget.src = bar)}
 								alt="tonneau bar"
 							></img>
+							<figcaption>Nuances sur la Baie #001</figcaption>
 						</figure>
 					</Link>
 				</div>
@@ -50,6 +56,7 @@ function Creation() {
 								onMouseLeave={(e) => (e.currentTarget.src = papillon)}
 								alt="tonneau papillon"
 							></img>
+							<figcaption>Nuances sur la Baie #001</figcaption>
 						</figure>
 					</Link>
 				</div>
@@ -63,6 +70,7 @@ function Creation() {
 								onMouseLeave={(e) => (e.currentTarget.src = longueteau)}
 								alt="tonneau papillon"
 							></img>
+							<figcaption>Nuances sur la Baie #001</figcaption>
 						</figure>
 					</Link>
 				</div>

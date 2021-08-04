@@ -1,3 +1,4 @@
+import plante from "../../images/plante.png";
 const Demarche = () => {
 	return (
 		<div className="about__child about__demarche">
@@ -7,7 +8,8 @@ const Demarche = () => {
 				poumons indispensables de notre planète. Conscient de l’importance de la
 				protection des forêts, Ti Tono Art s’engage auprès de REFOREST'ACTION.
 			</p>
-			<p>1 COMMANDE TONNEAU 225L DÉCORÉ = 1 ARBRE PLANTé</p>
+			<p>1 COMMANDE TONNEAU 225L DÉCORÉ = 1 ARBRE PLANTÉ</p>
+			<img src={plante} alt="plante verte" />
 		</div>
 	);
 };

@@ -1,9 +1,7 @@
 function Support() {
 	return (
 		<div className="about__child about__support">
-			<h3>
-				Notre support :<br /> Le Fût de Chêne
-			</h3>
+			<h3>Notre support : Le Fût de Chêne</h3>
 			<p>
 				Nous avons sélectionné une tonnellerie française familiale pour son
 				travail de professionnels passionnés, son expérience dans le métier
@@ -16,13 +14,17 @@ function Support() {
 				vanilles.
 			</p>
 			<p>
-				Nous permettons à ce jeune fût de perdurer dans le temps et de devenir
-				une pièce authentique, atypique et surtout unique.
+				Nous permettons à ce fût de perdurer dans le temps et de devenir une
+				pièce authentique, atypique et surtout unique.
 			</p>
 			<p>
+				Par ce travail, nous voulons valoriser un métier précieux et « oublié »
+				: le tonnelier.
+			</p>
+			{/* <p>
 				Afin de travailler de manière éthique, nous valorisons un métier «
 				oublié » :le tonnelier.
-			</p>
+			</p> */}
 		</div>
 	);
 }

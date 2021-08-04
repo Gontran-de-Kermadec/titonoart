@@ -39,9 +39,9 @@ function Artiste() {
 							Il quitte la Guadeloupe pour développer son talent et intègre une
 							MANAA à Bordeaux afin de renforcer ses fondamentaux en art
 							sappliqués. Il entre ensuite en spécialisation illustration à
-							l’École supérieure des Arts ESA Saint-Luc à Bruxelles. Ce cursus
-							développe ses compétences en Arts graphiques et favorise sa
-							créativité et sa mobilité d’esprit.
+							l’École supérieure des Arts ESA Saint-Luc à Bruxelles. Durant ce
+							cursus qui favorise sa créativité et sa mobilité d’esprit, il
+							développe ses compétences en Arts graphiques.
 						</p>
 					</div>
 					<div className="feature__img--container">
@@ -50,13 +50,18 @@ function Artiste() {
 				</div>
 				<div className="artiste__feature">
 					<div className="feature__txt">
-						<p className="feature__title">SON ÉXPÉRIENCE</p>
+						<p className="feature__title">SON EXPÉRIENCE</p>
 						<p>
+							Robin a travaillé et collaboré avec différents artistes à Paris,
+							Bruxelles, Bâle, Bordeaux, Guadeloupe. Il a réalisé des
+							illustrations sur le Continent Nord-Américain et aux Antilles.
+						</p>
+						{/* <p>
 							Robin a travaillé et collaboré avec des artistes tatoueurs à
 							Paris, Bruxelles (SalonPerle Noire), Bâle (El Mundo - Suisse),
 							Bordeaux , Guadeloupe (Cat eyes). Il a réalisé des illustrations
 							au Canada(Attaboy) et en Guadeloupe.
-						</p>
+						</p> */}
 					</div>
 					<div className="feature__img--container">
 						<img className="feature__img" src={robin} alt="" />
@@ -82,8 +87,8 @@ function Artiste() {
 						<p>
 							Après plus de dix ans dans le monde du BodyArt, il se lance dans
 							la création graphique sur fût de chêne. Chaque fût, illustré selon
-							son inspiration demanière unique, est transformé en véritable «
-							OEuvre d’art » . Il imagine des collections sans compromettre son
+							son inspiration de manière unique, est transformé en véritable «
+							œuvre d’art » . Il imagine des collections sans compromettre son
 							éthique et ses valeurs et accorde de l’importance à l’origine des
 							matières ainsi qu’à leur production. Robin propose un art
 							conscient en donnant une seconde vie à cet objet utilisé comme

@@ -37,7 +37,64 @@
 	align-self: center;
 	font-size: 2.5rem;
 }
-
+.about__child {
+	width: 80vw;
+	margin: 1rem auto;
+	font-size: 1.5rem;
+	overflow: hidden;
+}
+.about__child p {
+	margin: 1.2rem;
+}
+.about__origin--title {
+	font-weight: bolder;
+	/* transform: translateX(-60vw);
+	animation: moveR 3s ease-in forwards; */
+}
+.about__support h3 {
+	transform: translateX(-60vw);
+	animation: moveR 2s ease-out forwards;
+}
+.about__support p {
+	transform: translateY(20vw);
+	opacity: 0;
+}
+.about__support p:nth-child(2) {
+	animation: moveUp 0.6s ease-in-out 1.8s forwards;
+}
+.about__support p:nth-child(3) {
+	animation: moveUp 0.6s ease-in-out 2s forwards;
+}
+.about__support p:nth-child(4) {
+	animation: moveUp 0.6s ease-in-out 2.2s forwards;
+}
+.about__support p:nth-child(5) {
+	animation: moveUp 0.6s ease-in-out 2.4s forwards;
+}
+/*section valeur de l'à propos*/
+.about__valeur p span {
+	display: block;
+	line-height: 1.2rem;
+}
+/*section demarche de l'à propos*/
+.about__demarche img {
+	height: 250px;
+}
+@keyframes moveR {
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes moveUp {
+	/* 0% {
+		opacity: 0;
+	} */
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
 /* .subsection__overlay {
 	position: absolute;
 	top: 0;

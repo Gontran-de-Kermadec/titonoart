@@ -1,12 +1,22 @@
+.creation {
+	padding: 0 0 2rem 0;
+}
 .creation__container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .single__creation {
-	margin: 0 2rem;
+	margin: 1rem 2rem;
 }
 .single__creation img {
 	height: 400px;
 	width: auto;
+}
+.single__creation figure,
+.single__creation-card {
+	box-shadow: 5px 5px 10px 3px #000;
+}
+.single__creation-card figure {
+	box-shadow: initial;
 }

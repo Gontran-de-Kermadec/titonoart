@@ -14,12 +14,12 @@ function About() {
 					Ces objets destinés à la décoration d’intérieur sont réalisés selon
 					l’inspiration de l'artiste ou sur votre demande. Touche exotique,
 					atmosphère tropicale, l’art de vivre « à l’antillaise », esprit
-					Caraïbes, couleurs vives...
+					Caraïbes.
 				</p>
 				<p>
-					La manière dont vous décorez votre habitation reflète votre
-					personnalité. Nous voulons que vous vous sentiez bien chez vous, dans
-					un univers qui vous ressemble.
+					La décoration de votre habitation reflète votre personnalité. Nous
+					voulons que vous vous sentiez bien, Ti ToNo Art y ajoute une nouvelle
+					touche d'émotion.
 				</p>
 			</div>
 			<div>
