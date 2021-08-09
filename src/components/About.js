@@ -13,8 +13,8 @@ function About() {
 				<p>
 					Ces objets destinés à la décoration d’intérieur sont réalisés selon
 					l’inspiration de l'artiste ou sur votre demande. Touche exotique,
-					atmosphère tropicale, l’art de vivre « à l’antillaise », esprit
-					Caraïbes.
+					atmosphère tropicale, tout l’art de vivre « à l’antillaise » s'exprime
+					dans cet esprit Caraïbes.
 				</p>
 				<p>
 					La décoration de votre habitation reflète votre personnalité. Nous

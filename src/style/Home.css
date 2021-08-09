@@ -7,3 +7,16 @@
 .homepage__contact {
 	margin: 3rem;
 }
+.social__media--mobile {
+	margin-top: 1rem;
+}
+.social__media--mobile svg {
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0 0.7rem;
+}
+@media (min-width: 425px) {
+	.social__media--mobile {
+		display: none;
+	}
+}
