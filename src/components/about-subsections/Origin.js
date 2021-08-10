@@ -2,8 +2,8 @@ function Origin() {
 	return (
 		<div className="about__child content__origin">
 			<p className="about__origin--bold">
-				créations uniques & singulières peintes à la main avec inspiration qui
-				illuminera votre intérieur.
+				Créations uniques & singulières peintes à la main avec inspiration
+				illumineront votre intérieur.
 			</p>
 			{/* <div className="about__origin--trou">
         <img src={trou} alt="" id="about__origin--trou" />

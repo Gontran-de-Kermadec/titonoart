@@ -20,3 +20,27 @@
 .single__creation-card figure {
 	box-shadow: initial;
 }
+.single__creation-card button {
+	all: unset;
+	background-color: #000;
+	color: #fff;
+	border: solid 1px #000;
+	margin: 1rem 0;
+	padding: 0.5rem;
+	transition: all 0.5s;
+}
+.single__creation-card button:hover {
+	background-color: #fff;
+	color: #000;
+	transition: all 0.5s;
+}
+/*sous section de la page creation*/
+.deco__lightbox--close {
+	all: unset;
+	font-size: 2rem;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	background-color: #fff;
+	padding: 0 0.5rem;
+}

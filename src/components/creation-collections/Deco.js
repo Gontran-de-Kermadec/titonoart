@@ -51,7 +51,12 @@ const Deco = () => {
 					<figcaption>Titre à definir</figcaption>
 				</figure>
 				<div className="deco__lightbox false">
-					<button onClick={(e) => closeLightbox(e)}>X</button>
+					<button
+						onClick={(e) => closeLightbox(e)}
+						className="deco__lightbox--close"
+					>
+						X
+					</button>
 					<Carousel imgs={papillonArray} mode="manual" />
 				</div>
 			</div>
@@ -61,7 +66,12 @@ const Deco = () => {
 					<figcaption>Titre à definir</figcaption>
 				</figure>
 				<div className="deco__lightbox false">
-					<button onClick={(e) => closeLightbox(e)}>X</button>
+					<button
+						onClick={(e) => closeLightbox(e)}
+						className="deco__lightbox--close"
+					>
+						X
+					</button>
 					<Carousel imgs={lotusArray} mode="manual" />
 				</div>
 			</div>
@@ -71,7 +81,12 @@ const Deco = () => {
 					<figcaption>Titre à definir</figcaption>
 				</figure>
 				<div className="deco__lightbox false">
-					<button onClick={(e) => closeLightbox(e)}>X</button>
+					<button
+						onClick={(e) => closeLightbox(e)}
+						className="deco__lightbox--close"
+					>
+						X
+					</button>
 					<Carousel imgs={pirateArray} mode="manual" />
 				</div>
 			</div>

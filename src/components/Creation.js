@@ -35,34 +35,40 @@ function Creation() {
 				<div className="single__creation">
 					<h2>Bar</h2>
 					<Link to="/creation/bar">
-						<figure>
-							<img
-								src={bar}
-								onMouseEnter={(e) => (e.currentTarget.src = bar2)}
-								onMouseLeave={(e) => (e.currentTarget.src = bar)}
-								alt="tonneau bar"
-							></img>
-							<figcaption>Nuances sur la Baie #001</figcaption>
-						</figure>
+						<div className="single__creation-card">
+							<figure>
+								<img
+									src={bar}
+									onMouseEnter={(e) => (e.currentTarget.src = bar2)}
+									onMouseLeave={(e) => (e.currentTarget.src = bar)}
+									alt="tonneau bar"
+								></img>
+								<figcaption>Nuances sur la Baie #001</figcaption>
+							</figure>
+							<button>En savoir plus</button>
+						</div>
 					</Link>
 				</div>
 				<div className="single__creation">
 					<h2>Déco</h2>
 					<Link to="/creation/deco">
-						<figure>
-							<img
-								src={papillon}
-								onMouseEnter={(e) => (e.currentTarget.src = voilier2)}
-								onMouseLeave={(e) => (e.currentTarget.src = papillon)}
-								alt="tonneau papillon"
-							></img>
-							<figcaption>Nuances sur la Baie #001</figcaption>
-						</figure>
+						<div className="single__creation-card">
+							<figure>
+								<img
+									src={papillon}
+									onMouseEnter={(e) => (e.currentTarget.src = voilier2)}
+									onMouseLeave={(e) => (e.currentTarget.src = papillon)}
+									alt="tonneau papillon"
+								></img>
+								<figcaption>Nuances sur la Baie #001</figcaption>
+							</figure>
+							<button>En savoir plus</button>
+						</div>
 					</Link>
 				</div>
 				<div className="single__creation">
 					<h2>À votre image</h2>
-					<Link to="/creation/yourself">
+					<div className="single__creation-card">
 						<figure>
 							<img
 								src={longueteau}
@@ -72,7 +78,10 @@ function Creation() {
 							></img>
 							<figcaption>Nuances sur la Baie #001</figcaption>
 						</figure>
-					</Link>
+						<Link to="/creation/yourself">
+							<button>En savoir plus</button>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>

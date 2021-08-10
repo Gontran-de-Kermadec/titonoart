@@ -36,7 +36,12 @@ const Yourself = () => {
 					<figcaption>Titre à definir</figcaption>
 				</figure>
 				<div className="deco__lightbox false">
-					<button onClick={(e) => closeLightbox(e)}>X</button>
+					<button
+						onClick={(e) => closeLightbox(e)}
+						className="deco__lightbox--close"
+					>
+						X
+					</button>
 					<Carousel imgs={yourselfArray} mode="manual" />
 				</div>
 			</div>
