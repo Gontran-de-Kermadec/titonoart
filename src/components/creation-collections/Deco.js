@@ -75,7 +75,7 @@ const Deco = () => {
 					<Carousel imgs={lotusArray} mode="manual" />
 				</div>
 			</div>
-			<div>
+			<div className="img__container">
 				<figure onClick={(e) => openLightbox(e)}>
 					<img src={pirate} alt="tonneau d'un pirate" />
 					<figcaption>Titre à definir</figcaption>

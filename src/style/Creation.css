@@ -27,12 +27,12 @@
 	border: solid 1px #000;
 	margin: 1rem 0;
 	padding: 0.5rem;
-	transition: all 0.5s;
+	transition: all 0.3s;
 }
 .single__creation-card button:hover {
 	background-color: #fff;
 	color: #000;
-	transition: all 0.5s;
+	transition: all 0.3s;
 }
 /*sous section de la page creation*/
 .deco__lightbox--close {

@@ -11,6 +11,7 @@ const Art = () => {
 	];
 	const openLightbox = (e) => {
 		console.log(e.nativeEvent.path[1].nextSibling.classList.contains("false"));
+		console.log(e.nativeEvent.path[1].nextSibling);
 		if (e.nativeEvent.path[1].nextSibling.classList.contains("false")) {
 			e.nativeEvent.path[1].nextSibling.classList.remove("false");
 			e.nativeEvent.path[1].nextSibling.classList.add("true");
@@ -33,7 +34,7 @@ const Art = () => {
 						// onMouseEnter={(e) => (e.currentTarget.src = voilier2)}
 						// onMouseLeave={(e) => (e.currentTarget.src = voilier)}
 					/>
-					<figcaption>Titre à definir</figcaption>
+					<figcaption>Nuance sur la baie</figcaption>
 				</figure>
 				<div className="deco__lightbox false">
 					<button
@@ -43,6 +44,12 @@ const Art = () => {
 						X
 					</button>
 					<Carousel imgs={voilierArray} mode="manual" />
+				</div>
+				<div>
+					<p>Peinture acrylique - Mai 2021</p>
+					<p>Certificat d'authenticité</p>
+					<p>2500€</p>
+					<p>Acquis</p>
 				</div>
 			</div>
 		</div>

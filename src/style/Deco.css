@@ -36,6 +36,9 @@
 	height: 400px;
 	width: auto;
 }
+.img__container {
+	margin: 0.5rem 1rem;
+}
 
 @media (max-width: 768px) {
 	.deco__container {

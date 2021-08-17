@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Playfair+Display&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Staatliches&display=swap");
+/*font pour les textes
+font-family: 'Courgette', cursive;
+pour titre menu
+font-family: 'Staatliches', cursive;
+*/
 .App {
 	text-align: center;
-	font-family: "Crimson Text", serif;
+	/* font-family: "Crimson Text", serif; */
+	font-family: "Courgette", cursive;
 }
 
 .App-logo {
