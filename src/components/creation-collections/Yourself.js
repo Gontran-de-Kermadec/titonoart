@@ -24,7 +24,7 @@ const Yourself = () => {
 		}
 	};
 	return (
-		<div className="deco__container">
+		<div className="deco__container subcreation__container">
 			<div className="img__container">
 				<figure onClick={(e) => openLightbox(e)}>
 					<img

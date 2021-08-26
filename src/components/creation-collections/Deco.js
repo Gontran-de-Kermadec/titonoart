@@ -1,5 +1,5 @@
 import papillon from "../../images/papillon1.jpg";
-import papillon2 from "../../images/papillon3.jpg";
+//import papillon2 from "../../images/papillon3.jpg";
 import lotus from "../../images/lotus.jpg";
 import pirate from "../../images/pirate.jpg";
 import "../../style/Deco.css";
@@ -7,7 +7,7 @@ import Carousel from "../Carousel";
 
 const Deco = () => {
 	const papillonArray = [
-		"/images/papillon.jpg",
+		// "/images/papillon.jpg",
 		"/images/papillon1.jpg",
 		"/images/papillon2.jpg",
 		"/images/papillon3.jpg",
@@ -39,16 +39,16 @@ const Deco = () => {
 		}
 	};
 	return (
-		<div className="deco__container">
+		<div className="deco__container subcreation__container">
 			<div className="img__container">
 				<figure onClick={(e) => openLightbox(e)}>
 					<img
 						src={papillon}
 						alt="tonneau d'un papillon"
-						onMouseEnter={(e) => (e.currentTarget.src = papillon2)}
-						onMouseLeave={(e) => (e.currentTarget.src = papillon)}
+						// onMouseEnter={(e) => (e.currentTarget.src = papillon2)}
+						// onMouseLeave={(e) => (e.currentTarget.src = papillon)}
 					/>
-					<figcaption>Titre à definir</figcaption>
+					<figcaption>Papillon</figcaption>
 				</figure>
 				<div className="deco__lightbox false">
 					<button
@@ -63,7 +63,7 @@ const Deco = () => {
 			<div className="img__container">
 				<figure onClick={(e) => openLightbox(e)}>
 					<img src={lotus} alt="tonneau d'un lotus" />
-					<figcaption>Titre à definir</figcaption>
+					<figcaption>Christaline</figcaption>
 				</figure>
 				<div className="deco__lightbox false">
 					<button
@@ -78,7 +78,7 @@ const Deco = () => {
 			<div className="img__container">
 				<figure onClick={(e) => openLightbox(e)}>
 					<img src={pirate} alt="tonneau d'un pirate" />
-					<figcaption>Titre à definir</figcaption>
+					<figcaption>Caribbean pirate</figcaption>
 				</figure>
 				<div className="deco__lightbox false">
 					<button

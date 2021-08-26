@@ -43,4 +43,5 @@
 	cursor: pointer;
 	background-color: #fff;
 	padding: 0 0.5rem;
+	z-index: 150;
 }

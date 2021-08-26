@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "../style/Carousel.css";
 function Carousel(props) {
-	console.log(props);
+	console.log(props.imgs);
 	console.log(props.mode);
 	const [slideIndex, setSlideIndex] = useState(0);
 	const nextSlide = () => {
@@ -29,8 +29,8 @@ function Carousel(props) {
 	});
 	if (props.mode === "auto") {
 		return (
-			<div className="carousel">
-				{props.imgs.map((obj, i) => {
+			<div className="carousel__auto">
+				{props.imgs.map((img, i) => {
 					return (
 						<div
 							key={i}
@@ -38,7 +38,7 @@ function Carousel(props) {
 								slideIndex === i ? "slide-img img-active" : "slide-img"
 							}
 						>
-							<img src={obj} alt="img" />
+							<img src={img} alt="img" className={"slide-img--" + i} />
 						</div>
 					);
 				})}
@@ -46,8 +46,8 @@ function Carousel(props) {
 		);
 	} else if (props.mode === "manual") {
 		return (
-			<div className="carousel">
-				{props.imgs.map((obj, i) => {
+			<div className="carousel__manual">
+				{props.imgs.map((img, i) => {
 					return (
 						<div
 							key={i}
@@ -55,7 +55,7 @@ function Carousel(props) {
 								slideIndex === i ? "slide-img img-active" : "slide-img"
 							}
 						>
-							<img src={obj} alt="img" />
+							<img src={img} alt="img" />
 						</div>
 					);
 				})}

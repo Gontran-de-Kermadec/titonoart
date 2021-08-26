@@ -1,6 +1,7 @@
 import voilier from "../../images/voilier.jpg";
-// import voilier2 from "../../images/voilier2.jpg";
+import terre from "../../images/terre.jpg";
 import Carousel from "../Carousel";
+import "../../style/Art.css";
 
 const Art = () => {
 	const voilierArray = [
@@ -8,6 +9,14 @@ const Art = () => {
 		"/images/voilier1.jpg",
 		"/images/voilier2.jpg",
 		"/images/voilier3.jpg",
+		"/images/voilier4.jpg",
+	];
+	const terreArray = [
+		"/images/terre.jpg",
+		"/images/terre1.jpg",
+		"/images/terre2.jpg",
+		"/images/terre3.jpg",
+		"/images/terre4.jpg",
 	];
 	const openLightbox = (e) => {
 		console.log(e.nativeEvent.path[1].nextSibling.classList.contains("false"));
@@ -25,7 +34,15 @@ const Art = () => {
 		}
 	};
 	return (
-		<div className="deco__container">
+		<div className="art__container subcreation__container">
+			<div>
+				<p className="art__txt">
+					Créations artistiques réalisées selon l'inspiration de Robin. La
+					technique utilisée est la peinture acrylique. Un certificat
+					d'authenticité est délivré pour garantir le caractère unique de
+					l’œuvre.
+				</p>
+			</div>
 			<div className="img__container">
 				<figure onClick={(e) => openLightbox(e)}>
 					<img
@@ -50,6 +67,21 @@ const Art = () => {
 					<p>Certificat d'authenticité</p>
 					<p>2500€</p>
 					<p>Acquis</p>
+				</div>
+			</div>
+			<div className="img__container">
+				<figure onClick={(e) => openLightbox(e)}>
+					<img src={terre} alt="tonneau de la terre" />
+					<figcaption>Terre natale</figcaption>
+				</figure>
+				<div className="deco__lightbox false">
+					<button
+						onClick={(e) => closeLightbox(e)}
+						className="deco__lightbox--close"
+					>
+						X
+					</button>
+					<Carousel imgs={terreArray} mode="manual" />
 				</div>
 			</div>
 		</div>

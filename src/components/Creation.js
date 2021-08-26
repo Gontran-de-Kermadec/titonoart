@@ -25,7 +25,7 @@ function Creation() {
 									alt="tonneau d'un voilier"
 								></img>
 							</div>
-							<figcaption>Nuances sur la Baie #001</figcaption>
+							{/* <figcaption>Nuances sur la Baie #001</figcaption> */}
 						</figure>
 						<Link to="/creation/art">
 							<button>En savoir plus</button>
@@ -42,7 +42,7 @@ function Creation() {
 								onMouseLeave={(e) => (e.currentTarget.src = bar)}
 								alt="tonneau bar"
 							></img>
-							<figcaption>Nuances sur la Baie #001</figcaption>
+							{/* <figcaption>Nuances sur la Baie #001</figcaption> */}
 						</figure>
 						<Link to="/creation/bar">
 							<button>En savoir plus</button>
@@ -59,7 +59,7 @@ function Creation() {
 								onMouseLeave={(e) => (e.currentTarget.src = papillon)}
 								alt="tonneau papillon"
 							></img>
-							<figcaption>Nuances sur la Baie #001</figcaption>
+							{/* <figcaption>Nuances sur la Baie #001</figcaption> */}
 						</figure>
 						<Link to="/creation/deco">
 							<button>En savoir plus</button>
@@ -76,7 +76,7 @@ function Creation() {
 								onMouseLeave={(e) => (e.currentTarget.src = longueteau)}
 								alt="tonneau papillon"
 							></img>
-							<figcaption>Nuances sur la Baie #001</figcaption>
+							{/* <figcaption>Nuances sur la Baie #001</figcaption> */}
 						</figure>
 						<Link to="/creation/yourself">
 							<button>En savoir plus</button>
