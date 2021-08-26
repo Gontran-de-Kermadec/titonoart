@@ -35,7 +35,7 @@
 	transition: all 0.3s;
 }
 /*sous section de la page creation*/
-.deco__lightbox--close {
+.subcreation__lightbox--close {
 	all: unset;
 	font-size: 2rem;
 	position: absolute;

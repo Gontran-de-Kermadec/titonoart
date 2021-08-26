@@ -1,0 +1,8 @@
+.art__txt {
+	padding: 1.5rem 8rem;
+}
+@media (max-width: 768px) {
+	.art__txt {
+		padding: 0.2rem;
+	}
+}

@@ -12,7 +12,11 @@
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
-.deco__lightbox {
+.subcreation__container figure {
+	cursor: pointer;
+}
+.subcreation__lightbox {
+	/* .deco__lightbox { */
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -21,17 +25,20 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 100;
 }
-.deco__lightbox.false {
+.subcreation__lightbox.false {
+	/* .deco__lightbox.false { */
 	display: none;
 }
-.deco__lightbox.true {
+/* .deco__lightbox.true { */
+.subcreation__lightbox.true {
 	display: block;
 }
 
 /* .false.deco__lightbox {
 	display: none;
 } */
-.deco__lightbox .carousel {
+.subcreation__lightbox .carousel {
+	/* .deco__lightbox .carousel { */
 	/* top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -43,7 +50,8 @@
 	transform: translate(-50%, -50%);
 	width: 80vw;
 }
-.deco__lightbox .carousel img {
+.subcreation__lightbox .carousel img {
+	/* .deco__lightbox .carousel img { */
 	width: 80vw;
 	height: auto;
 }
@@ -62,11 +70,18 @@
 	.subcreation__container {
 		display: initial;
 	}
-	.deco__lightbox .carousel {
+	.subcreation__lightbox .carousel {
+		/* .deco__lightbox .carousel { */
 		width: 95vw;
 	}
-	.deco__lightbox .carousel img {
+	.subcreation__lightbox .carousel img {
+		/* .deco__lightbox .carousel img { */
 		width: 95vw;
 		height: 100vh;
+	}
+}
+@media (max-width: 375px) {
+	.subcreation__container img {
+		height: 360px;
 	}
 }

@@ -2,7 +2,7 @@ import papillon from "../../images/papillon1.jpg";
 //import papillon2 from "../../images/papillon3.jpg";
 import lotus from "../../images/lotus.jpg";
 import pirate from "../../images/pirate.jpg";
-import "../../style/Deco.css";
+import "../../style/Subcreation.css";
 import Carousel from "../Carousel";
 
 const Deco = () => {
@@ -50,10 +50,12 @@ const Deco = () => {
 					/>
 					<figcaption>Papillon</figcaption>
 				</figure>
-				<div className="deco__lightbox false">
+				<div className="subcreation__lightbox false">
+					{/* <div className="deco__lightbox false"> */}
 					<button
 						onClick={(e) => closeLightbox(e)}
-						className="deco__lightbox--close"
+						className="subcreation__lightbox--close"
+						// className="deco__lightbox--close"
 					>
 						X
 					</button>
@@ -65,10 +67,10 @@ const Deco = () => {
 					<img src={lotus} alt="tonneau d'un lotus" />
 					<figcaption>Christaline</figcaption>
 				</figure>
-				<div className="deco__lightbox false">
+				<div className="subcreation__lightbox false">
 					<button
 						onClick={(e) => closeLightbox(e)}
-						className="deco__lightbox--close"
+						className="subcreation__lightbox--close"
 					>
 						X
 					</button>
@@ -80,10 +82,10 @@ const Deco = () => {
 					<img src={pirate} alt="tonneau d'un pirate" />
 					<figcaption>Caribbean pirate</figcaption>
 				</figure>
-				<div className="deco__lightbox false">
+				<div className="subcreation__lightbox false">
 					<button
 						onClick={(e) => closeLightbox(e)}
-						className="deco__lightbox--close"
+						className="subcreation__lightbox--close"
 					>
 						X
 					</button>

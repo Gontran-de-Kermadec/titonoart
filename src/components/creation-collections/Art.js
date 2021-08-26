@@ -1,7 +1,7 @@
 import voilier from "../../images/voilier.jpg";
 import terre from "../../images/terre.jpg";
 import Carousel from "../Carousel";
-import "../../style/Art.css";
+import "../../style/creation-collections/Art.css";
 
 const Art = () => {
 	const voilierArray = [
@@ -47,16 +47,15 @@ const Art = () => {
 				<figure onClick={(e) => openLightbox(e)}>
 					<img
 						src={voilier}
-						alt="tonneau d'un papillon"
-						// onMouseEnter={(e) => (e.currentTarget.src = voilier2)}
-						// onMouseLeave={(e) => (e.currentTarget.src = voilier)}
+						alt="tonneau d'un voilier"
+						// onMouseEnter={(e) => (e.currentTarget.src = papillon2)}
+						// onMouseLeave={(e) => (e.currentTarget.src = papillon)}
 					/>
-					<figcaption>Nuance sur la baie</figcaption>
 				</figure>
-				<div className="deco__lightbox false">
+				<div className="subcreation__lightbox false">
 					<button
 						onClick={(e) => closeLightbox(e)}
-						className="deco__lightbox--close"
+						className="subcreation__lightbox--close"
 					>
 						X
 					</button>
@@ -71,13 +70,13 @@ const Art = () => {
 			</div>
 			<div className="img__container">
 				<figure onClick={(e) => openLightbox(e)}>
-					<img src={terre} alt="tonneau de la terre" />
+					<img src={terre} alt="tonneau d'un lotus" />
 					<figcaption>Terre natale</figcaption>
 				</figure>
-				<div className="deco__lightbox false">
+				<div className="subcreation__lightbox false">
 					<button
 						onClick={(e) => closeLightbox(e)}
-						className="deco__lightbox--close"
+						className="subcreation__lightbox--close"
 					>
 						X
 					</button>
