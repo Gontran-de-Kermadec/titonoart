@@ -37,9 +37,6 @@ function Header() {
 							<Link to="/creation">
 								<li>Créations</li>
 							</Link>
-							{/* <Link to="/contact">
-								<li>Contact</li>
-							</Link> */}
 							<li>
 								<div className="social__media">
 									<a

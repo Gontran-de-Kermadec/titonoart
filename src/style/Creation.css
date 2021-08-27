@@ -45,3 +45,10 @@
 	padding: 0 0.5rem;
 	z-index: 150;
 }
+@media (max-width: 475px) {
+	.single__creation-card button {
+		background-color: transparent;
+		color: #000;
+		border: solid 1px #000;
+	}
+}

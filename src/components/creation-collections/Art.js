@@ -18,23 +18,46 @@ const Art = () => {
 		"/images/terre3.jpg",
 		"/images/terre4.jpg",
 	];
-	const openLightbox = (e) => {
-		console.log(e.nativeEvent.path[1].nextSibling.classList.contains("false"));
-		console.log(e.nativeEvent.path[1].nextSibling);
-		if (e.nativeEvent.path[1].nextSibling.classList.contains("false")) {
-			e.nativeEvent.path[1].nextSibling.classList.remove("false");
-			e.nativeEvent.path[1].nextSibling.classList.add("true");
+	const openCloseLightbox = (e, action) => {
+		let path =
+			e.nativeEvent.path ||
+			(e.nativeEvent.composedPath && e.nativeEvent.composedPath());
+		if (action === "open") {
+			if (path[1].nextSibling.classList.contains("false")) {
+				path[1].nextSibling.classList.remove("false");
+				path[1].nextSibling.classList.add("true");
+			}
+		} else if (action === "close") {
+			if (path[1].classList.contains("true")) {
+				path[1].classList.remove("true");
+				path[1].classList.add("false");
+			}
 		}
 	};
-	const closeLightbox = (e) => {
-		console.log(e.nativeEvent.path[1].classList.contains("true"));
-		if (e.nativeEvent.path[1].classList.contains("true")) {
-			e.nativeEvent.path[1].classList.remove("true");
-			e.nativeEvent.path[1].classList.add("false");
-		}
-	};
+	// const openLightbox = (e) => {
+	// 	let path =
+	// 		e.nativeEvent.path ||
+	// 		(e.nativeEvent.composedPath && e.nativeEvent.composedPath());
+	// 	console.log(path);
+	// 	//console.log(e.nativeEvent.path[1].nextSibling.classList.contains("false"));
+	// 	// if (e.nativeEvent.path[1].nextSibling.classList.contains("false")) {
+	// 	// 	e.nativeEvent.path[1].nextSibling.classList.remove("false");
+	// 	// 	e.nativeEvent.path[1].nextSibling.classList.add("true");
+	// 	// }
+	// 	if (path[1].nextSibling.classList.contains("false")) {
+	// 		path[1].nextSibling.classList.remove("false");
+	// 		path[1].nextSibling.classList.add("true");
+	// 	}
+	// };
+	// const closeLightbox = (e) => {
+	// 	console.log(e.nativeEvent.path[1].classList.contains("true"));
+	// 	if (e.nativeEvent.path[1].classList.contains("true")) {
+	// 		e.nativeEvent.path[1].classList.remove("true");
+	// 		e.nativeEvent.path[1].classList.add("false");
+	// 	}
+	// };
 	return (
-		<div className="art__container subcreation__container">
+		<div>
 			<div>
 				<p className="art__txt">
 					Créations artistiques réalisées selon l'inspiration de Robin. La
@@ -43,44 +66,64 @@ const Art = () => {
 					l’œuvre.
 				</p>
 			</div>
-			<div className="img__container">
-				<figure onClick={(e) => openLightbox(e)}>
-					<img
-						src={voilier}
-						alt="tonneau d'un voilier"
-						// onMouseEnter={(e) => (e.currentTarget.src = papillon2)}
-						// onMouseLeave={(e) => (e.currentTarget.src = papillon)}
-					/>
-				</figure>
-				<div className="subcreation__lightbox false">
-					<button
-						onClick={(e) => closeLightbox(e)}
-						className="subcreation__lightbox--close"
+			<div className="art__container subcreation__container">
+				<div className="img__container">
+					{/* <figure onClick={(e) => openLightbox(e)}> */}
+					<figure
+						onClick={(e) => openCloseLightbox(e, "open")}
+						onTouchStart={(e) => openCloseLightbox(e, "open")}
 					>
-						X
-					</button>
-					<Carousel imgs={voilierArray} mode="manual" />
+						<img
+							src={voilier}
+							alt="tonneau d'un voilier"
+							// onMouseEnter={(e) => (e.currentTarget.src = papillon2)}
+							// onMouseLeave={(e) => (e.currentTarget.src = papillon)}
+						/>
+					</figure>
+					<div className="subcreation__lightbox false">
+						<button
+							// onClick={(e) => closeLightbox(e)}
+							onClick={(e) => openCloseLightbox(e, "close")}
+							className="subcreation__lightbox--close"
+						>
+							X
+						</button>
+						<Carousel imgs={voilierArray} mode="manual" />
+					</div>
+					<div>
+						<p>Nuance sur la baie</p>
+						<p>Peinture acrylique - Mai 2021</p>
+						<p>Certificat d'authenticité</p>
+						<p>3200€</p>
+						<p>Acquis</p>
+					</div>
 				</div>
-				<div>
-					<p>Peinture acrylique - Mai 2021</p>
-					<p>Certificat d'authenticité</p>
-					<p>2500€</p>
-					<p>Acquis</p>
-				</div>
-			</div>
-			<div className="img__container">
-				<figure onClick={(e) => openLightbox(e)}>
-					<img src={terre} alt="tonneau d'un lotus" />
-					<figcaption>Terre natale</figcaption>
-				</figure>
-				<div className="subcreation__lightbox false">
-					<button
-						onClick={(e) => closeLightbox(e)}
-						className="subcreation__lightbox--close"
+				<div className="img__container">
+					<figure
+						onClick={(e) => openCloseLightbox(e, "open")}
+						onTouchStart={(e) => openCloseLightbox(e, "open")}
 					>
-						X
-					</button>
-					<Carousel imgs={terreArray} mode="manual" />
+						{/* <figure onClick={(e) => openLightbox(e)}> */}
+						<img src={terre} alt="tonneau d'un lotus" />
+						{/* <figcaption>Terre natale</figcaption> */}
+					</figure>
+					<div className="subcreation__lightbox false">
+						<button
+							onClick={(e) => openCloseLightbox(e, "close")}
+							// onClick={(e) => closeLightbox(e)}
+							className="subcreation__lightbox--close"
+						>
+							X
+						</button>
+						<Carousel imgs={terreArray} mode="manual" />
+					</div>
+					<div>
+						<p>Terre natale</p>
+						<p>Peinture acrylique - Mai 2021</p>
+						<p>Certificat d'authenticité</p>
+						<p>3200€</p>
+						<p>Acquis</p>
+					</div>
 				</div>
 			</div>
 		</div>
