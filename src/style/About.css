@@ -17,7 +17,6 @@
 	width: 90vw;
 	margin: 2rem auto;
 	transition: 0.2s ease-in-out;
-	/* margin: 2rem 0; */
 }
 .about__subsection:nth-child(2n) {
 	flex-direction: row-reverse;

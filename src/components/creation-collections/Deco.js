@@ -81,8 +81,7 @@ const Deco = () => {
 					<Carousel imgs={papillonArray} mode="manual" />
 				</div>
 				<div>
-					<p>Papillon</p>
-					{/* <p>1500€</p> */}
+					<h3>Papillon</h3>
 					<p>Acquis</p>
 				</div>
 			</div>
@@ -104,8 +103,7 @@ const Deco = () => {
 					<Carousel imgs={lotusArray} mode="manual" />
 				</div>
 				<div>
-					<p>Christaline</p>
-					{/* <p>1500€</p> */}
+					<h3>Christaline</h3>
 					<p>Acquis</p>
 				</div>
 			</div>
@@ -127,7 +125,7 @@ const Deco = () => {
 					<Carousel imgs={pirateArray} mode="manual" />
 				</div>
 				<div>
-					<p>Caribbean pirate</p>
+					<h3>Caribbean pirate</h3>
 					{/* <p>1500€</p> */}
 					<p>Acquis</p>
 				</div>

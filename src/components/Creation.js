@@ -14,7 +14,7 @@ function Creation() {
 			<h1>Créations</h1>
 			<div className="creation__container">
 				<div className="single__creation">
-					<h2>Art</h2>
+					{/* <h2>Art</h2> */}
 					<div className="single__creation-card">
 						<figure>
 							<div className="creation__img-container">
@@ -28,12 +28,12 @@ function Creation() {
 							{/* <figcaption>Nuances sur la Baie #001</figcaption> */}
 						</figure>
 						<Link to="/creation/art">
-							<button>En savoir plus</button>
+							<button>Art</button>
 						</Link>
 					</div>
 				</div>
 				<div className="single__creation">
-					<h2>Bar</h2>
+					{/* <h2>Bar</h2> */}
 					<div className="single__creation-card">
 						<figure>
 							<img
@@ -44,13 +44,14 @@ function Creation() {
 							></img>
 							{/* <figcaption>Nuances sur la Baie #001</figcaption> */}
 						</figure>
+						<p>Bar</p>
 						<Link to="/creation/bar">
 							<button>En savoir plus</button>
 						</Link>
 					</div>
 				</div>
 				<div className="single__creation">
-					<h2>Déco</h2>
+					{/* <h2>Déco</h2> */}
 					<div className="single__creation-card">
 						<figure>
 							<img
@@ -62,12 +63,12 @@ function Creation() {
 							{/* <figcaption>Nuances sur la Baie #001</figcaption> */}
 						</figure>
 						<Link to="/creation/deco">
-							<button>En savoir plus</button>
+							<button>Déco</button>
 						</Link>
 					</div>
 				</div>
 				<div className="single__creation">
-					<h2>À votre image</h2>
+					{/* <h2>À votre image</h2> */}
 					<div className="single__creation-card">
 						<figure>
 							<img
@@ -78,6 +79,7 @@ function Creation() {
 							></img>
 							{/* <figcaption>Nuances sur la Baie #001</figcaption> */}
 						</figure>
+						<p>À votre image</p>
 						<Link to="/creation/yourself">
 							<button>En savoir plus</button>
 						</Link>

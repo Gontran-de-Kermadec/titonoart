@@ -1,8 +1,5 @@
 /* .deco__container { */
 .subcreation__container {
-	/* display: flex;
-	justify-content: center;
-	flex-wrap: wrap; */
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -63,6 +60,9 @@
 }
 .img__container {
 	margin: 0.5rem 1rem;
+}
+.img__container p {
+	font-family: Tahoma, Verdana, sans-serif;
 }
 
 @media (max-width: 768px) {

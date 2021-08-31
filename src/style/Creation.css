@@ -20,6 +20,11 @@
 .single__creation-card figure {
 	box-shadow: initial;
 }
+.single__creation-card p {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 0.5rem;
+}
 .single__creation-card button {
 	all: unset;
 	background-color: #000;
@@ -37,11 +42,11 @@
 /*sous section de la page creation*/
 .subcreation__lightbox--close {
 	all: unset;
-	font-size: 2rem;
+	font-size: 3rem;
 	position: absolute;
-	right: 0;
+	right: 1rem;
 	cursor: pointer;
-	background-color: #fff;
+	/* background-color: #fff; */
 	padding: 0 0.5rem;
 	z-index: 150;
 }
