@@ -5,9 +5,9 @@ function About() {
 	return (
 		<div className="about">
 			<div className="about__introduction">
-				<h1>À Propos de Ti Tono Art</h1>
+				<h1>À Propos de Ti ToNo Art</h1>
 				<p>
-					Ti TONO ART propose des créations exclusives de styles, de motifs, et
+					Ti ToNo Art propose des créations exclusives de styles, de motifs, et
 					de couleurs variés sur une matière noble : le Bois !
 				</p>
 				<p>
@@ -25,28 +25,17 @@ function About() {
 			<div>
 				<div className="about__subsections">
 					<Link className="about__subsection" to="/about/origin">
-						{/* <div className="about__subsection"> */}
 						<h3>L'origine</h3>
 						<div className="bg-img"></div>
-						{/* </div> */}
 					</Link>
 					<Link to="/about/support" className="about__subsection">
-						{/* <div className="about__subsection"> */}
 						<h3>Notre support</h3>
 						<div className="bg-img"></div>
-						{/* <div className="subsection__overlay">
-								<button className="overlay-btn">En savoir plus</button>
-						</div> */}
-						{/* </div> */}
 					</Link>
 					<Link to="/about/valeurs" className="about__subsection">
 						{/* <div className="about__subsection"> */}
 						<h3>Nos valeurs</h3>
 						<div className="bg-img"></div>
-						{/* <div className="subsection__overlay">
-								<button className="overlay-btn">En savoir plus</button>
-						</div> */}
-						{/* </div> */}
 					</Link>
 					<Link to="/about/demarche" className="about__subsection">
 						{/* <div className="about__subsection"> */}

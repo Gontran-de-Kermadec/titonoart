@@ -1,6 +1,6 @@
-header {
+/* header {
 	margin-bottom: 30px;
-}
+} */
 .header-flex {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -38,6 +38,7 @@ ul {
 	-ms-flex-align: center;
 	align-items: center;
 	height: 100%;
+	font-size: 1.5rem;
 }
 .social__media {
 	margin-top: 0.5rem;
@@ -54,6 +55,7 @@ li {
 	-webkit-transform: translateY(-2rem);
 	-ms-transform: translateY(-2rem);
 	transform: translateY(-2rem);
+	font-size: 1.2rem;
 }
 
 /*header responsive section mobile screen*/
