@@ -1,5 +1,9 @@
 import "../style/Artiste.css";
-import robin from "../images/robin.jpg";
+import artiste from "../images/artiste.jpg";
+import artiste1 from "../images/artiste1.jpg";
+import artiste2 from "../images/artiste2.jpg";
+import artiste3 from "../images/artiste3.jpg";
+import artiste4 from "../images/artiste4.jpg";
 
 function Artiste() {
 	return (
@@ -29,7 +33,7 @@ function Artiste() {
 						</p>
 					</div>
 					<div className="feature__img--container">
-						<img className="feature__img" src={robin} alt="" />
+						<img className="feature__img" src={artiste} alt="" />
 					</div>
 				</div>
 				<div className="artiste__feature">
@@ -45,7 +49,7 @@ function Artiste() {
 						</p>
 					</div>
 					<div className="feature__img--container">
-						<img className="feature__img" src={robin} alt="" />
+						<img className="feature__img" src={artiste1} alt="" />
 					</div>
 				</div>
 				<div className="artiste__feature">
@@ -57,15 +61,9 @@ function Artiste() {
 							des illustrations sur le Continent Nord-Américain et dans l'arc
 							antillais.
 						</p>
-						{/* <p>
-							Robin a travaillé et collaboré avec des artistes tatoueurs à
-							Paris, Bruxelles (SalonPerle Noire), Bâle (El Mundo - Suisse),
-							Bordeaux , Guadeloupe (Cat eyes). Il a réalisé des illustrations
-							au Canada(Attaboy) et en Guadeloupe.
-						</p> */}
 					</div>
 					<div className="feature__img--container">
-						<img className="feature__img" src={robin} alt="" />
+						<img className="feature__img" src={artiste2} alt="" />
 					</div>
 				</div>
 				<div className="artiste__feature">
@@ -79,7 +77,7 @@ function Artiste() {
 						</p>
 					</div>
 					<div className="feature__img--container">
-						<img className="feature__img" src={robin} alt="" />
+						<img className="feature__img" src={artiste3} alt="" />
 					</div>
 				</div>
 				<div className="artiste__feature">
@@ -97,7 +95,7 @@ function Artiste() {
 						</p>
 					</div>
 					<div className="feature__img--container">
-						<img className="feature__img" src={robin} alt="" />
+						<img className="feature__img" src={artiste4} alt="" />
 					</div>
 				</div>
 			</div>
