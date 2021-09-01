@@ -5,6 +5,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-top: 2rem;
 }
 .single__creation {
 	margin: 1rem 2rem;
@@ -39,6 +40,9 @@
 	color: #000;
 	transition: all 0.3s;
 }
+.img__container h3 {
+	font-family: "Courgette", cursive;
+}
 /*sous section de la page creation*/
 .subcreation__lightbox--close {
 	all: unset;
@@ -46,9 +50,10 @@
 	position: absolute;
 	right: 1rem;
 	cursor: pointer;
-	/* background-color: #fff; */
+	color: #fff;
 	padding: 0 0.5rem;
 	z-index: 150;
+	font-family: "Courgette", cursive;
 }
 @media (max-width: 475px) {
 	.single__creation-card button {

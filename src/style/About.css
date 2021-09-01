@@ -51,6 +51,27 @@
 .about__origin--title {
 	font-weight: bolder;
 }
+
+.about__origin--team {
+	/* .about__origin--team h3,
+.origin__team--container:nth-child(2) { */
+	text-align: left;
+}
+.origin__team--container {
+	display: flex;
+}
+.origin__team--container:nth-child(3) {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+.origin__team--img {
+	width: 150px;
+	height: 150px;
+	background-color: grey;
+	opacity: 0.5;
+	border-radius: 50%;
+}
+
 /*style des liens (precedent et suivant) dans les sous-parties*/
 .about__child--nextlink,
 .about__child--prevlink {

@@ -18,6 +18,35 @@ function Origin() {
 				nulle par ailleurs, conçues sur des produits riches d'une expérience
 				auxquels l'artiste offre une nouvelle destinée.
 			</p>
+			<p>
+				L’atelier Ti ToNo Art est situé à Sainte-Rose en Guadeloupe. Découvrez
+				nos réalisations on-line (instagram, facebook) ou bien physiquement dans
+				nos boutiques partenaires situées à Jarry :&nbsp;
+				<a href="https://www.colibri-spirit.com/" target="__blank">
+					Colibri Spirit
+				</a>
+				&nbsp;&&nbsp;
+				<a href="https://popupstory.fr/" target="__blank">
+					PopUp Story.
+				</a>
+			</p>
+			<section className="about__origin--team">
+				<h3>L'équipe</h3>
+				<div className="origin__team--container">
+					<div className="origin__team--img"></div>
+					<div className="origin__team--infos">
+						<p>Delphine</p>
+						<p>loremloremloremloremloremloremloremloremloremlorem</p>
+					</div>
+				</div>
+				<div className="origin__team--container">
+					<div className="origin__team--img"></div>
+					<div className="origin__team--infos">
+						<p>Robin</p>
+						<p>loremloremloremloremloremloremloremloremloremlorem</p>
+					</div>
+				</div>
+			</section>
 			<Link to="/about/support" className="about__child--nextlink">
 				<svg
 					aria-hidden="true"

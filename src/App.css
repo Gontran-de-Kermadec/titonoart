@@ -8,7 +8,8 @@ font-family: 'Staatliches', cursive;
 .App {
 	text-align: center;
 	/* font-family: "Crimson Text", serif; */
-	font-family: "Courgette", cursive;
+	/* font-family: "Courgette", cursive; */
+	font-family: Tahoma, Verdana, sans-serif;
 }
 
 /* .App-logo {

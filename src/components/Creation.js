@@ -44,9 +44,9 @@ function Creation() {
 							></img>
 							{/* <figcaption>Nuances sur la Baie #001</figcaption> */}
 						</figure>
-						<p>Bar</p>
+						{/* <p>Bar</p> */}
 						<Link to="/creation/bar">
-							<button>En savoir plus</button>
+							<button>Bar</button>
 						</Link>
 					</div>
 				</div>
@@ -79,9 +79,9 @@ function Creation() {
 							></img>
 							{/* <figcaption>Nuances sur la Baie #001</figcaption> */}
 						</figure>
-						<p>À votre image</p>
+						{/* <p>À votre image</p> */}
 						<Link to="/creation/yourself">
-							<button>En savoir plus</button>
+							<button>À votre image</button>
 						</Link>
 					</div>
 				</div>

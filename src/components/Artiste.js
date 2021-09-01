@@ -22,7 +22,7 @@ function Artiste() {
 			<div className="artiste__features">
 				<div className="artiste__feature">
 					<div className="feature__txt">
-						<p className="feature__title">SES DÉBUTS</p>
+						<p className="feature__title">Ses débuts</p>
 						<p>
 							Originaire de Deshaies (Guadeloupe), Robin grandit dans le monde
 							de l’architecture, le design et l’art grâce à son grand-père,
@@ -38,7 +38,7 @@ function Artiste() {
 				</div>
 				<div className="artiste__feature">
 					<div className="feature__txt">
-						<p className="feature__title">SA PÉRIODE D'APPRENTISSAGE</p>
+						<p className="feature__title">Sa période d'apprentissage</p>
 						<p>
 							Il quitte la Guadeloupe pour développer son talent et intègre une
 							MANAA à Bordeaux afin de renforcer ses fondamentaux en arts
@@ -54,7 +54,7 @@ function Artiste() {
 				</div>
 				<div className="artiste__feature">
 					<div className="feature__txt">
-						<p className="feature__title">SON EXPÉRIENCE</p>
+						<p className="feature__title">Son expérience</p>
 						<p>
 							Robin a travaillé et collaboré avec différents artistes à Paris,
 							Bruxelles, Bâle, Bordeaux et en Guadeloupe. Il a également réalisé
@@ -68,7 +68,7 @@ function Artiste() {
 				</div>
 				<div className="artiste__feature">
 					<div className="feature__txt">
-						<p className="feature__title">SA PERSONNALITÉ</p>
+						<p className="feature__title">Sa personnalité</p>
 						<p>
 							Curieux du monde qui l’entoure, doté d'un sens aigu de la beauté,
 							perfectionniste et soucieux du détail, Robin vit au travers de ses
@@ -82,7 +82,7 @@ function Artiste() {
 				</div>
 				<div className="artiste__feature">
 					<div className="feature__txt">
-						<p className="feature__title">AUJOURD'HUI</p>
+						<p className="feature__title">Aujourd'hui</p>
 						<p>
 							Après plus de dix ans dans le monde du BodyArt, il se lance dans
 							la création graphique sur fût de chêne. Chaque réalisation,

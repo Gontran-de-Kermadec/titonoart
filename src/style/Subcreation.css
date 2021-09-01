@@ -1,4 +1,3 @@
-/* .deco__container { */
 .subcreation__container {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -13,33 +12,21 @@
 	cursor: pointer;
 }
 .subcreation__lightbox {
-	/* .deco__lightbox { */
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.65);
 	z-index: 100;
 }
 .subcreation__lightbox.false {
-	/* .deco__lightbox.false { */
 	display: none;
 }
-/* .deco__lightbox.true { */
 .subcreation__lightbox.true {
 	display: block;
 }
-
-/* .false.deco__lightbox {
-	display: none;
-} */
 .subcreation__lightbox .carousel {
-	/* .deco__lightbox .carousel { */
-	/* top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 80vw; */
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -48,15 +35,12 @@
 	width: 80vw;
 }
 .subcreation__lightbox .carousel img {
-	/* .deco__lightbox .carousel img { */
 	width: 80vw;
 	height: auto;
 }
-/* .deco__container img { */
 .subcreation__container img {
 	height: 400px;
 	width: auto;
-	/* height: 100%; */
 }
 .img__container {
 	margin: 0.5rem 1rem;
@@ -66,16 +50,13 @@
 }
 
 @media (max-width: 768px) {
-	/* .deco__container { */
 	.subcreation__container {
 		display: initial;
 	}
 	.subcreation__lightbox .carousel {
-		/* .deco__lightbox .carousel { */
 		width: 95vw;
 	}
 	.subcreation__lightbox .carousel img {
-		/* .deco__lightbox .carousel img { */
 		width: 95vw;
 		height: 100vh;
 	}
