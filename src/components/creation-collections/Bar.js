@@ -75,52 +75,52 @@ const Bar = () => {
 						<Carousel imgs={barArray} mode="manual" />
 					</div>
 					<div>
-						<h3>B Numéro 01</h3>
+						<h3>CF N°1</h3>
 						<p>Acquis</p>
 					</div>
-					{/* <figure>
-				<img src={papillon} alt="tonneau d'un papillon"></img>
-				<figcaption>Titre à definir</figcaption>
-			</figure> */}
 				</div>
 			</div>
-			<Link to="/creation/art" className="about__child--prevlink">
-				<svg
-					aria-hidden="true"
-					focusable="false"
-					data-prefix="fas"
-					data-icon="angle-double-right"
-					// class="svg-inline--fa fa-angle-double-right fa-w-14"
-					role="img"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 448 512"
-				>
-					<path
-						fill="currentColor"
-						d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"
-					></path>
-				</svg>
-				<p>Art</p>
-			</Link>
-			<Link to="/creation/deco" className="about__child--nextlink">
-				<svg
-					aria-hidden="true"
-					focusable="false"
-					data-prefix="fas"
-					data-icon="angle-double-right"
-					// class="svg-inline--fa fa-angle-double-right fa-w-14"
-					role="img"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 448 512"
-				>
-					<path
-						fill="currentColor"
-						d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"
-					></path>
-				</svg>
-				<p>Déco</p>
-			</Link>
-			<a href="mailto:titonoart@gmail.com">Demandez un devis</a>
+			<a href="mailto:titonoart@gmail.com">
+				<p className="subcreation__container--devis">Demandez un devis</p>
+			</a>
+			<div className="prev-next__navigation">
+				<Link to="/creation/art" className="about__child--prevlink">
+					<svg
+						aria-hidden="true"
+						focusable="false"
+						data-prefix="fas"
+						data-icon="angle-double-right"
+						// class="svg-inline--fa fa-angle-double-right fa-w-14"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 448 512"
+					>
+						<path
+							fill="currentColor"
+							d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"
+						></path>
+					</svg>
+					<p>Art</p>
+				</Link>
+				<Link to="/creation/deco" className="about__child--nextlink">
+					<svg
+						aria-hidden="true"
+						focusable="false"
+						data-prefix="fas"
+						data-icon="angle-double-right"
+						// class="svg-inline--fa fa-angle-double-right fa-w-14"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 448 512"
+					>
+						<path
+							fill="currentColor"
+							d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"
+						></path>
+					</svg>
+					<p>Déco</p>
+				</Link>
+			</div>
 		</div>
 	);
 };

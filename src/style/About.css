@@ -12,7 +12,7 @@
 	position: relative;
 	display: flex;
 	justify-content: center;
-	height: 10rem;
+	height: 11rem;
 	border: solid 1px rgb(151, 149, 149);
 	width: 90vw;
 	margin: 2rem auto;
@@ -26,17 +26,36 @@
 	transition: 0.3s ease-in-out;
 }
 .bg-img {
-	background-image: url(../images/about-fut.jpg);
-	background-size: cover;
+	/* background-image: url(../images/about-menu.jpg); */
+	/* background-size: cover; */
 	width: 70%;
 }
-.about__subsection:nth-child(2n) .bg-img {
-	background-image: url(../images/bar.jpg);
+.bg-img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	/* object-position: 50% 45%; */
 }
+.bg-img .img-1 {
+	object-position: 50% top;
+}
+.bg-img .img-2 {
+	object-position: 50% 25%;
+}
+.bg-img .img-3 {
+	object-position: 50% 60%;
+}
+.bg-img .img-4 {
+	object-position: 50% 90%;
+}
+/* .about__subsection:nth-child(2n) .bg-img {
+	background-image: url(../images/bar.jpg);
+} */
 .about__subsection h3 {
 	width: 30%;
 	align-self: center;
 	font-size: 2.5rem;
+	font-family: "Courgette", cursive;
 }
 .about__child {
 	width: 80vw;
@@ -71,19 +90,32 @@
 	opacity: 0.5;
 	border-radius: 50%;
 }
+.content__origin p a {
+	color: blue;
+}
+.content__origin p a:hover {
+	text-decoration: underline;
+}
 
 /*style des liens (precedent et suivant) dans les sous-parties*/
+.prev-next__navigation {
+	display: flex;
+	justify-content: space-between;
+}
+.about__child .navigation--right {
+	justify-content: flex-end;
+}
 .about__child--nextlink,
 .about__child--prevlink {
-	position: absolute;
+	/* position: absolute; */
 	line-height: 1.2rem;
 }
-.about__child--prevlink {
+/* .about__child--prevlink {
 	left: 1rem;
 }
 .about__child--nextlink {
 	right: 1rem;
-}
+}*/
 .about__child--nextlink svg,
 .about__child--prevlink svg {
 	height: 2rem;
@@ -98,9 +130,9 @@
 	font-size: 1.2rem;
 	margin: 0;
 }
-.about__demarche .about__child--prevlink {
+/* .about__demarche .about__child--prevlink {
 	bottom: 1rem;
-}
+} */
 
 /*section valeur de l'à propos*/
 .about__valeur p span {
@@ -131,14 +163,14 @@
 		display: none;
 	}
 }
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
 	.about__child--nextlink,
 	.about__child--prevlink {
 		bottom: 1rem;
 	}
-}
-@media (min-width: 600px) and (max-width: 1200px) {
+} */
+/* @media (min-width: 600px) and (max-width: 1200px) {
 	.about__demarche .about__child--prevlink {
 		bottom: -8rem;
 	}
-}
+} */

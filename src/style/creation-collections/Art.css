@@ -1,6 +1,9 @@
 .art__txt {
 	padding: 1.5rem 8rem;
 }
+.art__container .art__navigation {
+	justify-content: flex-end;
+}
 @media (max-width: 768px) {
 	.art__txt {
 		padding: 0.2rem;

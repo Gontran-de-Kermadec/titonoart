@@ -9,7 +9,7 @@ function Artiste() {
 	return (
 		<div className="artiste">
 			<h2>
-				Artiste illustrateur:
+				Artiste illustrateur :
 				<br />
 				Robin Lepoutre
 			</h2>
