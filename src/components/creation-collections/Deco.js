@@ -1,12 +1,19 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import papillon from "../../images/papillon1.jpg";
 //import papillon2 from "../../images/papillon3.jpg";
 import lotus from "../../images/lotus.jpg";
 import pirate from "../../images/pirate.jpg";
 import "../../style/Subcreation.css";
 import Carousel from "../Carousel";
+import PrevNextNav from "../Prevnextnav";
 
 const Deco = () => {
+	const navigationInfos = {
+		direction: "prev",
+		route: "/creation/bar",
+		btnName: "Bar",
+		devis: true,
+	};
 	const papillonArray = [
 		// "/images/papillon.jpg",
 		"/images/papillon1.jpg",
@@ -130,10 +137,8 @@ const Deco = () => {
 					</div>
 				</div>
 			</div>
-			<a href="mailto:titonoart@gmail.com">
-				<p className="subcreation__container--devis">Demandez un devis</p>
-			</a>
-			<div className="prev-next__navigation">
+			<PrevNextNav propsInfos={navigationInfos} />
+			{/* <div className="prev-next__navigation">
 				<Link to="/creation/bar" className="about__child--prevlink">
 					<svg
 						aria-hidden="true"
@@ -152,25 +157,14 @@ const Deco = () => {
 					</svg>
 					<p>Bar</p>
 				</Link>
-				<Link to="/creation/yourself" className="about__child--nextlink">
-					<svg
-						aria-hidden="true"
-						focusable="false"
-						data-prefix="fas"
-						data-icon="angle-double-right"
-						// class="svg-inline--fa fa-angle-double-right fa-w-14"
-						role="img"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 448 512"
-					>
-						<path
-							fill="currentColor"
-							d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"
-						></path>
-					</svg>
-					<p>À votre image</p>
-				</Link>
-			</div>
+				<a
+					href="mailto:titonoart@gmail.com"
+					className="subcreation__container--devis"
+				>
+					<p>Demandez un devis</p>
+				</a>
+				
+			</div> */}
 		</div>
 	);
 };

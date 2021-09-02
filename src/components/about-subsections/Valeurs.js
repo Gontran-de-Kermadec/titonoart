@@ -1,8 +1,15 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import PrevNextNav from "../Prevnextnav";
 
 const Valeurs = () => {
+	const infos = {
+		direction: "both",
+		route: ["/about/support", "/about/demarche"],
+		btnName: ["Notre support", "Nos démarches"],
+		devis: true,
+	};
 	return (
-		<div className="about__child about__valeur">
+		<div className="about__child about__valeur about__subsection">
 			<h3>Nos valeurs :</h3>
 			<p>
 				<span>L'HUMAIN</span>
@@ -23,7 +30,7 @@ const Valeurs = () => {
 				», la préservation de l’environnement est essentielle. Notre façon de
 				consommer peut être plus qualitative et durable.
 			</p>
-			<div className="prev-next__navigation">
+			{/* <div className="prev-next__navigation">
 				<Link to="/about/support" className="about__child--prevlink">
 					<svg
 						aria-hidden="true"
@@ -60,7 +67,8 @@ const Valeurs = () => {
 					</svg>
 					<p>Nos démarches</p>
 				</Link>
-			</div>
+			</div> */}
+			<PrevNextNav propsInfos={infos} />
 		</div>
 	);
 };

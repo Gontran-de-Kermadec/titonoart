@@ -5,28 +5,18 @@ import { Link } from "react-router-dom";
 
 function Header() {
 	const toggleMenu = () => {
-		document.querySelector(".mobile__menu").classList.toggle("visible");
+		document
+			.querySelector(".header__small-screen-menu")
+			.classList.toggle("visible");
 	};
-	// const changePage = (e) => {
-	// 	//console.log(e.currentTarget.classList);
-	// 	document.querySelector(".mobile__menu").classList.toggle("visible");
-	// };
-	// useEffect(() => {
-	// 	function handleMenu() {
-	// 		document.
-	// 	}
-	// });
-	// const stopEvent = (e) => {
-	// 	e.stopPropagation();
-	// };
 	return (
 		<div>
 			<header>
-				<div className="header-flex">
+				<div className="header__large-screen">
 					<Link to="/" className="header__logo">
 						<img src={Logo} alt="Logo" />
 					</Link>
-					<nav className="large-screen-menu">
+					<nav>
 						<ul>
 							<Link to="/about">
 								<li>À propos</li>
@@ -38,7 +28,7 @@ function Header() {
 								<li>Créations</li>
 							</Link>
 							<li>
-								<div className="social__media">
+								<div className="header__icons">
 									<a
 										href="https://www.instagram.com/titonoart/"
 										target="_blank"
@@ -46,10 +36,7 @@ function Header() {
 									>
 										<svg
 											className="insta"
-											// height="511pt"
 											viewBox="0 0 511 511.9"
-											//viewBox="0 10 350 450"
-											// width="511pt"
 											xmlns="http://www.w3.org/2000/svg"
 										>
 											<path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0" />
@@ -64,8 +51,6 @@ function Header() {
 									>
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
-											// x="0px"
-											// y="0px"
 											width="60.734px"
 											height="60.733px"
 											viewBox="0 0 60.734 60.733"
@@ -79,6 +64,21 @@ function Header() {
 											</g>
 										</svg>
 									</a>
+									<svg
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="fas"
+										data-icon="truck"
+										//class="svg-inline--fa fa-truck fa-w-20"
+										role="img"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 640 512"
+									>
+										<path
+											fill="currentColor"
+											d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"
+										></path>
+									</svg>
 								</div>
 							</li>
 						</ul>
@@ -87,17 +87,15 @@ function Header() {
 				<p className="header__slogan">
 					"Fûts de chêne français transformés en véritables oeuvres d'art"
 				</p>
-				<div className="mobile__version">
+				{/* section consacrée au petits ecrans */}
+				<div className="header__small-screen">
 					<Link to="/" className="header__logo">
 						<svg
 							className="mobile__svg"
 							version="1.0"
 							xmlns="http://www.w3.org/2000/svg"
-							//width="3508.000000pt"
 							width="100"
-							// height="2480.000000pt"
 							height="100"
-							// viewBox="0 0 3508.000000 2480.000000"
 							viewBox="0 0 2800 1500"
 							preserveAspectRatio="xMidYMid meet"
 						>
@@ -238,8 +236,11 @@ l0 26 673 0 c459 0 685 -4 712 -11z m-3585 -671 c260 -370 474 -678 477 -685
 						<div className="line"></div>
 						<div className="line"></div>
 					</div>
-					<div className="mobile__menu">
-						<div className="mobile__menu--close" onClick={() => toggleMenu()}>
+					<div className="header__small-screen-menu">
+						<div
+							className="header__small-screen-menu--close"
+							onClick={() => toggleMenu()}
+						>
 							<svg
 								aria-hidden="true"
 								focusable="false"
@@ -255,7 +256,7 @@ l0 26 673 0 c459 0 685 -4 712 -11z m-3585 -671 c260 -370 474 -678 477 -685
 								></path>
 							</svg>
 						</div>
-						<nav className="mobile__menu--nav">
+						<nav className="header__small-screen-menu--nav">
 							<ul>
 								<Link to="/about">
 									<li onClick={() => toggleMenu()}>À propos</li>

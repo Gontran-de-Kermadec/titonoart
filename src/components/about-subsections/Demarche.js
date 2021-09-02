@@ -1,8 +1,15 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import plante from "../../images/plante.png";
+import PrevNextNav from "../Prevnextnav";
 const Demarche = () => {
+	const navigationInfos = {
+		direction: "prev",
+		route: "/about/valeurs",
+		btnName: "Nos valeurs",
+		devis: false,
+	};
 	return (
-		<div className="about__child about__demarche">
+		<div className="about__child about__demarche about__subsection">
 			<h3>Notre démarche : Eco - responsable</h3>
 			<p>
 				Le bois est la matière première de nos barriques. Les forêts sont les
@@ -11,14 +18,13 @@ const Demarche = () => {
 			</p>
 			<p>1 COMMANDE TONNEAU 225L DÉCORÉ = 1 ARBRE PLANTÉ</p>
 			<img src={plante} alt="plante verte" />
-			<div className="prev-next__navigation">
+			{/* <div className="prev-next__navigation">
 				<Link to="/about/valeurs" className="about__child--prevlink">
 					<svg
 						aria-hidden="true"
 						focusable="false"
 						data-prefix="fas"
 						data-icon="angle-double-right"
-						// class="svg-inline--fa fa-angle-double-right fa-w-14"
 						role="img"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 448 512"
@@ -30,7 +36,8 @@ const Demarche = () => {
 					</svg>
 					<p>Nos valeurs</p>
 				</Link>
-			</div>
+			</div> */}
+			<PrevNextNav propsInfos={navigationInfos} />
 		</div>
 	);
 };

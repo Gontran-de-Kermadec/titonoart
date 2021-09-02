@@ -1,11 +1,20 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import PrevNextNav from "../Prevnextnav";
 
 function Origin() {
+	const infos = {
+		direction: "next",
+		route: "/about/support",
+		btnName: "Notre support",
+		devis: false,
+	};
 	return (
-		<div className="about__child content__origin">
-			<p className="about__origin--bold">
-				Créations uniques & singulières, peintes à la main avec inspiration,
-				illumineront votre intérieur.
+		<div className="about__child content__origin about__subsection">
+			<p>
+				<em className="about__origin--bold">
+					Créations uniques & singulières, peintes à la main avec inspiration,
+					illumineront votre intérieur.
+				</em>
 			</p>
 			<h3 className="about__origin--title">L'origine</h3>
 			<p>
@@ -47,7 +56,7 @@ function Origin() {
 					</div>
 				</div>
 			</section>
-			<div className="prev-next__navigation navigation--right">
+			{/* <div className="prev-next__navigation navigation--right">
 				<Link to="/about/support" className="about__child--nextlink">
 					<svg
 						aria-hidden="true"
@@ -66,7 +75,8 @@ function Origin() {
 					</svg>
 					<p>Notre support</p>
 				</Link>
-			</div>
+			</div> */}
+			<PrevNextNav propsInfos={infos} />
 		</div>
 	);
 }

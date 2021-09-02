@@ -1,6 +1,9 @@
 .creation {
 	padding: 0 0 2rem 0;
 }
+.creation h2 {
+	margin: 0.5rem 0;
+}
 .creation__container {
 	display: flex;
 	flex-wrap: wrap;
@@ -28,9 +31,10 @@
 }
 .single__creation-card button {
 	all: unset;
-	background-color: #000;
-	color: #fff;
-	border: solid 1px #000;
+	background-color: #ddd;
+	color: #414141;
+	border: solid 1px #c2c2c2;
+	border-radius: 0.5rem;
 	margin: 1rem 0;
 	padding: 0.5rem;
 	transition: all 0.3s;
@@ -40,9 +44,9 @@
 	color: #000;
 	transition: all 0.3s;
 }
-.img__container h3 {
+/* .img__container h3 {
 	font-family: "Courgette", cursive;
-}
+} */
 /*sous section de la page creation*/
 .subcreation__lightbox--close {
 	all: unset;
@@ -50,7 +54,7 @@
 	position: absolute;
 	right: 1rem;
 	cursor: pointer;
-	color: #fff;
+	color: #c2c2c2;
 	padding: 0 0.5rem;
 	z-index: 150;
 	font-family: "Courgette", cursive;

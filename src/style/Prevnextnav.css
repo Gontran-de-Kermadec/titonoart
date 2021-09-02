@@ -1,0 +1,27 @@
+.prev-next__navigation {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem 0;
+}
+.navigation--next {
+	justify-content: flex-end;
+}
+.prevbutton,
+.nextbutton {
+	line-height: 1.2rem;
+}
+.prevbutton svg,
+.nextbutton svg {
+	height: 2rem;
+}
+.prevbutton svg {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.prevbutton p,
+.nextbutton p {
+	font-size: 1.2rem;
+	margin: 0;
+}

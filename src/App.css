@@ -1,48 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Staatliches&display=swap");
-/*font pour les textes
-font-family: 'Courgette', cursive;
-pour titre menu
-font-family: 'Staatliches', cursive;
-*/
-.App {
+/* .App {
 	text-align: center;
-	/* font-family: "Crimson Text", serif; */
-	/* font-family: "Courgette", cursive; */
 	font-family: Tahoma, Verdana, sans-serif;
+} */
+h3,
+.header__slogan {
+	font-family: "Courgette", cursive;
+}
+p {
+	font-size: 1.2rem;
 }
 
-/* .App-logo {
-	height: 40vmin;
-	pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
-} */
-
-/* .App-header {
-	background-color: #282c34;
-	min-height: 100vh;
+/*style des liens (precedent et suivant) qui apparaissent sur plusieurs pages differentes*/
+.prev-next__navigation {
+	position: relative;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-} */
-
-/* .App-link {
-	color: #61dafb;
-} */
-
-/* @keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-} */
+	justify-content: space-between;
+	margin: 2rem 0;
+}
+.about__child .navigation--right {
+	justify-content: flex-end;
+}
+.about__child--nextlink,
+.about__child--prevlink {
+	line-height: 1.2rem;
+}
+.about__child--nextlink svg,
+.about__child--prevlink svg {
+	height: 2rem;
+}
+.about__child--prevlink svg {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.about__child--nextlink p,
+.about__child--prevlink p {
+	font-size: 1.2rem;
+	margin: 0;
+}

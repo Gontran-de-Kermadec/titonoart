@@ -25,30 +25,30 @@ function About() {
 			</div>
 			<div>
 				<div className="about__subsections">
-					<Link className="about__subsection" to="/about/origin">
+					<Link className="about__menu" to="/about/origin">
 						<h3>L'origine</h3>
-						<div className="bg-img">
+						<div className="about__menu--img">
 							<img className="img-1" src={aboutMenu} alt="" />
 						</div>
 					</Link>
-					<Link to="/about/support" className="about__subsection">
+					<Link to="/about/support" className="about__menu">
 						<h3>Notre support</h3>
-						<div className="bg-img">
+						<div className="about__menu--img">
 							<img className="img-2" src={aboutMenu} alt="" />
 						</div>
 					</Link>
-					<Link to="/about/valeurs" className="about__subsection">
+					<Link to="/about/valeurs" className="about__menu">
 						<h3>Nos valeurs</h3>
-						<div className="bg-img">
+						<div className="about__menu--img">
 							<img className="img-3" src={aboutMenu} alt="" />
 						</div>
 					</Link>
-					<Link to="/about/demarche" className="about__subsection">
+					<Link to="/about/demarche" className="about__menu">
 						<h3>
 							Notre démarche :<br />
 							Eco - responsable
 						</h3>
-						<div className="bg-img">
+						<div className="about__menu--img">
 							<img className="img-4" src={aboutMenu} alt="" />
 						</div>
 					</Link>

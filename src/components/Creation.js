@@ -5,14 +5,14 @@ import papillon from "../images/papillon1.jpg";
 import { Link } from "react-router-dom";
 import voilier2 from "../images/voilier2.jpg";
 import "../style/Creation.css";
-import longueteau from "../images/longueteau.jpg";
-import longueteau2 from "../images/longueteau2.jpg";
+// import longueteau from "../images/longueteau.jpg";
+// import longueteau2 from "../images/longueteau2.jpg";
 
 function Creation() {
 	return (
 		<div className="creation">
 			<div>
-				<h1>Créations</h1>
+				<h2>Créations</h2>
 				<p>
 					Toutes nos créations sont des réalisations uniques qui nécessitent de
 					longues heures d’imagination & de travail. Notre volonté est de
@@ -75,8 +75,7 @@ function Creation() {
 						</Link>
 					</div>
 				</div>
-				<div className="single__creation">
-					{/* <h2>À votre image</h2> */}
+				{/* <div className="single__creation">
 					<div className="single__creation-card">
 						<figure>
 							<img
@@ -85,14 +84,12 @@ function Creation() {
 								onMouseLeave={(e) => (e.currentTarget.src = longueteau)}
 								alt="tonneau papillon"
 							></img>
-							{/* <figcaption>Nuances sur la Baie #001</figcaption> */}
 						</figure>
-						{/* <p>À votre image</p> */}
 						<Link to="/creation/yourself">
 							<button>À votre image</button>
 						</Link>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import PrevNextNav from "../Prevnextnav";
 
 function Support() {
+	const infos = {
+		direction: "both",
+		route: ["/about/origin", "/about/valeurs"],
+		btnName: ["Origine", "Nos valeurs"],
+	};
 	return (
-		<div className="about__child about__support">
+		<div className="about__child about__support about__subsection">
 			<h3>Notre support : Le Fût de Chêne</h3>
 			<p>
 				Nous avons sélectionné une tonnellerie française familiale pour son
@@ -23,7 +29,7 @@ function Support() {
 				Par ce travail, nous voulons valoriser un métier précieux et « oublié »
 				: le tonnelier.
 			</p>
-			<div className="prev-next__navigation">
+			{/* <div className="prev-next__navigation">
 				<Link to="/about/origin" className="about__child--prevlink">
 					<svg
 						aria-hidden="true"
@@ -60,7 +66,8 @@ function Support() {
 					</svg>
 					<p>Nos valeurs</p>
 				</Link>
-			</div>
+			</div> */}
+			<PrevNextNav propsInfos={infos} />
 		</div>
 	);
 }

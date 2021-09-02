@@ -50,12 +50,21 @@
 }
 .subcreation__container--devis {
 	/* border: solid 1px; */
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	transform: translateX(-50%);
 	width: 10rem;
 	margin: 1rem auto;
 	padding: 1rem;
-	background: #000;
-	color: #fff;
+	background: #ddd;
+	border: solid 1px #c2c2c2;
+	color: #414141;
+	border-radius: 0.5rem;
 }
+/* #bar__link--devis {
+
+} */
 
 @media (max-width: 768px) {
 	.subcreation__container {

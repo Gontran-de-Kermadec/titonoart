@@ -1,9 +1,7 @@
 main :nth-child(2) {
 	margin: 2rem;
 }
-.homepage__partenaire p {
-	margin: 1rem;
-}
+.homepage__partenaire p,
 .homepage__partenaire a {
 	margin: 1rem;
 }
@@ -15,16 +13,16 @@ main :nth-child(2) {
 .homepage__contact {
 	margin: 3rem;
 }
-.social__media--mobile {
+.homepage__icons {
 	margin-top: 1rem;
 }
-.social__media--mobile svg {
+.homepage__icons svg {
 	width: 1.5rem;
 	height: 1.5rem;
 	margin: 0 0.7rem;
 }
 @media (min-width: 425px) {
-	.social__media--mobile {
+	.homepage__icons {
 		display: none;
 	}
 }

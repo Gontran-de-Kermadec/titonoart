@@ -74,7 +74,7 @@ function Carousel(props) {
 						<polygon
 							points="36.66 18.63 33.12 22.17 60.21 49.26 33.34 76.13 36.88 79.67 63.77 52.77 67.4 49.37 36.66 18.63"
 							fill="transparent"
-							stroke="#fff"
+							stroke="#c2c2c2"
 						/>
 					</svg>
 				</button>
@@ -93,7 +93,7 @@ function Carousel(props) {
 						<polygon
 							points="36.66 18.63 33.12 22.17 60.21 49.26 33.34 76.13 36.88 79.67 63.77 52.77 67.4 49.37 36.66 18.63"
 							fill="transparent"
-							stroke="#fff"
+							stroke="#c2c2c2"
 						/>
 					</svg>
 				</button>

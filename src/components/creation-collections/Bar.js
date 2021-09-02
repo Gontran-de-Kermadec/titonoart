@@ -1,8 +1,15 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import bar from "../../images/bar.jpg";
 import Carousel from "../Carousel";
+import PrevNextNav from "../Prevnextnav";
 
 const Bar = () => {
+	const navigationInfos = {
+		direction: "both",
+		route: ["/creation/art", "/creation/deco"],
+		btnName: ["Art", "Déco"],
+		devis: true,
+	};
 	const barArray = [
 		"/images/bar.jpg",
 		"/images/bar1.jpg",
@@ -25,20 +32,6 @@ const Bar = () => {
 			}
 		}
 	};
-	// const openLightbox = (e) => {
-	// 	console.log(e.nativeEvent.path[1].nextSibling.classList.contains("false"));
-	// 	if (e.nativeEvent.path[1].nextSibling.classList.contains("false")) {
-	// 		e.nativeEvent.path[1].nextSibling.classList.remove("false");
-	// 		e.nativeEvent.path[1].nextSibling.classList.add("true");
-	// 	}
-	// };
-	// const closeLightbox = (e) => {
-	// 	console.log(e.nativeEvent.path[1].classList.contains("true"));
-	// 	if (e.nativeEvent.path[1].classList.contains("true")) {
-	// 		e.nativeEvent.path[1].classList.remove("true");
-	// 		e.nativeEvent.path[1].classList.add("false");
-	// 	}
-	// };
 	return (
 		<div>
 			<div>
@@ -80,10 +73,11 @@ const Bar = () => {
 					</div>
 				</div>
 			</div>
-			<a href="mailto:titonoart@gmail.com">
+			<PrevNextNav propsInfos={navigationInfos} />
+			{/* <a href="mailto:titonoart@gmail.com">
 				<p className="subcreation__container--devis">Demandez un devis</p>
-			</a>
-			<div className="prev-next__navigation">
+			</a> */}
+			{/* <div className="prev-next__navigation">
 				<Link to="/creation/art" className="about__child--prevlink">
 					<svg
 						aria-hidden="true"
@@ -120,7 +114,14 @@ const Bar = () => {
 					</svg>
 					<p>Déco</p>
 				</Link>
-			</div>
+				<a
+					href="mailto:titonoart@gmail.com"
+					id="bar__link--devis"
+					className="subcreation__container--devis"
+				>
+					<p>Demandez un devis</p>
+				</a>
+			</div> */}
 		</div>
 	);
 };

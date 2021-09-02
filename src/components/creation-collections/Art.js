@@ -1,10 +1,17 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import voilier from "../../images/voilier.jpg";
 import terre from "../../images/terre.jpg";
 import Carousel from "../Carousel";
 import "../../style/creation-collections/Art.css";
+import PrevNextNav from "../Prevnextnav";
 
 const Art = () => {
+	const navigationInfos = {
+		direction: "next",
+		route: "/creation/bar",
+		btnName: "Bar",
+		devis: true,
+	};
 	const voilierArray = [
 		"/images/voilier.jpg",
 		"/images/voilier1.jpg",
@@ -35,28 +42,6 @@ const Art = () => {
 			}
 		}
 	};
-	// const openLightbox = (e) => {
-	// 	let path =
-	// 		e.nativeEvent.path ||
-	// 		(e.nativeEvent.composedPath && e.nativeEvent.composedPath());
-	// 	console.log(path);
-	// 	//console.log(e.nativeEvent.path[1].nextSibling.classList.contains("false"));
-	// 	// if (e.nativeEvent.path[1].nextSibling.classList.contains("false")) {
-	// 	// 	e.nativeEvent.path[1].nextSibling.classList.remove("false");
-	// 	// 	e.nativeEvent.path[1].nextSibling.classList.add("true");
-	// 	// }
-	// 	if (path[1].nextSibling.classList.contains("false")) {
-	// 		path[1].nextSibling.classList.remove("false");
-	// 		path[1].nextSibling.classList.add("true");
-	// 	}
-	// };
-	// const closeLightbox = (e) => {
-	// 	console.log(e.nativeEvent.path[1].classList.contains("true"));
-	// 	if (e.nativeEvent.path[1].classList.contains("true")) {
-	// 		e.nativeEvent.path[1].classList.remove("true");
-	// 		e.nativeEvent.path[1].classList.add("false");
-	// 	}
-	// };
 	return (
 		<div className="art__container">
 			<div>
@@ -124,10 +109,11 @@ const Art = () => {
 					</div>
 				</div>
 			</div>
-			<a href="mailto:titonoart@gmail.com">
+			<PrevNextNav propsInfos={navigationInfos} />
+			{/* <a href="mailto:titonoart@gmail.com">
 				<p className="subcreation__container--devis">Demandez un devis</p>
-			</a>
-			<div className="prev-next__navigation art__navigation">
+			</a> */}
+			{/* <div className="prev-next__navigation art__navigation">
 				<Link to="/creation/bar" className="about__child--nextlink">
 					<svg
 						aria-hidden="true"
@@ -146,7 +132,13 @@ const Art = () => {
 					</svg>
 					<p>Bar</p>
 				</Link>
-			</div>
+				<a
+					href="mailto:titonoart@gmail.com"
+					className="subcreation__container--devis"
+				>
+					<p>Demandez un devis</p>
+				</a>
+			</div> */}
 		</div>
 	);
 };
