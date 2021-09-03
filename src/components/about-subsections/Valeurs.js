@@ -6,10 +6,10 @@ const Valeurs = () => {
 		direction: "both",
 		route: ["/about/support", "/about/demarche"],
 		btnName: ["Notre support", "Nos démarches"],
-		devis: true,
+		devis: false,
 	};
 	return (
-		<div className="about__child about__valeur about__subsection">
+		<div className="about__subsection about__subsection--valeur">
 			<h3>Nos valeurs :</h3>
 			<p>
 				<span>L'HUMAIN</span>

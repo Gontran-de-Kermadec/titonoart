@@ -1,11 +1,11 @@
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./App.css";
 import Header from "./components/Header";
 import Creation from "./components/Creation";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Artiste from "./components/Artiste";
-import "./App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import Origin from "./components/about-subsections/Origin";
 import Support from "./components/about-subsections/Support";
 import Valeurs from "./components/about-subsections/Valeurs";
@@ -13,7 +13,6 @@ import Demarche from "./components/about-subsections/Demarche";
 import Deco from "./components/creation-collections/Deco";
 import Art from "./components/creation-collections/Art";
 import Bar from "./components/creation-collections/Bar";
-import Yourself from "./components/creation-collections/Yourself";
 
 function App() {
 	return (
@@ -32,7 +31,6 @@ function App() {
 				<Route path="/creation/deco" exact component={Deco} />
 				<Route path="/creation/art" exact component={Art} />
 				<Route path="/creation/bar" exact component={Bar} />
-				<Route path="/creation/yourself" exact component={Yourself} />
 			</Router>
 		</div>
 	);

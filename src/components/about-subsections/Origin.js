@@ -9,7 +9,7 @@ function Origin() {
 		devis: false,
 	};
 	return (
-		<div className="about__child content__origin about__subsection">
+		<div className="about__subsection about__subsection--origin">
 			<p>
 				<em className="about__origin--bold">
 					Créations uniques & singulières, peintes à la main avec inspiration,

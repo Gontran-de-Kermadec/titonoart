@@ -9,7 +9,7 @@ const Demarche = () => {
 		devis: false,
 	};
 	return (
-		<div className="about__child about__demarche about__subsection">
+		<div className="about__subsection about__subsection--demarche">
 			<h3>Notre démarche : Eco - responsable</h3>
 			<p>
 				Le bois est la matière première de nos barriques. Les forêts sont les

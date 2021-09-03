@@ -12,7 +12,7 @@ function Home() {
 		"/images/slider4.jpg",
 	];
 	return (
-		<div>
+		<div className="homepage">
 			<main>
 				<Carousel imgs={imgArray} mode="auto" />
 				<p>

@@ -6,9 +6,10 @@ function Support() {
 		direction: "both",
 		route: ["/about/origin", "/about/valeurs"],
 		btnName: ["Origine", "Nos valeurs"],
+		devis: false,
 	};
 	return (
-		<div className="about__child about__support about__subsection">
+		<div className="about__subsection">
 			<h3>Notre support : Le Fût de Chêne</h3>
 			<p>
 				Nous avons sélectionné une tonnellerie française familiale pour son

@@ -1,9 +1,6 @@
-// import { Link } from "react-router-dom";
 import papillon from "../../images/papillon1.jpg";
-//import papillon2 from "../../images/papillon3.jpg";
 import lotus from "../../images/lotus.jpg";
 import pirate from "../../images/pirate.jpg";
-import "../../style/Subcreation.css";
 import Carousel from "../Carousel";
 import PrevNextNav from "../Prevnextnav";
 
@@ -15,7 +12,6 @@ const Deco = () => {
 		devis: true,
 	};
 	const papillonArray = [
-		// "/images/papillon.jpg",
 		"/images/papillon1.jpg",
 		"/images/papillon2.jpg",
 		"/images/papillon3.jpg",
@@ -48,24 +44,10 @@ const Deco = () => {
 			}
 		}
 	};
-	// const openLightbox = (e) => {
-	// 	console.log(e.nativeEvent.path[1].nextSibling.classList.contains("false"));
-	// 	if (e.nativeEvent.path[1].nextSibling.classList.contains("false")) {
-	// 		e.nativeEvent.path[1].nextSibling.classList.remove("false");
-	// 		e.nativeEvent.path[1].nextSibling.classList.add("true");
-	// 	}
-	// };
-	// const closeLightbox = (e) => {
-	// 	console.log(e.nativeEvent.path[1].classList.contains("true"));
-	// 	if (e.nativeEvent.path[1].classList.contains("true")) {
-	// 		e.nativeEvent.path[1].classList.remove("true");
-	// 		e.nativeEvent.path[1].classList.add("false");
-	// 	}
-	// };
 	return (
 		<div>
-			<div className="deco__container subcreation__container">
-				<div className="img__container">
+			<div className="deco__container creation__subsection">
+				<div className="creation__subsection--card">
 					<figure
 						onClick={(e) => openCloseLightbox(e, "open")}
 						onTouchStart={(e) => openCloseLightbox(e, "open")}
@@ -78,7 +60,7 @@ const Deco = () => {
 						/>
 						{/* <figcaption>Papillon</figcaption> */}
 					</figure>
-					<div className="subcreation__lightbox false">
+					<div className="creation__subsection--lightbox false">
 						<button
 							onClick={(e) => openCloseLightbox(e, "close")}
 							className="subcreation__lightbox--close"
@@ -92,15 +74,14 @@ const Deco = () => {
 						<p>Acquis</p>
 					</div>
 				</div>
-				<div className="img__container">
+				<div className="creation__subsection--card">
 					<figure
 						onClick={(e) => openCloseLightbox(e, "open")}
 						onTouchStart={(e) => openCloseLightbox(e, "open")}
 					>
 						<img src={lotus} alt="tonneau d'un lotus" />
-						{/* <figcaption>Christaline</figcaption> */}
 					</figure>
-					<div className="subcreation__lightbox false">
+					<div className="creation__subsection--lightbox false">
 						<button
 							onClick={(e) => openCloseLightbox(e, "close")}
 							className="subcreation__lightbox--close"
@@ -114,7 +95,7 @@ const Deco = () => {
 						<p>Acquis</p>
 					</div>
 				</div>
-				<div className="img__container">
+				<div className="creation__subsection--card">
 					<figure
 						onClick={(e) => openCloseLightbox(e, "open")}
 						onTouchStart={(e) => openCloseLightbox(e, "open")}
@@ -122,7 +103,7 @@ const Deco = () => {
 						<img src={pirate} alt="tonneau d'un pirate" />
 						{/* <figcaption>Caribbean pirate</figcaption> */}
 					</figure>
-					<div className="subcreation__lightbox false">
+					<div className="creation__subsection--lightbox false">
 						<button
 							onClick={(e) => openCloseLightbox(e, "close")}
 							className="subcreation__lightbox--close"
@@ -138,33 +119,6 @@ const Deco = () => {
 				</div>
 			</div>
 			<PrevNextNav propsInfos={navigationInfos} />
-			{/* <div className="prev-next__navigation">
-				<Link to="/creation/bar" className="about__child--prevlink">
-					<svg
-						aria-hidden="true"
-						focusable="false"
-						data-prefix="fas"
-						data-icon="angle-double-right"
-						// class="svg-inline--fa fa-angle-double-right fa-w-14"
-						role="img"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 448 512"
-					>
-						<path
-							fill="currentColor"
-							d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"
-						></path>
-					</svg>
-					<p>Bar</p>
-				</Link>
-				<a
-					href="mailto:titonoart@gmail.com"
-					className="subcreation__container--devis"
-				>
-					<p>Demandez un devis</p>
-				</a>
-				
-			</div> */}
 		</div>
 	);
 };

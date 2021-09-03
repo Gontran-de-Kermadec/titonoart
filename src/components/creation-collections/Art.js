@@ -1,8 +1,6 @@
-// import { Link } from "react-router-dom";
 import voilier from "../../images/voilier.jpg";
 import terre from "../../images/terre.jpg";
 import Carousel from "../Carousel";
-import "../../style/creation-collections/Art.css";
 import PrevNextNav from "../Prevnextnav";
 
 const Art = () => {
@@ -44,30 +42,24 @@ const Art = () => {
 	};
 	return (
 		<div className="art__container">
-			<div>
-				<p className="art__txt">
+			<div className="creation__subsection--intro">
+				<p>
 					Créations artistiques réalisées selon l'inspiration de Robin. La
 					technique utilisée est la peinture acrylique. Un certificat
 					d'authenticité est délivré pour garantir le caractère unique de
 					l’œuvre.
 				</p>
 			</div>
-			<div className="subcreation__container">
-				<div className="img__container">
+			<div className="creation__subsection">
+				<div className="creation__subsection--card">
 					<figure
 						onClick={(e) => openCloseLightbox(e, "open")}
 						onTouchStart={(e) => openCloseLightbox(e, "open")}
 					>
-						<img
-							src={voilier}
-							alt="tonneau d'un voilier"
-							// onMouseEnter={(e) => (e.currentTarget.src = papillon2)}
-							// onMouseLeave={(e) => (e.currentTarget.src = papillon)}
-						/>
+						<img src={voilier} alt="tonneau d'un voilier" />
 					</figure>
-					<div className="subcreation__lightbox false">
+					<div className="creation__subsection--lightbox false">
 						<button
-							// onClick={(e) => closeLightbox(e)}
 							onClick={(e) => openCloseLightbox(e, "close")}
 							className="subcreation__lightbox--close"
 						>
@@ -82,19 +74,16 @@ const Art = () => {
 						<p>Acquis</p>
 					</div>
 				</div>
-				<div className="img__container">
+				<div className="creation__subsection--card">
 					<figure
 						onClick={(e) => openCloseLightbox(e, "open")}
 						onTouchStart={(e) => openCloseLightbox(e, "open")}
 					>
-						{/* <figure onClick={(e) => openLightbox(e)}> */}
 						<img src={terre} alt="tonneau d'un lotus" />
-						{/* <figcaption>Terre natale</figcaption> */}
 					</figure>
-					<div className="subcreation__lightbox false">
+					<div className="subcreation__lightbox creation__subsection--lightbox false">
 						<button
 							onClick={(e) => openCloseLightbox(e, "close")}
-							// onClick={(e) => closeLightbox(e)}
 							className="subcreation__lightbox--close"
 						>
 							X
@@ -110,35 +99,6 @@ const Art = () => {
 				</div>
 			</div>
 			<PrevNextNav propsInfos={navigationInfos} />
-			{/* <a href="mailto:titonoart@gmail.com">
-				<p className="subcreation__container--devis">Demandez un devis</p>
-			</a> */}
-			{/* <div className="prev-next__navigation art__navigation">
-				<Link to="/creation/bar" className="about__child--nextlink">
-					<svg
-						aria-hidden="true"
-						focusable="false"
-						data-prefix="fas"
-						data-icon="angle-double-right"
-						// class="svg-inline--fa fa-angle-double-right fa-w-14"
-						role="img"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 448 512"
-					>
-						<path
-							fill="currentColor"
-							d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"
-						></path>
-					</svg>
-					<p>Bar</p>
-				</Link>
-				<a
-					href="mailto:titonoart@gmail.com"
-					className="subcreation__container--devis"
-				>
-					<p>Demandez un devis</p>
-				</a>
-			</div> */}
 		</div>
 	);
 };

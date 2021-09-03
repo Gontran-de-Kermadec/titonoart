@@ -39,25 +39,27 @@
 .about__menu--img .img-4 {
 	object-position: 50% 90%;
 }
-
 .about__menu h3 {
 	width: 30%;
 	align-self: center;
 	font-size: 2rem;
 }
-
 /*about subsection part*/
-/* .about__child, */
 .about__subsection {
 	width: 80vw;
 	margin: 1rem auto;
 	font-size: 1.3rem;
 	overflow: hidden;
 }
-/* .about__child p, */
 .about__subsection p {
-	/* font-family: Tahoma, Verdana, sans-serif; */
 	margin: 2rem 0;
+}
+/*section a propos => origin*/
+.about__subsection--origin p a {
+	color: blue;
+}
+.about__subsection--origin p a:hover {
+	text-decoration: underline;
 }
 .about__origin--title {
 	font-weight: bolder;
@@ -65,7 +67,6 @@
 .about__origin--bold {
 	font-size: 1rem;
 }
-
 .about__origin--team {
 	text-align: left;
 }
@@ -89,52 +90,15 @@
 .origin__team--infos {
 	margin: 0 2rem;
 }
-.content__origin p a {
-	color: blue;
-}
-.content__origin p a:hover {
-	text-decoration: underline;
-}
-
-/*style des liens (precedent et suivant) dans les sous-parties*/
-/* .prev-next__navigation {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	margin: 2rem 0;
-}
-.about__child .navigation--right {
-	justify-content: flex-end;
-}
-.about__child--nextlink,
-.about__child--prevlink {
-	line-height: 1.2rem;
-}
-.about__child--nextlink svg,
-.about__child--prevlink svg {
-	height: 2rem;
-}
-.about__child--prevlink svg {
-	-webkit-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
-.about__child--nextlink p,
-.about__child--prevlink p {
-	font-size: 1.2rem;
-	margin: 0;
-} */
-/*section valeur de l'à propos*/
-.about__valeur p span {
+/*section a propos => valeur*/
+.about__subsection--valeur p span {
 	display: block;
 	line-height: 1.2rem;
 }
-/*section demarche de l'à propos*/
-.about__demarche img {
+/*section a propos => demarche*/
+.about__subsection--demarche img {
 	height: 250px;
 }
-
-/*responsive section*/
 @media (max-width: 600px) {
 	.about__menu {
 		width: 80vw;
@@ -146,7 +110,7 @@
 	.about__menu--img {
 		width: 60%;
 	}
-	.about__child p {
+	.about__subsection p {
 		font-size: 1rem;
 	}
 	.about__demarche img {

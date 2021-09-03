@@ -1,40 +1,7 @@
-/* .App {
-	text-align: center;
-	font-family: Tahoma, Verdana, sans-serif;
-} */
 h3,
 .header__slogan {
 	font-family: "Courgette", cursive;
 }
 p {
 	font-size: 1.2rem;
-}
-
-/*style des liens (precedent et suivant) qui apparaissent sur plusieurs pages differentes*/
-.prev-next__navigation {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	margin: 2rem 0;
-}
-.about__child .navigation--right {
-	justify-content: flex-end;
-}
-.about__child--nextlink,
-.about__child--prevlink {
-	line-height: 1.2rem;
-}
-.about__child--nextlink svg,
-.about__child--prevlink svg {
-	height: 2rem;
-}
-.about__child--prevlink svg {
-	-webkit-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
-.about__child--nextlink p,
-.about__child--prevlink p {
-	font-size: 1.2rem;
-	margin: 0;
 }

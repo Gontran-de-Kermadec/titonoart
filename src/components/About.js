@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../style/About.css";
-import aboutMenu from "../images/about-menu2.jpg";
+import aboutMenu from "../images/about-menu.jpg";
 
 function About() {
 	return (

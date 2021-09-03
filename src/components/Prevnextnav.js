@@ -26,7 +26,7 @@ const PrevNextNav = (props) => {
 				</Link>
 				{props.propsInfos.devis ? (
 					<a href="mailto:titonoart@gmail.com">
-						<p className="subcreation__container--devis">Demandez un devis</p>
+						<p className="prev-next__navigation--devis">Demandez un devis</p>
 					</a>
 				) : (
 					console.log("false")
@@ -55,7 +55,9 @@ const PrevNextNav = (props) => {
 				</Link>
 				{props.propsInfos.devis ? (
 					<a href="mailto:titonoart@gmail.com">
-						<p className="subcreation__container--devis">Demandez un devis</p>
+						<p className="subcreation__container--devis prev-next__navigation--devis">
+							Demandez un devis
+						</p>
 					</a>
 				) : (
 					console.log("false")
@@ -101,7 +103,9 @@ const PrevNextNav = (props) => {
 				</Link>
 				{props.propsInfos.devis ? (
 					<a href="mailto:titonoart@gmail.com">
-						<p className="subcreation__container--devis">Demandez un devis</p>
+						<p className="subcreation__container--devis prev-next__navigation--devis">
+							Demandez un devis
+						</p>
 					</a>
 				) : (
 					console.log("false")
