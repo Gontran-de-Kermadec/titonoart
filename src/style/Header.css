@@ -1,4 +1,7 @@
 /*style all screens*/
+header {
+	margin-bottom: 2rem;
+}
 header nav {
 	font-family: "Staatliches", cursive;
 }
@@ -161,6 +164,7 @@ header nav {
 }
 @media (min-width: 1025px) {
 	.header__slogan {
-		margin: 2rem 0;
+		/* margin: 2rem 0; */
+		margin-top: 2rem;
 	}
 }

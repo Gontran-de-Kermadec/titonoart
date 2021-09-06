@@ -6,7 +6,7 @@ function About() {
 	return (
 		<div className="about">
 			<div className="about__introduction">
-				<h1>À Propos de Ti ToNo Art</h1>
+				<h2>À Propos de Ti ToNo Art</h2>
 				<p>
 					Ti ToNo Art propose des créations exclusives de styles, de motifs, et
 					de couleurs variés sur une matière noble : le Bois !

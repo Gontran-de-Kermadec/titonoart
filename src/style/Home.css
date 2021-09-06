@@ -1,5 +1,5 @@
-main :nth-child(2) {
-	margin: 2rem;
+#homepage__sentence {
+	margin: 2rem 0;
 }
 .homepage__partenaire p,
 .homepage__partenaire a {

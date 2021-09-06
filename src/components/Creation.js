@@ -14,9 +14,9 @@ function Creation() {
 				<h2>Créations</h2>
 				<p>
 					Toutes nos créations sont des réalisations uniques qui nécessitent de
-					longues heures d’imagination & de travail. Notre volonté est de
-					redonner de l’importance à la fabrication artisanale et à la création
-					artistique.
+					longues heures d’imagination & de travail. <br />
+					Notre volonté est de redonner de l’importance à la fabrication
+					artisanale et à la création artistique.
 				</p>
 			</div>
 			<div className="creation__container">

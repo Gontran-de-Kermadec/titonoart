@@ -1,6 +1,6 @@
 /*about main page*/
 .about__introduction p {
-	margin: 1rem 0;
+	margin: 1rem 6rem;
 }
 .about__menu {
 	position: relative;
@@ -46,17 +46,15 @@
 }
 /*about subsection part*/
 .about__subsection {
-	width: 80vw;
-	margin: 1rem auto;
+	margin: 0 auto;
 	font-size: 1.3rem;
-	overflow: hidden;
 }
 .about__subsection p {
-	margin: 2rem 0;
+	margin: 2rem 5rem;
 }
 /*section a propos => origin*/
 .about__subsection--origin p a {
-	color: blue;
+	color: #3a60bb;
 }
 .about__subsection--origin p a:hover {
 	text-decoration: underline;
@@ -69,6 +67,8 @@
 }
 .about__origin--team {
 	text-align: left;
+	overflow: hidden;
+	margin: 0 5rem;
 }
 .about__origin--team h3 {
 	text-align: center;
@@ -90,6 +90,9 @@
 .origin__team--infos {
 	margin: 0 2rem;
 }
+.origin__team--infos p {
+	margin: 2rem 0;
+}
 /*section a propos => valeur*/
 .about__subsection--valeur p span {
 	display: block;
@@ -100,6 +103,9 @@
 	height: 250px;
 }
 @media (max-width: 600px) {
+	.about__introduction p {
+		margin: 1.5rem;
+	}
 	.about__menu {
 		width: 80vw;
 	}
@@ -112,8 +118,12 @@
 	}
 	.about__subsection p {
 		font-size: 1rem;
+		margin: 2rem 1rem;
 	}
 	.about__demarche img {
 		display: none;
+	}
+	.about__origin--team {
+		margin: 0 1rem;
 	}
 }

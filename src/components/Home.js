@@ -13,22 +13,20 @@ function Home() {
 	];
 	return (
 		<div className="homepage">
-			<main>
-				<Carousel imgs={imgArray} mode="auto" />
-				<p>
-					Décorez votre intérieur en faisant l’acquisition d’une œuvre
-					artistique originale.
-				</p>
-				<section className="homepage__partenaire">
-					<p>Où retrouver nos créations</p>
-					<a href="https://www.colibri-spirit.com/" target="__blank">
-						<img src={colibri} alt="logo"></img>
-					</a>
-					<a href="https://popupstory.fr/" target="__blank">
-						<img src={popup} alt="logo"></img>
-					</a>
-				</section>
-			</main>
+			<Carousel imgs={imgArray} mode="auto" />
+			<p id="homepage__sentence">
+				Décorez votre intérieur en faisant l’acquisition d’une œuvre artistique
+				originale.
+			</p>
+			<section className="homepage__partenaire">
+				<p>Où retrouver nos créations</p>
+				<a href="https://www.colibri-spirit.com/" target="__blank">
+					<img src={colibri} alt="logo"></img>
+				</a>
+				<a href="https://popupstory.fr/" target="__blank">
+					<img src={popup} alt="logo"></img>
+				</a>
+			</section>
 			<footer className="homepage__contact">
 				<p>Contactez-nous</p>
 				<a href="mailto:titonoart@gmail.com">titonoart@gmail.com</a>

@@ -45,9 +45,9 @@ const Art = () => {
 			<div className="creation__subsection--intro">
 				<p>
 					Créations artistiques réalisées selon l'inspiration de Robin. La
-					technique utilisée est la peinture acrylique. Un certificat
-					d'authenticité est délivré pour garantir le caractère unique de
-					l’œuvre.
+					technique utilisée est la peinture acrylique. <br />
+					Un certificat d'authenticité est délivré pour garantir le caractère
+					unique de l’œuvre.
 				</p>
 			</div>
 			<div className="creation__subsection">
@@ -70,7 +70,6 @@ const Art = () => {
 					<div>
 						<h3>Nuance sur la baie</h3>
 						<p>Peinture acrylique - Mai 2021</p>
-						<p>Certificat d'authenticité</p>
 						<p>Acquis</p>
 					</div>
 				</div>
@@ -81,7 +80,7 @@ const Art = () => {
 					>
 						<img src={terre} alt="tonneau d'un lotus" />
 					</figure>
-					<div className="subcreation__lightbox creation__subsection--lightbox false">
+					<div className="creation__subsection--lightbox false">
 						<button
 							onClick={(e) => openCloseLightbox(e, "close")}
 							className="subcreation__lightbox--close"
@@ -93,8 +92,9 @@ const Art = () => {
 					<div>
 						<h3>Terre natale</h3>
 						<p>Peinture acrylique - Mai 2021</p>
-						<p>Certificat d'authenticité</p>
-						<p>Disponible</p>
+						<p>
+							<span className="creation__subsection--dispo"></span>Disponible
+						</p>
 					</div>
 				</div>
 			</div>

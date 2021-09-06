@@ -11,12 +11,12 @@ function Header() {
 	};
 	return (
 		<div>
-			<header>
+			<header role="banner">
 				<div className="header__large-screen">
 					<Link to="/" className="header__logo">
-						<img src={Logo} alt="Logo" />
+						<img src={Logo} alt="Logo de TiTonoArt" />
 					</Link>
-					<nav>
+					<nav role="navigation">
 						<ul>
 							<Link to="/about">
 								<li>À propos</li>

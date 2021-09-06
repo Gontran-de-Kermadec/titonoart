@@ -19,18 +19,20 @@ function App() {
 		<div className="App">
 			<Router>
 				<Header />
-				<Route path="/" exact component={Home} />
-				<Route path="/creation" exact component={Creation} />
-				<Route path="/about" exact component={About} />
-				<Route path="/contact" exact component={Contact} />
-				<Route path="/artiste" exact component={Artiste} />
-				<Route path="/about/origin" exact component={Origin} />
-				<Route path="/about/support" exact component={Support} />
-				<Route path="/about/valeurs" exact component={Valeurs} />
-				<Route path="/about/demarche" exact component={Demarche} />
-				<Route path="/creation/deco" exact component={Deco} />
-				<Route path="/creation/art" exact component={Art} />
-				<Route path="/creation/bar" exact component={Bar} />
+				<main>
+					<Route path="/" exact component={Home} />
+					<Route path="/creation" exact component={Creation} />
+					<Route path="/about" exact component={About} />
+					<Route path="/contact" exact component={Contact} />
+					<Route path="/artiste" exact component={Artiste} />
+					<Route path="/about/origin" exact component={Origin} />
+					<Route path="/about/support" exact component={Support} />
+					<Route path="/about/valeurs" exact component={Valeurs} />
+					<Route path="/about/demarche" exact component={Demarche} />
+					<Route path="/creation/deco" exact component={Deco} />
+					<Route path="/creation/art" exact component={Art} />
+					<Route path="/creation/bar" exact component={Bar} />
+				</main>
 			</Router>
 		</div>
 	);

@@ -5,3 +5,8 @@ h3,
 p {
 	font-size: 1.2rem;
 }
+.about__introduction h2,
+.artiste h2,
+.creation__intro h2 {
+	margin-bottom: 2rem;
+}
