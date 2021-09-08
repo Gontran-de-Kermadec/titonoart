@@ -12,40 +12,7 @@ header nav {
 	display: -ms-flexbox;
 	display: flex;
 }
-.delivery__block,
-.arrow {
-	position: absolute;
-}
-.delivery__block {
-	display: none;
-	right: -1rem;
-	top: 3rem;
-	width: 50vw;
-	height: 50vh;
-	border: solid 0.1rem #000;
-	border-radius: 1rem;
-	background-color: #fff;
-}
-.delivery__block.displayed {
-	display: block;
-}
-.arrow {
-	right: 1rem;
-	width: 0;
-	height: 0;
-	border: 0 solid transparent;
-	border-right-width: 20px;
-	border-left-width: 20px;
-}
-.arrow__outer {
-	top: -1.3rem;
-	border-bottom: 20px solid #000;
-}
-.arrow__inner {
-	border-bottom: 20px solid #fff;
-	left: -20px;
-	top: 3px;
-}
+
 /*style large screens*/
 .header__large-screen {
 	-webkit-box-pack: justify;
