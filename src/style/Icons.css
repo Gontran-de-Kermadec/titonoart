@@ -66,3 +66,17 @@
 		right: 6.3rem;
 	}
 }
+/*style icons homepage*/
+.homepage__icons {
+	margin-top: 1rem;
+}
+.homepage__icons svg {
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0 0.7rem;
+}
+@media (min-width: 425px) {
+	.homepage__icons {
+		display: none;
+	}
+}
