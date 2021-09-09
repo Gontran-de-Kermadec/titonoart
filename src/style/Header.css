@@ -52,6 +52,7 @@ header nav {
 }
 .header__large-screen li {
 	list-style: none;
+	margin-right: 2rem;
 }
 .header__slogan {
 	font-size: 1.2rem;

@@ -19,7 +19,7 @@ function Origin() {
 			<h3 className="about__origin--title">L'origine</h3>
 			<p>
 				Ti ToNo Art a été créé en 2021 sur une idée originale de Delphine,
-				évoluant dans le monde des spiritueux, et de l'artiste peintre, Robin
+				évoluant dans le monde des spiritueux, et de l'artiste peintre Robin
 				Lepoutre.
 			</p>
 			<p>

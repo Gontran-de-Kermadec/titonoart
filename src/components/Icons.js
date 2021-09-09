@@ -59,8 +59,13 @@ function Icons({ location }) {
 						<div className="arrow arrow__inner"></div>
 					</div>
 					<div>
-						<p>Infos livraison</p>
-						<p>Contactez Gégé pour la livraison....</p>
+						<p>
+							Une fois votre commande validée auprès de notre atelier ou de nos
+							boutiques partenaires, un service livraison vous est proposé.
+							<br />
+							Votre « Ti ToNo » arrivera chez vous en toute sécurité grâce au
+							service de Raphael, votre unique interlocuteur.
+						</p>
 					</div>
 				</div>
 			</div>
