@@ -2,16 +2,17 @@
 .carousel__manual {
 	position: relative;
 	overflow: hidden;
-	height: 600px;
+	height: 31.25rem;
+}
+.carousel__auto .slide-img {
+	height: 100%;
+}
+.carousel__auto .slide-img img {
+	width: 100vw;
 }
 .carousel__manual {
 	width: 100vw;
 	height: 100vh;
-}
-.carousel img {
-	width: 100vw;
-	height: 550px;
-	object-fit: cover;
 }
 .slide-img {
 	position: absolute;
@@ -64,7 +65,27 @@
 }
 
 /*mobile section*/
-@media (max-width: 425px) {
+@media (max-width: 321px) {
+	.carousel__auto {
+		height: 13.25rem;
+	}
+}
+@media (min-width: 321px) and (max-width: 376px) {
+	.carousel__auto {
+		height: 15.25rem;
+	}
+}
+@media (min-width: 376px) and (max-width: 600px) {
+	.carousel__auto {
+		height: 17.25rem;
+	}
+}
+@media (min-width: 601px) and (max-width: 768px) {
+	.carousel__auto {
+		height: 26.25rem;
+	}
+}
+@media (max-width: 426px) {
 	.carousel__svg {
 		width: 50px;
 	}

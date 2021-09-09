@@ -15,7 +15,6 @@
 	right: -1rem;
 	top: 2.6rem;
 	width: 50vw;
-	/* height: 50vh; */
 	border: solid 0.1rem #000;
 	border-radius: 1rem;
 	background-color: #fff;
@@ -42,6 +41,15 @@
 	top: 0.125rem;
 }
 /*small screen*/
+@media (min-width: 426px) and (max-width: 768px) {
+	.delivery__block {
+		width: 80vw;
+		right: 0;
+	}
+	.arrow {
+		right: 0.8rem;
+	}
+}
 @media (max-width: 425px) {
 	.delivery__block {
 		bottom: 2.8rem;
@@ -50,6 +58,8 @@
 	}
 	.delivery__block div p {
 		margin: 1rem;
+		font-size: 1.2rem;
+		font-weight: initial;
 	}
 	.arrow__outer {
 		transform: rotate(180deg);

@@ -20,7 +20,7 @@ function Carousel(props) {
 	};
 	useEffect(() => {
 		if (props.mode === "auto") {
-			const interval = 6000;
+			const interval = 5000;
 			const timer = setTimeout(() => {
 				nextSlide();
 			}, interval);
