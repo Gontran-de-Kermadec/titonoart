@@ -70,7 +70,7 @@ const Art = () => {
 					<div>
 						<h3>Nuance sur la baie</h3>
 						<p>Peinture acrylique - Mai 2021</p>
-						<p>Acquis</p>
+						<p className="creation__subsection--availability">Acquis</p>
 					</div>
 				</div>
 				<div className="creation__subsection--card">
@@ -92,7 +92,7 @@ const Art = () => {
 					<div>
 						<h3>Terre natale</h3>
 						<p>Peinture acrylique - Mai 2021</p>
-						<p>
+						<p className="creation__subsection--availability">
 							<span className="creation__subsection--dispo"></span>Disponible
 						</p>
 					</div>

@@ -44,13 +44,12 @@ function Header() {
 							className="mobile__svg"
 							version="1.0"
 							xmlns="http://www.w3.org/2000/svg"
-							width="100"
-							height="100"
+							width="120"
+							height="120"
 							viewBox="0 0 2800 1500"
 							preserveAspectRatio="xMidYMid meet"
 						>
 							<g
-								//transform="translate(0.000000,2480.000000) scale(0.1,-0.1)"
 								transform="translate(-650,2480) scale(0.12,-0.14)"
 								fill="#000000"
 								stroke="none"

@@ -21,7 +21,8 @@
 }
 .delivery__block div p {
 	font-family: Tahoma, Verdana, sans-serif;
-	margin: 2rem;
+	margin: 1rem;
+	font-size: 1rem;
 }
 .arrow {
 	right: 1.8rem;
@@ -41,14 +42,18 @@
 	top: 0.125rem;
 }
 /*small screen*/
-@media (min-width: 426px) and (max-width: 768px) {
+/* @media (min-width: 426px) and (max-width: 768px) { */
+@media (max-width: 768px) {
 	.delivery__block {
 		width: 80vw;
-		right: 0;
+		right: -0.5rem;
 	}
 	.arrow {
 		right: 0.8rem;
 	}
+	/* .delivery__block div p {
+		margin: 1rem;
+	} */
 }
 @media (max-width: 425px) {
 	.delivery__block {
@@ -57,8 +62,8 @@
 		width: 80vw;
 	}
 	.delivery__block div p {
-		margin: 1rem;
-		font-size: 1.2rem;
+		/* margin: 1rem; */
+		/* font-size: 1.2rem; */
 		font-weight: initial;
 	}
 	.arrow__outer {

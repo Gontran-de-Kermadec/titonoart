@@ -61,10 +61,13 @@ function Icons({ location }) {
 					<div>
 						<p>
 							Une fois votre commande validée auprès de notre atelier ou de nos
-							boutiques partenaires, un service livraison vous est proposé.
-							<br />
+							boutiques partenaires, un <b>service livraison</b> vous est
+							proposé.
+							{/* <br /> */}
+						</p>
+						<p>
 							Votre « Ti ToNo » arrivera chez vous en toute sécurité grâce au
-							service de Raphael, votre unique interlocuteur.
+							service de Raphaël, votre unique interlocuteur.
 						</p>
 					</div>
 				</div>

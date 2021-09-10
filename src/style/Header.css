@@ -132,6 +132,7 @@ header nav {
 	.header__small-screen-menu--nav li {
 		font-size: 2rem;
 		border-bottom: solid 1px;
+		text-align: center;
 	}
 }
 
@@ -162,6 +163,9 @@ header nav {
 @media (max-width: 768px) {
 	.header__large-screen li {
 		margin-right: initial;
+	}
+	.header__icons svg {
+		margin: 0 0.3rem;
 	}
 }
 @media (min-width: 425px) {

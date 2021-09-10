@@ -50,15 +50,9 @@ const Deco = () => {
 				<div className="creation__subsection--card">
 					<figure
 						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchStart={(e) => openCloseLightbox(e, "open")}
+						onTouchEnd={(e) => openCloseLightbox(e, "open")}
 					>
-						<img
-							src={papillon}
-							alt="tonneau d'un papillon"
-							// onMouseEnter={(e) => (e.currentTarget.src = papillon2)}
-							// onMouseLeave={(e) => (e.currentTarget.src = papillon)}
-						/>
-						{/* <figcaption>Papillon</figcaption> */}
+						<img src={papillon} alt="tonneau d'un papillon" />
 					</figure>
 					<div className="creation__subsection--lightbox false">
 						<button
@@ -77,7 +71,7 @@ const Deco = () => {
 				<div className="creation__subsection--card">
 					<figure
 						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchStart={(e) => openCloseLightbox(e, "open")}
+						onTouchEnd={(e) => openCloseLightbox(e, "open")}
 					>
 						<img src={lotus} alt="tonneau d'un lotus" />
 					</figure>
@@ -98,10 +92,9 @@ const Deco = () => {
 				<div className="creation__subsection--card">
 					<figure
 						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchStart={(e) => openCloseLightbox(e, "open")}
+						onTouchEnd={(e) => openCloseLightbox(e, "open")}
 					>
 						<img src={pirate} alt="tonneau d'un pirate" />
-						{/* <figcaption>Caribbean pirate</figcaption> */}
 					</figure>
 					<div className="creation__subsection--lightbox false">
 						<button
