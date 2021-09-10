@@ -54,7 +54,7 @@ const Art = () => {
 				<div className="creation__subsection--card">
 					<figure
 						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchStart={(e) => openCloseLightbox(e, "open")}
+						onTouchEnd={(e) => openCloseLightbox(e, "open")}
 					>
 						<img src={voilier} alt="tonneau d'un voilier" />
 					</figure>
@@ -76,9 +76,9 @@ const Art = () => {
 				<div className="creation__subsection--card">
 					<figure
 						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchStart={(e) => openCloseLightbox(e, "open")}
+						onTouchEnd={(e) => openCloseLightbox(e, "open")}
 					>
-						<img src={terre} alt="tonneau d'un lotus" />
+						<img src={terre} alt="tonneau décoré" />
 					</figure>
 					<div className="creation__subsection--lightbox false">
 						<button

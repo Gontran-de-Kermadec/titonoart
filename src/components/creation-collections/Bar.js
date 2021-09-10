@@ -46,7 +46,7 @@ const Bar = () => {
 				<div className="creation__subsection--card">
 					<figure
 						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchStart={(e) => openCloseLightbox(e, "open")}
+						onTouchEnd={(e) => openCloseLightbox(e, "open")}
 					>
 						<img src={bar} alt="tonneau d'un papillon" />
 					</figure>

@@ -28,6 +28,7 @@ header nav {
 .header__logo img {
 	width: auto;
 	height: 90%;
+	/* margin-top: -1.6rem; */
 }
 .header__large-screen nav {
 	width: 80%;
@@ -174,6 +175,9 @@ header nav {
 	}
 }
 @media (min-width: 1025px) {
+	.header__logo img {
+		margin-top: -1.6rem;
+	}
 	.header__slogan {
 		margin-top: 2rem;
 	}
