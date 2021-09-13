@@ -83,11 +83,13 @@
 .origin__team--img {
 	width: 150px;
 	height: 150px;
+	align-self: center;
 	background-color: grey;
 	opacity: 0.5;
 	border-radius: 50%;
 }
 .origin__team--infos {
+	width: 70%;
 	margin: 0 2rem;
 }
 .origin__team--infos p {
@@ -125,5 +127,22 @@
 	}
 	.about__origin--team {
 		margin: 0 1rem;
+	}
+	.about__origin--team h3 {
+		margin: 1rem 0;
+	}
+	.origin__team--container {
+		display: initial;
+	}
+	.origin__team--img {
+		margin: 0 auto;
+	}
+	.origin__team--infos {
+		width: unset;
+		margin: unset;
+		text-align: center;
+	}
+	.origin__team--infos p {
+		margin: 1rem auto;
 	}
 }

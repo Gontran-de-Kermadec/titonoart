@@ -88,10 +88,10 @@ function Artiste() {
 							la création graphique sur fût de chêne. Chaque réalisation,
 							illustrée selon son inspiration de manière unique, est transformée
 							en véritable « œuvre d’art » . Il imagine des collections sans
-							compromettre son éthique et ses valeurs. Il accorde de
+							compromettre ni son éthique, ni ses valeurs et accorde de
 							l’importance à l’origine des matières ainsi qu’à leur production.
-							Robin propose un art conscient en donnant une seconde vie à cet
-							objet utilisé comme support.
+							Robin propose ainsi un art conscient en donnant une seconde vie à
+							cet objet utilisé comme support.
 						</p>
 					</div>
 					<div className="feature__img--container">

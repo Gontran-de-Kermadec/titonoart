@@ -10,8 +10,8 @@ function Home() {
 		"/images/slider0.jpg",
 		"/images/slider1.jpg",
 		"/images/slider2.jpg",
-		"/images/slider3.jpg",
-		"/images/slider4.jpg",
+		// "/images/slider3.jpg",
+		// "/images/slider4.jpg",
 	];
 	return (
 		<div className="homepage">

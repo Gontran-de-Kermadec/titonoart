@@ -18,14 +18,13 @@ const Valeurs = () => {
 			</p>
 			<p>
 				<span>LA PASSION</span>
-				Au-delà de nos horizons différents, cette activité nous réunie pour
+				Au-delà de nos horizons différents, cette activité nous réunit pour
 				l’amour de l’art et de l’émotion qui s’en dégage.
 			</p>
 			<p>
 				<span>PARTAGE</span>
 				Nous partageons un produit original fruit de l'imaginaire de l’artiste
 				ou personnalisable selon vos envies.
-				{/* Nous proposons un produit à caractère unique. */}
 			</p>
 			<p>
 				<span>L'ENVIRONNEMENT</span>« Créer » veut aussi parfois dire « Recycler

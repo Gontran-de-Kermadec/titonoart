@@ -29,8 +29,24 @@ function Origin() {
 			</p>
 			<p>
 				L’atelier Ti ToNo Art est situé à Sainte-Rose en Guadeloupe. Découvrez
-				nos réalisations on-line (instagram, facebook) ou bien physiquement dans
-				nos boutiques partenaires situées à Jarry :&nbsp;
+				nos réalisations en nous suivant sur nos pages (
+				<a
+					href="https://www.instagram.com/titonoart/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Instagram
+				</a>
+				,{" "}
+				<a
+					href="https://www.facebook.com/titonoart"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Facebook
+				</a>
+				) et en vous présentant dans nos boutiques partenaires situées à Jarry
+				:&nbsp;
 				<a href="https://www.colibri-spirit.com/" target="__blank">
 					Colibri Spirit
 				</a>
@@ -44,15 +60,38 @@ function Origin() {
 				<div className="origin__team--container">
 					<div className="origin__team--img"></div>
 					<div className="origin__team--infos">
-						<p>Delphine</p>
-						<p>loremloremloremloremloremloremloremloremloremlorem</p>
+						<p className="team__infos--name">
+							<em>Delphine</em>
+						</p>
+						<p>
+							Née en Guadeloupe, a grandi entre la Bretagne et l’Alsace,
+							Delphine est une voyageuse dans l’âme. En sillonnant le globe pour
+							ses études et le plaisir, elle s’est imprégnée des cultures, des
+							échanges humains et a développé ainsi son appétence innée pour la
+							communication.
+						</p>
 					</div>
 				</div>
 				<div className="origin__team--container">
 					<div className="origin__team--img"></div>
 					<div className="origin__team--infos">
-						<p>Robin</p>
-						<p>loremloremloremloremloremloremloremloremloremlorem</p>
+						<p className="team__infos--name">
+							<em>Robin</em>
+						</p>
+						<p>
+							Robin fait corps avec l’Ile aux belles eaux qu’il sillonne à moto,
+							à pied ou à la nage. Ces paysages sont sources de bien-être mais
+							également d’inspiration à l’image des dégradés de vert qui
+							jalonnent la Basse-Terre et des camaïeux de bleu qui bordent
+							Karukera. Si la Guadeloupe reste son port d’attache, que les idées
+							foisonnent et jaillissent de son esprit d’artiste, Robin goûte,
+							tout comme Delphine, au plaisir des voyages. Il a traversé les
+							océans dans le cadre de sa formation, de ses activités
+							professionnelles, mais également pour le plaisir simple de
+							s’ouvrir aux autres. Ces lieux, aux cultures variées, nourrissent
+							sa créativité et lui offre de nouvelles opportunités pour
+							continuer à nous émerveiller.
+						</p>
 					</div>
 				</div>
 			</section>

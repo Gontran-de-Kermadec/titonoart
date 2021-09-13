@@ -8,7 +8,7 @@ function About() {
 			<div className="about__introduction">
 				<h2>À Propos de Ti ToNo Art</h2>
 				<p>
-					Ti ToNo Art propose des créations exclusives de styles, de motifs, et
+					Ti ToNo Art propose des créations exclusives de styles, de motifs et
 					de couleurs variés sur une matière noble : le Bois !
 				</p>
 				<p>

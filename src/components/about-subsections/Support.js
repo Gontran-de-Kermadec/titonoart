@@ -21,17 +21,13 @@ function Support() {
 				Nous travaillons uniquement avec des barriques déjà utilisées pour le
 				vieillissement du vin. Ce cépage n’a pas abîmé le bois. Il l’a
 				naturellement imprégné des subtils arômes de fruits rouges et de
-				vanilles.
+				vanille.
 			</p>
 			<p>
-				Par notre travail, nous permettons à ce fût de perdurer dans le temps et
-				de devenir une pièce authentique, atypique et surtout unique, aussi,
-				nous voulons valoriser un métier précieux et « oublié » : le tonnelier.
+				Par notre travail, nous permettons à ce fût de perdurer en devenant une
+				pièce artistique unique et de valoriser un métier souvent oublié, celui
+				de tonnelier.
 			</p>
-			{/* <p>
-				Par ce travail, nous voulons valoriser un métier précieux et « oublié »
-				: le tonnelier.
-			</p> */}
 			<PrevNextNav propsInfos={infos} />
 		</div>
 	);
