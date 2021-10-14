@@ -13,8 +13,8 @@ const Demarche = () => {
 			<h3>Notre éthique : Eco-responsable</h3>
 			<p>
 				Le bois est la matière première de nos barriques. Les forêts sont les
-				poumons indispensables de notre planète. Conscient de l’importance de la
-				protection de notre éco-système, Ti ToNo Art s’engage auprès de
+				poumons indispensables de notre planète. Conscients de l’importance de
+				la protection de notre éco-système, Ti ToNo Art s’engage auprès de
 				REFOREST'ACTION.
 			</p>
 			<p>Lorsque vous commandez un Ti Tono 225L, nous plantons un arbre.</p>

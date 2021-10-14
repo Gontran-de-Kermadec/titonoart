@@ -1,11 +1,10 @@
-// import { Link } from "react-router-dom";
 import PrevNextNav from "../Prevnextnav";
 
 const Valeurs = () => {
 	const infos = {
 		direction: "both",
 		route: ["/about/support", "/about/demarche"],
-		btnName: ["Notre support", "Nos démarches"],
+		btnName: ["Notre support", "Notre éthique"],
 		devis: false,
 	};
 	return (
@@ -22,7 +21,7 @@ const Valeurs = () => {
 				l’amour de l’art et de l’émotion qui s’en dégage.
 			</p>
 			<p>
-				<span>PARTAGE</span>
+				<span>LE PARTAGE</span>
 				Nous partageons un produit original fruit de l'imaginaire de l’artiste
 				ou personnalisable selon vos envies.
 			</p>

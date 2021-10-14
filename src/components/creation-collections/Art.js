@@ -1,5 +1,6 @@
 import voilier from "../../images/voilier.jpg";
 import terre from "../../images/terre.jpg";
+import nature from "../../images/nature.jpg";
 import Carousel from "../Carousel";
 import PrevNextNav from "../Prevnextnav";
 
@@ -23,6 +24,13 @@ const Art = () => {
 		"/images/terre2.jpg",
 		"/images/terre3.jpg",
 		"/images/terre4.jpg",
+	];
+	const natureArray = [
+		"/images/nature.jpg",
+		"/images/nature1.jpg",
+		"/images/nature2.jpg",
+		"/images/nature3.jpg",
+		"/images/nature4.jpg",
 	];
 	const openCloseLightbox = (e, action) => {
 		let path =
@@ -92,6 +100,30 @@ const Art = () => {
 					<div>
 						<h3>Terre natale</h3>
 						<p>Peinture acrylique - Mai 2021</p>
+						<p className="creation__subsection--availability">
+							<span className="creation__subsection--dispo"></span>Disponible
+						</p>
+					</div>
+				</div>
+				<div className="creation__subsection--card">
+					<figure
+						onClick={(e) => openCloseLightbox(e, "open")}
+						onTouchEnd={(e) => openCloseLightbox(e, "open")}
+					>
+						<img src={nature} alt="tonneau décoré" />
+					</figure>
+					<div className="creation__subsection--lightbox false">
+						<button
+							onClick={(e) => openCloseLightbox(e, "close")}
+							className="subcreation__lightbox--close"
+						>
+							X
+						</button>
+						<Carousel imgs={natureArray} mode="manual" />
+					</div>
+					<div>
+						<h3>Luxuriante nature</h3>
+						<p>Peinture acrylique</p>
 						<p className="creation__subsection--availability">
 							<span className="creation__subsection--dispo"></span>Disponible
 						</p>

@@ -87,7 +87,7 @@ function Artiste() {
 							Après plus de dix ans dans le monde du BodyArt, il se lance dans
 							la création graphique sur fût de chêne. Chaque réalisation,
 							illustrée selon son inspiration de manière unique, est transformée
-							en véritable « œuvre d’art » . Il imagine des collections sans
+							en véritable « œuvre d’art ». Il imagine des collections sans
 							compromettre ni son éthique, ni ses valeurs et accorde de
 							l’importance à l’origine des matières ainsi qu’à leur production.
 							Robin propose ainsi un art conscient en donnant une seconde vie à
