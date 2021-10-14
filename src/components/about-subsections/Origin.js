@@ -1,5 +1,6 @@
 // import { Link } from "react-router-dom";
 import PrevNextNav from "../Prevnextnav";
+import delphine from "../../images/delphine.jpg";
 
 function Origin() {
 	const infos = {
@@ -58,7 +59,9 @@ function Origin() {
 			<section className="about__origin--team">
 				<h3>L'équipe</h3>
 				<div className="origin__team--container">
-					<div className="origin__team--img"></div>
+					<div className="origin__team--img">
+						<img src={delphine} alt="Portait Delphine" />
+					</div>
 					<div className="origin__team--infos">
 						<p className="team__infos--name">
 							<em>Delphine</em>

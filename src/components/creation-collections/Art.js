@@ -123,7 +123,7 @@ const Art = () => {
 					</div>
 					<div>
 						<h3>Luxuriante nature</h3>
-						<p>Peinture acrylique</p>
+						<p>Peinture acrylique - Septembre 2021</p>
 						<p className="creation__subsection--availability">
 							<span className="creation__subsection--dispo"></span>Disponible
 						</p>
