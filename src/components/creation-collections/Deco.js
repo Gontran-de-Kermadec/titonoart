@@ -2,6 +2,7 @@ import papillon from "../../images/papillon1.jpg";
 import lotus from "../../images/lotus.jpg";
 import pirate from "../../images/pirate.jpg";
 import roche from "../../images/roche.jpg";
+import tortue from "../../images/tortue.jpg";
 import Carousel from "../Carousel";
 import PrevNextNav from "../Prevnextnav";
 
@@ -34,6 +35,12 @@ const Deco = () => {
 		"/images/roche1.jpg",
 		"/images/roche2.jpg",
 		"/images/roche3.jpg",
+	];
+	const tortueArray = [
+		"/images/tortue.jpg",
+		"/images/tortue1.jpg",
+		"/images/tortue2.jpg",
+		"/images/tortue3.jpg",
 	];
 	const openCloseLightbox = (e, action) => {
 		let path =
@@ -138,6 +145,27 @@ const Deco = () => {
 						<p className="creation__subsection--availability">
 							<span className="creation__subsection--dispo"></span>Disponible
 						</p>
+					</div>
+				</div>
+				<div className="creation__subsection--card">
+					<figure
+						onClick={(e) => openCloseLightbox(e, "open")}
+						onTouchEnd={(e) => openCloseLightbox(e, "open")}
+					>
+						<img src={tortue} alt="tonneau décoré" />
+					</figure>
+					<div className="creation__subsection--lightbox false">
+						<button
+							onClick={(e) => openCloseLightbox(e, "close")}
+							className="subcreation__lightbox--close"
+						>
+							X
+						</button>
+						<Carousel imgs={tortueArray} mode="manual" />
+					</div>
+					<div>
+						<h3>Gocho-Etchea</h3>
+						<p>Acquis</p>
 					</div>
 				</div>
 			</div>

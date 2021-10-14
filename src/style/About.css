@@ -75,10 +75,14 @@
 }
 .origin__team--container {
 	display: flex;
+	flex-direction: row-reverse;
+}
+.origin__team--container:nth-child(2) {
+	text-align: right;
 }
 .origin__team--container:nth-child(3) {
-	flex-direction: row-reverse;
-	text-align: right;
+	flex-direction: initial;
+	/* text-align: right; */
 }
 .origin__team--img {
 	width: 150px;
