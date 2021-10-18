@@ -148,6 +148,7 @@
 	.origin__team--infos {
 		width: unset;
 		margin: unset;
+		margin-top: 3rem;
 		text-align: center;
 	}
 	.origin__team--infos p {
