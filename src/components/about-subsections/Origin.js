@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 import PrevNextNav from "../Prevnextnav";
 import delphine from "../../images/delphine.jpg";
+import robin from "../../images/robin.jpg";
 
 function Origin() {
 	const infos = {
@@ -76,7 +77,9 @@ function Origin() {
 					</div>
 				</div>
 				<div className="origin__team--container">
-					<div className="origin__team--img"></div>
+					<div className="origin__team--img">
+						<img src={robin} alt="Portait Robin" />
+					</div>
 					<div className="origin__team--infos">
 						<p className="team__infos--name">
 							<em>Robin</em>
