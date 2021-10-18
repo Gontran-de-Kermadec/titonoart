@@ -85,11 +85,12 @@
 	/* text-align: right; */
 }
 .origin__team--img {
+	/* flex-shrink: 0; */
 	width: 150px;
+	/* width: 20%; */
 	height: 150px;
+	/* height: auto; */
 	align-self: center;
-	/* opacity: 0.5;
-	border-radius: 50%; */
 }
 .origin__team--img img {
 	width: 100%;
@@ -97,11 +98,14 @@
 	border-radius: 50%;
 }
 .origin__team--infos {
-	width: 70%;
+	width: 85%;
 	margin: 0 2rem;
 }
 .origin__team--infos p {
 	margin: 2rem 0;
+}
+.team__infos--name {
+	font-family: "Courgette", cursive;
 }
 /*section a propos => valeur*/
 .about__subsection--valeur p span {
@@ -143,6 +147,7 @@
 		display: initial;
 	}
 	.origin__team--img {
+		/* width: 150px; */
 		margin: 0 auto;
 	}
 	.origin__team--infos {
