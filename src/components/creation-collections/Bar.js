@@ -3,8 +3,10 @@ import carib1 from "../../images/carib1.jpg";
 import carib2 from "../../images/carib2.jpg";
 import carib3 from "../../images/carib3.jpg";
 import carib4 from "../../images/carib4.jpg";
-import Carousel from "../Carousel";
 import PrevNextNav from "../Prevnextnav";
+import CreationCard from "./CreationCard";
+import Prev from "../utils/Prev";
+import Next from "../utils/Next";
 
 const Bar = () => {
 	const navigationInfos = {
@@ -43,22 +45,6 @@ const Bar = () => {
 		"/images/carib42.jpg",
 		"/images/carib43.jpg",
 	];
-	const openCloseLightbox = (e, action) => {
-		let path =
-			e.nativeEvent.path ||
-			(e.nativeEvent.composedPath && e.nativeEvent.composedPath());
-		if (action === "open") {
-			if (path[1].nextSibling.classList.contains("false")) {
-				path[1].nextSibling.classList.remove("false");
-				path[1].nextSibling.classList.add("true");
-			}
-		} else if (action === "close") {
-			if (path[1].classList.contains("true")) {
-				path[1].classList.remove("true");
-				path[1].classList.add("false");
-			}
-		}
-	};
 	return (
 		<div>
 			<div className="creation__subsection--intro">
@@ -71,117 +57,45 @@ const Bar = () => {
 				</p>
 			</div>
 			<div className="bar__container creation__subsection">
-				<div className="creation__subsection--card">
-					<figure
-						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchEnd={(e) => openCloseLightbox(e, "open")}
-					>
-						<img src={bar} alt="tonneau d'un papillon" />
-					</figure>
-					<div className="creation__subsection--lightbox false">
-						<button
-							onClick={(e) => openCloseLightbox(e, "close")}
-							className="subcreation__lightbox--close"
-						>
-							X
-						</button>
-						<Carousel imgs={barArray} mode="manual" />
-					</div>
-					<div>
-						<h3>CF N°1</h3>
-						<p>Acquis</p>
-					</div>
+				<Prev route="/creation/art" btnName="Art" />
+				<div className="creation__subsection--allCards">
+					<CreationCard
+						img={bar}
+						imgArr={barArray}
+						futTitle="CF N°1"
+						futAvailability="Acquis"
+					/>
+					<CreationCard
+						img={carib1}
+						imgArr={carib1Array}
+						futTitle="CF Caribbean selection 1/4"
+						futAvailability="Disponible"
+					/>
+					<CreationCard
+						img={carib2}
+						imgArr={carib2Array}
+						futTitle="CF Caribbean selection 2/4"
+						futAvailability="Acquis"
+					/>
+					<CreationCard
+						img={carib3}
+						imgArr={carib3Array}
+						futTitle="CF Caribbean selection 3/4"
+						futAvailability="Disponible"
+					/>
+					<CreationCard
+						img={carib4}
+						imgArr={carib4Array}
+						futTitle="CF Caribbean selection 4/4"
+						futAvailability="Disponible"
+					/>
 				</div>
-				<div className="creation__subsection--card">
-					<figure
-						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchEnd={(e) => openCloseLightbox(e, "open")}
-					>
-						<img src={carib1} alt="tonneau transformé en bar" />
-					</figure>
-					<div className="creation__subsection--lightbox false">
-						<button
-							onClick={(e) => openCloseLightbox(e, "close")}
-							className="subcreation__lightbox--close"
-						>
-							X
-						</button>
-						<Carousel imgs={carib1Array} mode="manual" />
-					</div>
-					<div>
-						<h3>CF Caribbean selection 1/4</h3>
-						<p className="creation__subsection--availability">
-							<span className="creation__subsection--dispo"></span>Disponible
-						</p>
-					</div>
-				</div>
-				<div className="creation__subsection--card">
-					<figure
-						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchEnd={(e) => openCloseLightbox(e, "open")}
-					>
-						<img src={carib2} alt="tonneau transformé en bar" />
-					</figure>
-					<div className="creation__subsection--lightbox false">
-						<button
-							onClick={(e) => openCloseLightbox(e, "close")}
-							className="subcreation__lightbox--close"
-						>
-							X
-						</button>
-						<Carousel imgs={carib2Array} mode="manual" />
-					</div>
-					<div>
-						<h3>CF Caribbean selection 2/4</h3>
-						<p>Acquis</p>
-					</div>
-				</div>
-				<div className="creation__subsection--card">
-					<figure
-						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchEnd={(e) => openCloseLightbox(e, "open")}
-					>
-						<img src={carib3} alt="tonneau transformé en bar" />
-					</figure>
-					<div className="creation__subsection--lightbox false">
-						<button
-							onClick={(e) => openCloseLightbox(e, "close")}
-							className="subcreation__lightbox--close"
-						>
-							X
-						</button>
-						<Carousel imgs={carib3Array} mode="manual" />
-					</div>
-					<div>
-						<h3>CF Caribbean selection 3/4</h3>
-						<p className="creation__subsection--availability">
-							<span className="creation__subsection--dispo"></span>Disponible
-						</p>
-					</div>
-				</div>
-				<div className="creation__subsection--card">
-					<figure
-						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchEnd={(e) => openCloseLightbox(e, "open")}
-					>
-						<img src={carib4} alt="tonneau transformé en bar" />
-					</figure>
-					<div className="creation__subsection--lightbox false">
-						<button
-							onClick={(e) => openCloseLightbox(e, "close")}
-							className="subcreation__lightbox--close"
-						>
-							X
-						</button>
-						<Carousel imgs={carib4Array} mode="manual" />
-					</div>
-					<div>
-						<h3>CF Caribbean selection 4/4</h3>
-						<p className="creation__subsection--availability">
-							<span className="creation__subsection--dispo"></span>Disponible
-						</p>
-					</div>
-				</div>
+				<Next route="/creation/deco" btnName="Déco" />
+			</div>
+			<div>
+				<a href="mailto:titonoart@gmail.com">
+					<p className="creation__subsection--devis">Demandez un devis</p>
+				</a>
 			</div>
 			<PrevNextNav propsInfos={navigationInfos} />
 		</div>

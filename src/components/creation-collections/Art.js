@@ -1,9 +1,10 @@
 import voilier from "../../images/voilier.jpg";
 import terre from "../../images/terre.jpg";
 import nature from "../../images/nature.jpg";
-import Carousel from "../Carousel";
 import PrevNextNav from "../Prevnextnav";
-import Loupe from "../Loupe";
+import CreationCard from "./CreationCard";
+// import Prev from "../utils/Prev";
+import Next from "../utils/Next";
 
 const Art = () => {
 	const navigationInfos = {
@@ -33,23 +34,6 @@ const Art = () => {
 		"/images/nature3.jpg",
 		"/images/nature4.jpg",
 	];
-	const openCloseLightbox = (e, action) => {
-		let path =
-			e.nativeEvent.path ||
-			(e.nativeEvent.composedPath && e.nativeEvent.composedPath());
-		console.log(path);
-		if (action === "open") {
-			if (path[1].nextSibling.classList.contains("false")) {
-				path[1].nextSibling.classList.remove("false");
-				path[1].nextSibling.classList.add("true");
-			}
-		} else if (action === "close") {
-			if (path[1].classList.contains("true")) {
-				path[1].classList.remove("true");
-				path[1].classList.add("false");
-			}
-		}
-	};
 	return (
 		<div className="art__container">
 			<div className="creation__subsection--intro">
@@ -61,79 +45,38 @@ const Art = () => {
 				</p>
 			</div>
 			<div className="creation__subsection">
-				<div className="creation__subsection--card">
-					<figure
-						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchEnd={(e) => openCloseLightbox(e, "open")}
-					>
-						<img src={voilier} alt="tonneau d'un voilier" />
-						<Loupe />
-					</figure>
-					<div className="creation__subsection--lightbox false">
-						<button
-							onClick={(e) => openCloseLightbox(e, "close")}
-							className="subcreation__lightbox--close"
-						>
-							X
-						</button>
-						<Carousel imgs={voilierArray} mode="manual" />
-					</div>
-					<div>
-						<h3>Nuance sur la baie</h3>
-						<p>Peinture acrylique - Mai 2021</p>
-						<p className="creation__subsection--availability">Acquis</p>
-					</div>
+				{/* <Prev route="/creation/bar" btnName="Bar" /> */}
+				<div></div>
+				<div className="creation__subsection--allCards">
+					<CreationCard
+						img={voilier}
+						imgArr={voilierArray}
+						futTitle={"Nuance sur la baie"}
+						futDate="Peinture acrylique - Mai 2021"
+						futAvailability="Acquis"
+					/>
+					<CreationCard
+						img={terre}
+						imgArr={terreArray}
+						futTitle="Terre natale"
+						futDate="Peinture acrylique - Mai 2021"
+						futAvailability="Disponible"
+					/>
+					<CreationCard
+						img={nature}
+						imgArr={natureArray}
+						futTitle="Luxuriante nature"
+						futDate="Peinture acrylique - Septembre 2021"
+						futAvailability="Disponible"
+					/>
 				</div>
-				<div className="creation__subsection--card">
-					<figure
-						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchEnd={(e) => openCloseLightbox(e, "open")}
-					>
-						<img src={terre} alt="tonneau décoré" />
-						<Loupe />
-					</figure>
-					<div className="creation__subsection--lightbox false">
-						<button
-							onClick={(e) => openCloseLightbox(e, "close")}
-							className="subcreation__lightbox--close"
-						>
-							X
-						</button>
-						<Carousel imgs={terreArray} mode="manual" />
-					</div>
-					<div>
-						<h3>Terre natale</h3>
-						<p>Peinture acrylique - Mai 2021</p>
-						<p className="creation__subsection--availability">
-							<span className="creation__subsection--dispo"></span>Disponible
-						</p>
-					</div>
-				</div>
-				<div className="creation__subsection--card">
-					<figure
-						onClick={(e) => openCloseLightbox(e, "open")}
-						onTouchEnd={(e) => openCloseLightbox(e, "open")}
-					>
-						<img src={nature} alt="tonneau décoré" />
-						<Loupe />
-					</figure>
-					<div className="creation__subsection--lightbox false">
-						<button
-							onClick={(e) => openCloseLightbox(e, "close")}
-							className="subcreation__lightbox--close"
-						>
-							X
-						</button>
-						<Carousel imgs={natureArray} mode="manual" />
-					</div>
-					<div>
-						<h3>Luxuriante nature</h3>
-						<p>Peinture acrylique - Septembre 2021</p>
-						<p className="creation__subsection--availability">
-							<span className="creation__subsection--dispo"></span>Disponible
-						</p>
-					</div>
-				</div>
+				<Next route="/creation/bar" btnName="Bar" />
+				{/* <div></div> */}
+			</div>
+			<div>
+				<a href="mailto:titonoart@gmail.com">
+					<p className="creation__subsection--devis">Demandez un devis</p>
+				</a>
 			</div>
 			<PrevNextNav propsInfos={navigationInfos} />
 		</div>
