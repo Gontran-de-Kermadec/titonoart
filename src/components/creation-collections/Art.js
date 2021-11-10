@@ -3,6 +3,7 @@ import terre from "../../images/terre.jpg";
 import nature from "../../images/nature.jpg";
 import Carousel from "../Carousel";
 import PrevNextNav from "../Prevnextnav";
+import Loupe from "../Loupe";
 
 const Art = () => {
 	const navigationInfos = {
@@ -36,6 +37,7 @@ const Art = () => {
 		let path =
 			e.nativeEvent.path ||
 			(e.nativeEvent.composedPath && e.nativeEvent.composedPath());
+		console.log(path);
 		if (action === "open") {
 			if (path[1].nextSibling.classList.contains("false")) {
 				path[1].nextSibling.classList.remove("false");
@@ -65,6 +67,7 @@ const Art = () => {
 						onTouchEnd={(e) => openCloseLightbox(e, "open")}
 					>
 						<img src={voilier} alt="tonneau d'un voilier" />
+						<Loupe />
 					</figure>
 					<div className="creation__subsection--lightbox false">
 						<button
@@ -87,6 +90,7 @@ const Art = () => {
 						onTouchEnd={(e) => openCloseLightbox(e, "open")}
 					>
 						<img src={terre} alt="tonneau décoré" />
+						<Loupe />
 					</figure>
 					<div className="creation__subsection--lightbox false">
 						<button
@@ -111,6 +115,7 @@ const Art = () => {
 						onTouchEnd={(e) => openCloseLightbox(e, "open")}
 					>
 						<img src={nature} alt="tonneau décoré" />
+						<Loupe />
 					</figure>
 					<div className="creation__subsection--lightbox false">
 						<button

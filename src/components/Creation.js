@@ -20,47 +20,47 @@ function Creation() {
 				</p>
 			</div>
 			<div className="creation__container">
-				<div className="single__creation-card creation__card">
-					<figure>
-						<div className="creation__img-container">
-							<img
-								src={voilier}
-								onMouseEnter={(e) => (e.currentTarget.src = terre1)}
-								onMouseLeave={(e) => (e.currentTarget.src = voilier)}
-								alt="tonneau d'un voilier"
-							></img>
-						</div>
-					</figure>
-					<Link to="/creation/art">
+				<Link to="/creation/art">
+					<div className="single__creation-card creation__card">
+						<figure>
+							<div className="creation__img-container">
+								<img
+									src={voilier}
+									onMouseEnter={(e) => (e.currentTarget.src = terre1)}
+									onMouseLeave={(e) => (e.currentTarget.src = voilier)}
+									alt="tonneau d'un voilier"
+								></img>
+							</div>
+						</figure>
 						<button>Art</button>
-					</Link>
-				</div>
-				<div className="single__creation-card creation__card">
-					<figure>
-						<img
-							src={bar}
-							onMouseEnter={(e) => (e.currentTarget.src = bar2)}
-							onMouseLeave={(e) => (e.currentTarget.src = bar)}
-							alt="tonneau bar"
-						></img>
-					</figure>
-					<Link to="/creation/bar">
+					</div>
+				</Link>
+				<Link to="/creation/bar">
+					<div className="single__creation-card creation__card">
+						<figure>
+							<img
+								src={bar}
+								onMouseEnter={(e) => (e.currentTarget.src = bar2)}
+								onMouseLeave={(e) => (e.currentTarget.src = bar)}
+								alt="tonneau bar"
+							></img>
+						</figure>
 						<button>Bar</button>
-					</Link>
-				</div>
-				<div className="single__creation-card creation__card">
-					<figure>
-						<img
-							src={papillon}
-							onMouseEnter={(e) => (e.currentTarget.src = pirate1)}
-							onMouseLeave={(e) => (e.currentTarget.src = papillon)}
-							alt="tonneau papillon"
-						></img>
-					</figure>
-					<Link to="/creation/deco">
+					</div>
+				</Link>
+				<Link to="/creation/deco">
+					<div className="single__creation-card creation__card">
+						<figure>
+							<img
+								src={papillon}
+								onMouseEnter={(e) => (e.currentTarget.src = pirate1)}
+								onMouseLeave={(e) => (e.currentTarget.src = papillon)}
+								alt="tonneau papillon"
+							></img>
+						</figure>
 						<button>Déco</button>
-					</Link>
-				</div>
+					</div>
+				</Link>
 			</div>
 		</div>
 	);

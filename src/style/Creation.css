@@ -52,11 +52,31 @@
 	margin: 0.5rem 1rem;
 }
 .creation__subsection figure {
+	position: relative;
 	cursor: pointer;
+}
+.creation__subsection figure:hover .figure__svg {
+	opacity: 1;
 }
 .creation__subsection img {
 	height: 400px;
 	width: auto;
+}
+.creation__subsection .figure__svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 2rem;
+	border-radius: 1.5rem;
+	pointer-events: none;
+	transition: opacity 0.5s;
+}
+.figure__svg svg {
+	height: 50px;
+	pointer-events: none;
 }
 .creation__subsection--lightbox {
 	position: fixed;
