@@ -49,6 +49,10 @@
 	margin: 0 auto;
 	font-size: 1.3rem;
 }
+.about__subsection--flex {
+	display: flex;
+	justify-content: space-between;
+}
 .about__subsection p {
 	margin: 2rem 5rem;
 }

@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 import plante from "../../images/plante.png";
 import PrevNextNav from "../Prevnextnav";
+import Prev from "../utils/Prev";
 const Demarche = () => {
 	const navigationInfos = {
 		direction: "prev",
@@ -11,14 +12,20 @@ const Demarche = () => {
 	return (
 		<div className="about__subsection about__subsection--demarche">
 			<h3>Notre éthique : Eco-responsable</h3>
-			<p>
-				Le bois est la matière première de nos barriques. Les forêts sont les
-				poumons indispensables de notre planète. Conscients de l’importance de
-				la protection de notre éco-système, Ti ToNo Art s’engage auprès de
-				REFOREST'ACTION.
-			</p>
-			<p>Lorsque vous commandez un Ti Tono 225L, nous plantons un arbre.</p>
-			<img src={plante} alt="plante verte" />
+			<div className="about__subsection--flex">
+				<Prev route="/about/valeurs" btnName="Nos valeurs" />
+				<div>
+					<p>
+						Le bois est la matière première de nos barriques. Les forêts sont
+						les poumons indispensables de notre planète. Conscients de
+						l’importance de la protection de notre éco-système, Ti ToNo Art
+						s’engage auprès de REFOREST'ACTION.
+					</p>
+					<p>Lorsque vous commandez un Ti Tono 225L, nous plantons un arbre.</p>
+					<img src={plante} alt="plante verte" />
+				</div>
+				<div></div>
+			</div>
 			<PrevNextNav propsInfos={navigationInfos} />
 		</div>
 	);
