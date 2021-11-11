@@ -25,6 +25,9 @@
 }
 /*mobile section*/
 @media (max-width: 768px) {
+	.artiste__features {
+		margin: 0 1rem;
+	}
 	.artiste__feature {
 		display: initial;
 		text-align: center;
