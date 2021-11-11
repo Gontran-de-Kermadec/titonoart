@@ -164,3 +164,8 @@
 		margin: 1rem auto;
 	}
 }
+@media (min-width: 1024px) {
+	.about__subsection--flex {
+		padding: 0 1.5rem;
+	}
+}
