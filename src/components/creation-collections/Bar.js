@@ -3,6 +3,7 @@ import carib1 from "../../images/carib1.jpg";
 import carib2 from "../../images/carib2.jpg";
 import carib3 from "../../images/carib3.jpg";
 import carib4 from "../../images/carib4.jpg";
+import minifut from "../../images/mini_fut.jpg";
 import PrevNextNav from "../Prevnextnav";
 import CreationCard from "./CreationCard";
 import Prev from "../utils/Prev";
@@ -15,6 +16,12 @@ const Bar = () => {
 		btnName: ["Art", "Déco"],
 		devis: true,
 	};
+	const minifutArray = [
+		"/images/mini_fut.jpg",
+		"/images/mini_fut1.jpg",
+		"/images/mini_fut2.jpg",
+		"/images/mini_fut3.jpg",
+	];
 	const barArray = [
 		"/images/bar.jpg",
 		"/images/bar1.jpg",
@@ -59,6 +66,12 @@ const Bar = () => {
 			<div className="bar__container creation__subsection">
 				<Prev route="/creation/art" btnName="Art" />
 				<div className="creation__subsection--allCards">
+					<CreationCard
+						img={minifut}
+						imgArr={minifutArray}
+						futTitle="Mini-Tono d'intérieur"
+						futAvailability="Disponible"
+					/>
 					<CreationCard
 						img={bar}
 						imgArr={barArray}
