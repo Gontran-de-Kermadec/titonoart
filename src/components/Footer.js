@@ -12,7 +12,7 @@ const Footer = () => {
 				</div>
 				<div className="footer__socials">
 					<a
-						href="https://www.facebook.com/profile.php?id=100046316814416"
+						href="https://www.facebook.com/titonoart"
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -21,7 +21,7 @@ const Footer = () => {
 					</a>
 					&nbsp;&nbsp;&nbsp;
 					<a
-						href="https://www.instagram.com/robin.lepoutre/?r=nametag&fbclid=IwAR35PLcU9gssikw4fS32w0XMjdUH6gdr1bqZJ36YutR16fCIcuFQVlw0Pak"
+						href="https://www.instagram.com/titonoart/"
 						target="_blank"
 						rel="noreferrer"
 					>
