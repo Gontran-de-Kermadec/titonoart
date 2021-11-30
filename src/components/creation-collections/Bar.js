@@ -8,6 +8,7 @@ import PrevNextNav from "../Prevnextnav";
 import CreationCard from "./CreationCard";
 import Prev from "../utils/Prev";
 import Next from "../utils/Next";
+import Footer from "../Footer";
 
 const Bar = () => {
 	const navigationInfos = {
@@ -69,7 +70,7 @@ const Bar = () => {
 					<CreationCard
 						img={minifut}
 						imgArr={minifutArray}
-						futTitle="Mini-Tono d'intérieur"
+						futTitle="Mini Tono 3/5 litres"
 						futAvailability="Disponible"
 					/>
 					<CreationCard
@@ -111,6 +112,7 @@ const Bar = () => {
 				</a>
 			</div>
 			<PrevNextNav propsInfos={navigationInfos} />
+			<Footer />
 		</div>
 	);
 };

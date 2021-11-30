@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../style/About.css";
 import aboutMenu from "../images/about-menu.jpg";
+// import Footer from "./Footer";
 
 function About() {
 	return (
@@ -54,6 +55,7 @@ function About() {
 					</Link>
 				</div>
 			</div>
+			{/* <Footer /> */}
 		</div>
 	);
 }

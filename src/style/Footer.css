@@ -1,0 +1,47 @@
+.footer {
+	margin: 2rem 2rem 1rem 2rem;
+	font-size: initial;
+}
+.footer__flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+	.footer {
+		margin: 0 4rem 1rem 4rem;
+	}
+	.footer a {
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+	}
+	.footer .footer__underline {
+		position: absolute;
+		left: -100%;
+		bottom: -4px;
+		border: solid;
+		width: 100%;
+		animation: underline_out 0.5s ease forwards;
+	}
+	.footer a:hover .footer__underline {
+		animation: underline_in 0.5s ease forwards;
+	}
+}
+
+@keyframes underline_in {
+	0% {
+		left: -100%;
+	}
+	100% {
+		left: 0;
+	}
+}
+@keyframes underline_out {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 100%;
+	}
+}

@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+// import Footer from "../Footer";
 import PrevNextNav from "../Prevnextnav";
 import Next from "../utils/Next";
 import Prev from "../utils/Prev";
@@ -37,6 +38,7 @@ function Support() {
 				<Next route="/about/valeurs" btnName="Nos valeurs" />
 			</div>
 			<PrevNextNav propsInfos={infos} />
+			{/* <Footer /> */}
 		</div>
 	);
 }

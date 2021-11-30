@@ -11,9 +11,12 @@
 	justify-content: center;
 	margin-top: 2rem;
 }
-.creation__card {
+.creation__container a {
 	margin: 1rem 2rem;
 }
+/* .creation__card {
+	margin: 1rem 2rem;
+} */
 .creation__card img {
 	height: 400px;
 	width: auto;

@@ -4,6 +4,7 @@ import "../style/Icons.css";
 import colibri from "../images/colibri.svg";
 import popup from "../images/popup.svg";
 import Icons from "./Icons";
+import Footer from "./Footer";
 
 function Home() {
 	const imgArray = [
@@ -29,11 +30,12 @@ function Home() {
 					<img src={popup} alt="logo"></img>
 				</a>
 			</section>
-			<footer className="homepage__contact">
+			<section className="homepage__contact">
 				<p>Contactez-nous</p>
 				<a href="mailto:titonoart@gmail.com">titonoart@gmail.com</a>
 				<Icons location="homepage" />
-			</footer>
+			</section>
+			<Footer />
 		</div>
 	);
 }

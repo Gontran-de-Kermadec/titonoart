@@ -161,6 +161,11 @@ header nav {
 		transform: translateY(-12rem);
 	}
 }
+@media (min-width: 425px) and (max-width: 550px) {
+	.header__logo img {
+		transform: translateY(1rem);
+	}
+}
 @media (max-width: 768px) {
 	.header__large-screen li {
 		margin-right: initial;

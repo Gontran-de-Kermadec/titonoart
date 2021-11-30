@@ -4,6 +4,7 @@ import artiste1 from "../images/artiste1.jpg";
 import artiste2 from "../images/artiste2.jpg";
 import artiste3 from "../images/artiste3.jpg";
 import artiste4 from "../images/artiste4.jpg";
+// import Footer from "./Footer";
 
 function Artiste() {
 	return (
@@ -99,6 +100,7 @@ function Artiste() {
 					</div>
 				</div>
 			</div>
+			{/* <Footer /> */}
 		</div>
 	);
 }
