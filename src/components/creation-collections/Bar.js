@@ -8,7 +8,6 @@ import PrevNextNav from "../Prevnextnav";
 import CreationCard from "./CreationCard";
 import Prev from "../utils/Prev";
 import Next from "../utils/Next";
-import Footer from "../Footer";
 
 const Bar = () => {
 	const navigationInfos = {
@@ -101,7 +100,7 @@ const Bar = () => {
 						img={carib4}
 						imgArr={carib4Array}
 						futTitle="CF Caribbean selection 4/4"
-						futAvailability="Disponible"
+						futAvailability="Acquis"
 					/>
 				</div>
 				<Next route="/creation/deco" btnName="Déco" />
@@ -112,7 +111,6 @@ const Bar = () => {
 				</a>
 			</div>
 			<PrevNextNav propsInfos={navigationInfos} />
-			<Footer />
 		</div>
 	);
 };

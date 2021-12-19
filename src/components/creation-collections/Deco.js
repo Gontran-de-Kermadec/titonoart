@@ -6,7 +6,6 @@ import tortue from "../../images/tortue.jpg";
 import PrevNextNav from "../Prevnextnav";
 import CreationCard from "./CreationCard";
 import Prev from "../utils/Prev";
-import Footer from "../Footer";
 
 const Deco = () => {
 	const navigationInfos = {
@@ -87,7 +86,6 @@ const Deco = () => {
 				</a>
 			</div>
 			<PrevNextNav propsInfos={navigationInfos} />
-			<Footer />
 		</div>
 	);
 };

@@ -5,7 +5,6 @@ import PrevNextNav from "../Prevnextnav";
 import CreationCard from "./CreationCard";
 // import Prev from "../utils/Prev";
 import Next from "../utils/Next";
-import Footer from "../Footer";
 
 const Art = () => {
 	const navigationInfos = {
@@ -80,7 +79,6 @@ const Art = () => {
 				</a>
 			</div>
 			<PrevNextNav propsInfos={navigationInfos} />
-			<Footer />
 		</div>
 	);
 };

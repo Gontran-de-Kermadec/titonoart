@@ -89,11 +89,8 @@
 	/* text-align: right; */
 }
 .origin__team--img {
-	/* flex-shrink: 0; */
 	width: 150px;
-	/* width: 20%; */
 	height: 150px;
-	/* height: auto; */
 	align-self: center;
 }
 .origin__team--img img {
@@ -110,6 +107,21 @@
 }
 .team__infos--name {
 	font-family: "Courgette", cursive;
+}
+/*section a propos => support */
+.fut__support--img {
+	/* margin-bottom: 2rem;
+	width: 90vw; */
+	margin: 0 auto 2rem auto;
+}
+@media (max-width: 767px) {
+	.fut__support--img {
+		width: 90vw;
+		/* margin: 0 auto 2rem auto; */
+	}
+	.fut__support--img img {
+		width: 100%;
+	}
 }
 /*section a propos => valeur*/
 .about__subsection--valeur p span {

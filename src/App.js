@@ -14,6 +14,7 @@ import Deco from "./components/creation-collections/Deco";
 import Art from "./components/creation-collections/Art";
 import Bar from "./components/creation-collections/Bar";
 import Legals from "./components/Legals";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -35,6 +36,7 @@ function App() {
 					<Route path="/creation/bar" exact component={Bar} />
 					<Route path="/mentions-legales" exact component={Legals} />
 				</main>
+				<Footer />
 			</Router>
 		</div>
 	);

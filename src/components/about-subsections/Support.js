@@ -3,6 +3,7 @@
 import PrevNextNav from "../Prevnextnav";
 import Next from "../utils/Next";
 import Prev from "../utils/Prev";
+import fut_support from "../../images/fut_support.jpg";
 
 function Support() {
 	const infos = {
@@ -34,9 +35,13 @@ function Support() {
 						une pièce artistique unique et de valoriser un métier souvent
 						oublié, celui de tonnelier.
 					</p>
+					<div className="fut__support--img">
+						<img src={fut_support} alt="fut" />
+					</div>
 				</div>
 				<Next route="/about/valeurs" btnName="Nos valeurs" />
 			</div>
+
 			<PrevNextNav propsInfos={infos} />
 			{/* <Footer /> */}
 		</div>

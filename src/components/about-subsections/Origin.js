@@ -3,7 +3,6 @@ import PrevNextNav from "../Prevnextnav";
 import delphine from "../../images/delphine.jpg";
 import robin from "../../images/robin.jpg";
 import Next from "../utils/Next";
-// import Footer from "../Footer";
 
 function Origin() {
 	const infos = {
@@ -110,7 +109,6 @@ function Origin() {
 				<Next route="/about/support" btnName="Notre support" />
 			</div>
 			<PrevNextNav propsInfos={infos} />
-			{/* <Footer /> */}
 		</div>
 	);
 }

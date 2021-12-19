@@ -180,6 +180,9 @@ header nav {
 	}
 }
 @media (min-width: 1025px) {
+	.header__large-screen {
+		background-color: #e3eff3;
+	}
 	.header__logo img {
 		margin-top: -1.6rem;
 	}

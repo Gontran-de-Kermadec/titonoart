@@ -19,9 +19,8 @@ function About() {
 					dans cet esprit Caraïbes.
 				</p>
 				<p>
-					La décoration de votre habitation reflète votre personnalité. Nous
-					voulons que vous vous sentiez bien chez vous, Ti ToNo Art y ajoute une
-					nouvelle touche d'émotion.
+					La décoration de votre habitation reflète votre personnalité. Ti ToNo
+					Art ajoute une nouvelle touche d'émotion.
 				</p>
 			</div>
 			<div>

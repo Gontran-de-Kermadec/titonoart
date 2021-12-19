@@ -1,6 +1,11 @@
 .footer {
-	margin: 2rem 2rem 1rem 2rem;
+	/* margin: 2rem 2rem 1rem 2rem; */
+	padding: 1rem;
+	background: #362007;
 	font-size: initial;
+}
+.footer a {
+	color: #fff;
 }
 .footer__flex {
 	display: flex;
@@ -9,12 +14,15 @@
 
 @media (min-width: 1024px) {
 	.footer {
-		margin: 0 4rem 1rem 4rem;
+		/* margin: initial; */
+		padding: 1rem;
+		background: #362007;
 	}
 	.footer a {
 		position: relative;
 		overflow: hidden;
 		display: inline-block;
+		/* color: #fff; */
 	}
 	.footer .footer__underline {
 		position: absolute;
