@@ -4,6 +4,8 @@ import carib2 from "../../images/carib2.jpg";
 import carib3 from "../../images/carib3.jpg";
 import carib4 from "../../images/carib4.jpg";
 import minifut from "../../images/mini_fut.jpg";
+import rokamir from "../../images/rokamir.jpg";
+import antilles from "../../images/antilles.jpg";
 import PrevNextNav from "../Prevnextnav";
 import CreationCard from "./CreationCard";
 import Prev from "../utils/Prev";
@@ -51,6 +53,18 @@ const Bar = () => {
 		"/images/carib41.jpg",
 		"/images/carib42.jpg",
 		"/images/carib43.jpg",
+	];
+	const rokamirArray = [
+		"/images/rokamir.jpg",
+		"/images/rokamir1.jpg",
+		"/images/rokamir2.jpg",
+		"/images/rokamir3.jpg",
+	];
+	const antillesArray = [
+		"/images/antilles.jpg",
+		"/images/antilles1.jpg",
+		"/images/antilles2.jpg",
+		"/images/antilles3.jpg",
 	];
 	return (
 		<div>
@@ -100,6 +114,18 @@ const Bar = () => {
 						img={carib4}
 						imgArr={carib4Array}
 						futTitle="CF Caribbean selection 4/4"
+						futAvailability="Acquis"
+					/>
+					<CreationCard
+						img={rokamir}
+						imgArr={rokamirArray}
+						futTitle="CF Best gift for mum"
+						futAvailability="Acquis"
+					/>
+					<CreationCard
+						img={antilles}
+						imgArr={antillesArray}
+						futTitle="CF Petites Antilles"
 						futAvailability="Acquis"
 					/>
 				</div>

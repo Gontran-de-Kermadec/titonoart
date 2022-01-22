@@ -5,13 +5,17 @@ const Footer = () => {
 		<div className="footer">
 			<div className="footer__flex">
 				<div className="footer__legals">
-					<Link to="/mentions-legales">
+					<Link to="/mentions-legales" className="mentions">
 						Mentions légales
 						<span className="footer__underline"></span>
 					</Link>
 				</div>
 				<div className="footer__socials">
-					<a
+					<p>
+						Contactez-nous:{" "}
+						<a href="mailto:titonoart@gmail.com">titonoart@gmail.com</a>
+					</p>
+					{/* <a
 						href="https://www.facebook.com/titonoart"
 						target="_blank"
 						rel="noreferrer"
@@ -27,7 +31,7 @@ const Footer = () => {
 					>
 						Instagram
 						<span className="footer__underline"></span>
-					</a>
+					</a> */}
 				</div>
 			</div>
 		</div>

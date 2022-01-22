@@ -3,7 +3,7 @@ import "../style/Home.css";
 import "../style/Icons.css";
 import colibri from "../images/colibri.svg";
 import popup from "../images/popup.svg";
-import Icons from "./Icons";
+//import Icons from "./Icons";
 // import Footer from "./Footer";
 
 function Home() {
@@ -30,12 +30,11 @@ function Home() {
 					<img src={popup} alt="logo"></img>
 				</a>
 			</section>
-			<section className="homepage__contact">
+			{/* <section className="homepage__contact">
 				<p>Contactez-nous</p>
 				<a href="mailto:titonoart@gmail.com">titonoart@gmail.com</a>
 				<Icons location="homepage" />
-			</section>
-			{/* <Footer /> */}
+			</section> */}
 		</div>
 	);
 }
