@@ -70,7 +70,7 @@ const Deco = () => {
 						img={roche}
 						imgArr={rocheArray}
 						futTitle="Roche gravée"
-						futAvailability="Disponible"
+						futAvailability="Acquis"
 					/>
 					<CreationCard
 						img={tortue}
