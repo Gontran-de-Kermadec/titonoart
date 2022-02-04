@@ -139,7 +139,7 @@ const Bar = () => {
 						img={palmTree}
 						imgArr={palmTreeArray}
 						futTitle="CF Palm Tree"
-						futAvailability="Disponible"
+						futAvailability="Acquis"
 					/>
 				</div>
 				<Next route="/creation/deco" btnName="Déco" />
