@@ -1,7 +1,8 @@
-import "../style/Header.css";
-import "../style/Icons.css";
+// import "../style/Header.css";
+import headerStyle from "../style/Header.module.css";
+// import "../style/Icons.css";
 import Logo from "../images/logo.svg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Icons from "./Icons";
 
 function Header() {
@@ -14,32 +15,38 @@ function Header() {
 		<div>
 			<header role="banner">
 				<div className="header__large-screen">
-					<Link to="/" className="header__logo">
+					{/* <div className={headerStyle.header__large-screen}> */}
+					{/* <Link to="/" className={headerStyle.header__logo}>
 						<img src={Logo} alt="Logo de TiTonoArt" />
-					</Link>
+					</Link> */}
+					<div to="/" className={headerStyle.header__logo}>
+						{/* <Link to="/" className="header__logo"> */}
+						<img src={Logo} alt="Logo de TiTonoArt" />
+					</div>
 					<nav role="navigation">
 						<ul>
-							<Link to="/about">
+							<div to="/about">
 								<li>À propos</li>
-							</Link>
-							<Link to="/artiste">
+							</div>
+							<div to="/artiste">
 								<li>Artiste</li>
-							</Link>
-							<Link to="/creation">
+							</div>
+							<div to="/creation">
 								<li>Créations</li>
-							</Link>
+							</div>
 							<li>
 								<Icons location="header" />
 							</li>
 						</ul>
 					</nav>
 				</div>
-				<p className="header__slogan">
+				{/* <p className="header__slogan"> */}
+				<p className={headerStyle.header__slogan}>
 					"Fûts de chêne français transformés en véritables oeuvres d'art"
 				</p>
 				{/* section consacrée au petits ecrans */}
 				<div className="header__small-screen">
-					<Link to="/" className="header__logo">
+					<div to="/" className="header__logo">
 						<svg
 							className="mobile__svg"
 							version="1.0"
@@ -179,7 +186,7 @@ l0 26 673 0 c459 0 685 -4 712 -11z m-3585 -671 c260 -370 474 -678 477 -685
 								/>
 							</g>
 						</svg>
-					</Link>
+					</div>
 					<div className="mobile__lines" onClick={() => toggleMenu()}>
 						<div className="line"></div>
 						<div className="line"></div>
@@ -207,7 +214,16 @@ l0 26 673 0 c459 0 685 -4 712 -11z m-3585 -671 c260 -370 474 -678 477 -685
 						</div>
 						<nav className="header__small-screen-menu--nav">
 							<ul>
-								<Link to="/about">
+								<p to="/about">
+									<li onClick={() => toggleMenu()}>À propos</li>
+								</p>
+								<p to="/artiste">
+									<li onClick={() => toggleMenu()}>Artiste</li>
+								</p>
+								<p to="/creation">
+									<li onClick={() => toggleMenu()}>Créations</li>
+								</p>
+								{/* <Link to="/about">
 									<li onClick={() => toggleMenu()}>À propos</li>
 								</Link>
 								<Link to="/artiste">
@@ -215,7 +231,7 @@ l0 26 673 0 c459 0 685 -4 712 -11z m-3585 -671 c260 -370 474 -678 477 -685
 								</Link>
 								<Link to="/creation">
 									<li onClick={() => toggleMenu()}>Créations</li>
-								</Link>
+								</Link> */}
 							</ul>
 						</nav>
 					</div>
