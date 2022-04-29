@@ -1,3 +1,7 @@
+import PrevNextNav from "../../components/Prevnextnav";
+import Next from "../../components/utils/Next";
+import Prev from "../../components/utils/Prev";
+
 export default function Valeurs() {
 	const infos = {
 		direction: "both",
@@ -9,7 +13,7 @@ export default function Valeurs() {
 		<div className="about__subsection about__subsection--valeur">
 			<h3>Nos valeurs :</h3>
 			<div className="about__subsection--flex">
-				{/* <Prev route="/about/support" btnName="Notre support" /> */}
+				<Prev route="/about/support" btnName="Notre support" />
 				<div>
 					<p>
 						<span>L'HUMAIN</span>
@@ -32,9 +36,9 @@ export default function Valeurs() {
 						Notre façon de consommer peut être plus qualitative et durable.
 					</p>
 				</div>
-				{/* <Next route="/about/demarche" btnName="Notre éthique" /> */}
+				<Next route="/about/demarche" btnName="Notre éthique" />
 			</div>
-			{/* <PrevNextNav propsInfos={infos} /> */}
+			<PrevNextNav propsInfos={infos} />
 		</div>
 	);
 }
