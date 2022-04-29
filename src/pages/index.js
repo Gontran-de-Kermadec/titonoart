@@ -1,14 +1,14 @@
 //import Carousel from "./Carousel";
-//import Carousel from "../components/Carousel";
+import Carousel from "../components/Carousel";
 //import "../style/Home.css";
 //import "../style/Icons.css";
 // import styles from './Button.module.css'
 import homeStyle from "../style/Home.module.css";
 //import "../style/Home.module.css";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 
-import colibri from "../images/colibri.svg";
-import popup from "../images/popup.svg";
+//import colibri from "/images/colibri.svg";
+// import popup from "../images/popup.svg";
 //import Icons from "./Icons";
 // import Footer from "./Footer";
 
@@ -23,9 +23,9 @@ function Home() {
 	return (
 		// <div className="homepage">
 		<div>
-			<Header />
+			{/* <Header /> */}
 			<div className={homeStyle.homepage}>
-				{/* <Carousel imgs={imgArray} mode="auto" /> */}
+				<Carousel imgs={imgArray} mode="auto" />
 				{/* <p id="homepage__sentence"> */}
 				<p id={homeStyle.homepage__sentence}>
 					Décorez votre intérieur en faisant l’acquisition d’une œuvre
@@ -35,10 +35,10 @@ function Home() {
 				<section className={homeStyle.homepage__partenaire}>
 					<p>Où retrouver nos créations</p>
 					<a href="https://www.colibri-spirit.com/" target="__blank">
-						<img src={colibri} alt="logo"></img>
+						<img src="images/colibri.svg" alt="logo"></img>
 					</a>
 					<a href="https://popupstory.fr/" target="__blank">
-						<img src={popup} alt="logo"></img>
+						<img src="images/popup.svg" alt="logo"></img>
 					</a>
 				</section>
 			</div>

@@ -1,7 +1,13 @@
 // import App from 'next/app'
+import Layout from "../components/layout";
 
 function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />;
+	// return <Component {...pageProps} />;
+	return (
+		<Layout>
+			<Component {...pageProps} />
+		</Layout>
+	);
 }
 
 // Only uncomment this method if you have blocking data requirements for

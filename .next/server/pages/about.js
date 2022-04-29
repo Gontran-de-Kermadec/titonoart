@@ -1,0 +1,46 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/about";
+exports.ids = ["pages/about"];
+exports.modules = {
+
+/***/ "./src/pages/about.js":
+/*!****************************!*\
+  !*** ./src/pages/about.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction About() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"about\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"about__introduction\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h2\", {\n                    children: \"\\xc0 Propos de Ti ToNo Art\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\User\\\\Documents\\\\Pro\\\\Coding\\\\Projets\\\\titono\\\\spa-version\\\\titono-art\\\\src\\\\pages\\\\about.js\",\n                    lineNumber: 5,\n                    columnNumber: 5\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                    children: \"Ti ToNo Art propose des cr\\xe9ations exclusives de styles, de motifs et de couleurs vari\\xe9s sur une mati\\xe8re noble : le Bois !\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\User\\\\Documents\\\\Pro\\\\Coding\\\\Projets\\\\titono\\\\spa-version\\\\titono-art\\\\src\\\\pages\\\\about.js\",\n                    lineNumber: 6,\n                    columnNumber: 5\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                    children: \"Ces objets destin\\xe9s \\xe0 la d\\xe9coration d\\u2019int\\xe9rieur sont r\\xe9alis\\xe9s selon l\\u2019inspiration de l'artiste ou sur votre demande. Touche exotique, atmosph\\xe8re tropicale, tout l\\u2019art de vivre \\xab \\xe0 l\\u2019antillaise \\xbb s'exprime dans cet esprit Cara\\xefbes.\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\User\\\\Documents\\\\Pro\\\\Coding\\\\Projets\\\\titono\\\\spa-version\\\\titono-art\\\\src\\\\pages\\\\about.js\",\n                    lineNumber: 10,\n                    columnNumber: 5\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                    children: \"La d\\xe9coration de votre habitation refl\\xe8te votre personnalit\\xe9. Ti ToNo Art ajoute une nouvelle touche d'\\xe9motion.\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\User\\\\Documents\\\\Pro\\\\Coding\\\\Projets\\\\titono\\\\spa-version\\\\titono-art\\\\src\\\\pages\\\\about.js\",\n                    lineNumber: 16,\n                    columnNumber: 5\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"C:\\\\Users\\\\User\\\\Documents\\\\Pro\\\\Coding\\\\Projets\\\\titono\\\\spa-version\\\\titono-art\\\\src\\\\pages\\\\about.js\",\n            lineNumber: 4,\n            columnNumber: 4\n        }, this)\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\User\\\\Documents\\\\Pro\\\\Coding\\\\Projets\\\\titono\\\\spa-version\\\\titono-art\\\\src\\\\pages\\\\about.js\",\n        lineNumber: 3,\n        columnNumber: 3\n    }, this);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvYWJvdXQuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7QUFBQSxTQUFTQSxLQUFLLEdBQUc7SUFDaEIscUJBQ0MsOERBQUNDLEtBQUc7UUFBQ0MsU0FBUyxFQUFDLE9BQU87a0JBQ3JCLDRFQUFDRCxLQUFHO1lBQUNDLFNBQVMsRUFBQyxxQkFBcUI7OzhCQUNuQyw4REFBQ0MsSUFBRTs4QkFBQyw0QkFBdUI7Ozs7O3dCQUFNOzhCQUNoQyw4REFBQUMsR0FBQzs4QkFBQyxvSUFHSDs7Ozs7d0JBQUk7OEJBQ0osOERBQUNBLEdBQUM7OEJBQUMsNlJBS0g7Ozs7O3dCQUFJOzhCQUNKLDhEQUFDQSxHQUFDOzhCQUFDLDZIQUdIOzs7Ozt3QkFBSTs7Ozs7O2dCQUNDOzs7OztZQWlDRCxDQUNMO0NBQ0Y7QUFFRCxpRUFBZUosS0FBSyxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdGl0b25vLWFydC8uL3NyYy9wYWdlcy9hYm91dC5qcz9mZDVjIl0sInNvdXJjZXNDb250ZW50IjpbImZ1bmN0aW9uIEFib3V0KCkge1xyXG5cdHJldHVybiAoXHJcblx0XHQ8ZGl2IGNsYXNzTmFtZT1cImFib3V0XCI+XHJcblx0XHRcdDxkaXYgY2xhc3NOYW1lPVwiYWJvdXRfX2ludHJvZHVjdGlvblwiPlxyXG5cdFx0XHRcdDxoMj7DgCBQcm9wb3MgZGUgVGkgVG9ObyBBcnQ8L2gyPlxyXG5cdFx0XHRcdDxwPlxyXG5cdFx0XHRcdFx0VGkgVG9ObyBBcnQgcHJvcG9zZSBkZXMgY3LDqWF0aW9ucyBleGNsdXNpdmVzIGRlIHN0eWxlcywgZGUgbW90aWZzIGV0XHJcblx0XHRcdFx0XHRkZSBjb3VsZXVycyB2YXJpw6lzIHN1ciB1bmUgbWF0acOocmUgbm9ibGUgOiBsZSBCb2lzICFcclxuXHRcdFx0XHQ8L3A+XHJcblx0XHRcdFx0PHA+XHJcblx0XHRcdFx0XHRDZXMgb2JqZXRzIGRlc3RpbsOpcyDDoCBsYSBkw6ljb3JhdGlvbiBk4oCZaW50w6lyaWV1ciBzb250IHLDqWFsaXPDqXMgc2Vsb25cclxuXHRcdFx0XHRcdGzigJlpbnNwaXJhdGlvbiBkZSBsJ2FydGlzdGUgb3Ugc3VyIHZvdHJlIGRlbWFuZGUuIFRvdWNoZSBleG90aXF1ZSxcclxuXHRcdFx0XHRcdGF0bW9zcGjDqHJlIHRyb3BpY2FsZSwgdG91dCBs4oCZYXJ0IGRlIHZpdnJlIMKrIMOgIGzigJlhbnRpbGxhaXNlIMK7IHMnZXhwcmltZVxyXG5cdFx0XHRcdFx0ZGFucyBjZXQgZXNwcml0IENhcmHDr2Jlcy5cclxuXHRcdFx0XHQ8L3A+XHJcblx0XHRcdFx0PHA+XHJcblx0XHRcdFx0XHRMYSBkw6ljb3JhdGlvbiBkZSB2b3RyZSBoYWJpdGF0aW9uIHJlZmzDqHRlIHZvdHJlIHBlcnNvbm5hbGl0w6kuIFRpIFRvTm9cclxuXHRcdFx0XHRcdEFydCBham91dGUgdW5lIG5vdXZlbGxlIHRvdWNoZSBkJ8OpbW90aW9uLlxyXG5cdFx0XHRcdDwvcD5cclxuXHRcdFx0PC9kaXY+XHJcblx0XHRcdHsvKiA8ZGl2PlxyXG5cdFx0XHRcdDxkaXYgY2xhc3NOYW1lPVwiYWJvdXRfX3N1YnNlY3Rpb25zXCI+XHJcblx0XHRcdFx0XHQ8TGluayBjbGFzc05hbWU9XCJhYm91dF9fbWVudVwiIHRvPVwiL2Fib3V0L29yaWdpblwiPlxyXG5cdFx0XHRcdFx0XHQ8aDM+TCdvcmlnaW5lPC9oMz5cclxuXHRcdFx0XHRcdFx0PGRpdiBjbGFzc05hbWU9XCJhYm91dF9fbWVudS0taW1nXCI+XHJcblx0XHRcdFx0XHRcdFx0PGltZyBjbGFzc05hbWU9XCJpbWctMVwiIHNyYz17YWJvdXRNZW51fSBhbHQ9XCJcIiAvPlxyXG5cdFx0XHRcdFx0XHQ8L2Rpdj5cclxuXHRcdFx0XHRcdDwvTGluaz5cclxuXHRcdFx0XHRcdDxMaW5rIHRvPVwiL2Fib3V0L3N1cHBvcnRcIiBjbGFzc05hbWU9XCJhYm91dF9fbWVudVwiPlxyXG5cdFx0XHRcdFx0XHQ8aDM+Tm90cmUgc3VwcG9ydDwvaDM+XHJcblx0XHRcdFx0XHRcdDxkaXYgY2xhc3NOYW1lPVwiYWJvdXRfX21lbnUtLWltZ1wiPlxyXG5cdFx0XHRcdFx0XHRcdDxpbWcgY2xhc3NOYW1lPVwiaW1nLTJcIiBzcmM9e2Fib3V0TWVudX0gYWx0PVwiXCIgLz5cclxuXHRcdFx0XHRcdFx0PC9kaXY+XHJcblx0XHRcdFx0XHQ8L0xpbms+XHJcblx0XHRcdFx0XHQ8TGluayB0bz1cIi9hYm91dC92YWxldXJzXCIgY2xhc3NOYW1lPVwiYWJvdXRfX21lbnVcIj5cclxuXHRcdFx0XHRcdFx0PGgzPk5vcyB2YWxldXJzPC9oMz5cclxuXHRcdFx0XHRcdFx0PGRpdiBjbGFzc05hbWU9XCJhYm91dF9fbWVudS0taW1nXCI+XHJcblx0XHRcdFx0XHRcdFx0PGltZyBjbGFzc05hbWU9XCJpbWctM1wiIHNyYz17YWJvdXRNZW51fSBhbHQ9XCJcIiAvPlxyXG5cdFx0XHRcdFx0XHQ8L2Rpdj5cclxuXHRcdFx0XHRcdDwvTGluaz5cclxuXHRcdFx0XHRcdDxMaW5rIHRvPVwiL2Fib3V0L2RlbWFyY2hlXCIgY2xhc3NOYW1lPVwiYWJvdXRfX21lbnVcIj5cclxuXHRcdFx0XHRcdFx0PGgzPlxyXG5cdFx0XHRcdFx0XHRcdE5vdHJlIGTDqW1hcmNoZSA6PGJyIC8+XHJcblx0XHRcdFx0XHRcdFx0RWNvIC0gcmVzcG9uc2FibGVcclxuXHRcdFx0XHRcdFx0PC9oMz5cclxuXHRcdFx0XHRcdFx0PGRpdiBjbGFzc05hbWU9XCJhYm91dF9fbWVudS0taW1nXCI+XHJcblx0XHRcdFx0XHRcdFx0PGltZyBjbGFzc05hbWU9XCJpbWctNFwiIHNyYz17YWJvdXRNZW51fSBhbHQ9XCJcIiAvPlxyXG5cdFx0XHRcdFx0XHQ8L2Rpdj5cclxuXHRcdFx0XHRcdDwvTGluaz5cclxuXHRcdFx0XHQ8L2Rpdj5cclxuXHRcdFx0PC9kaXY+ICovfVxyXG5cdFx0XHR7LyogPEZvb3RlciAvPiAqL31cclxuXHRcdDwvZGl2PlxyXG5cdCk7XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IEFib3V0O1xyXG4iXSwibmFtZXMiOlsiQWJvdXQiLCJkaXYiLCJjbGFzc05hbWUiLCJoMiIsInAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/pages/about.js\n");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./src/pages/about.js"));
+module.exports = __webpack_exports__;
+
+})();

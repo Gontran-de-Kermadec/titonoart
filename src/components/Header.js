@@ -1,9 +1,11 @@
 // import "../style/Header.css";
 import headerStyle from "../style/Header.module.css";
 // import "../style/Icons.css";
-import Logo from "../images/logo.svg";
+// import Logo from "../images/logo.svg";
 // import { Link } from "react-router-dom";
+// import Image from "next/image";
 import Icons from "./Icons";
+import Link from "next/link";
 
 function Header() {
 	const toggleMenu = () => {
@@ -14,26 +16,35 @@ function Header() {
 	return (
 		<div>
 			<header role="banner">
-				<div className="header__large-screen">
-					{/* <div className={headerStyle.header__large-screen}> */}
+				{/* <div className="header__large-screen"> */}
+				<div className={headerStyle.header__largeScreen}>
 					{/* <Link to="/" className={headerStyle.header__logo}>
 						<img src={Logo} alt="Logo de TiTonoArt" />
 					</Link> */}
-					<div to="/" className={headerStyle.header__logo}>
-						{/* <Link to="/" className="header__logo"> */}
-						<img src={Logo} alt="Logo de TiTonoArt" />
-					</div>
+					{/* <div className={headerStyle.header__logo}> */}
+					<Link href="/" passHref>
+						<a href="replace" className={headerStyle.header__logo}>
+							<img src="/images/logo.svg" alt="Logo de TiTonoArt" />
+						</a>
+					</Link>
+					{/* </div> */}
 					<nav role="navigation">
 						<ul>
-							<div to="/about">
-								<li>À propos</li>
-							</div>
-							<div to="/artiste">
-								<li>Artiste</li>
-							</div>
-							<div to="/creation">
-								<li>Créations</li>
-							</div>
+							<Link href="/about" passHref>
+								<a href="replace">
+									<li>À propos</li>
+								</a>
+							</Link>
+							<Link href="/artiste" passHref>
+								<a href="replace">
+									<li>Artiste</li>
+								</a>
+							</Link>
+							<Link href="/creation" passHref>
+								<a href="replace">
+									<li>Créations</li>
+								</a>
+							</Link>
 							<li>
 								<Icons location="header" />
 							</li>
@@ -45,7 +56,8 @@ function Header() {
 					"Fûts de chêne français transformés en véritables oeuvres d'art"
 				</p>
 				{/* section consacrée au petits ecrans */}
-				<div className="header__small-screen">
+				{/* <div className="header__small-screen"> */}
+				<div className={headerStyle.header__smallScreen}>
 					<div to="/" className="header__logo">
 						<svg
 							className="mobile__svg"
@@ -187,12 +199,17 @@ l0 26 673 0 c459 0 685 -4 712 -11z m-3585 -671 c260 -370 474 -678 477 -685
 							</g>
 						</svg>
 					</div>
-					<div className="mobile__lines" onClick={() => toggleMenu()}>
+					<div
+						className={headerStyle.mobile__lines}
+						onClick={() => toggleMenu()}
+					>
+						{/* <div className="mobile__lines" onClick={() => toggleMenu()}> */}
 						<div className="line"></div>
 						<div className="line"></div>
 						<div className="line"></div>
 					</div>
-					<div className="header__small-screen-menu">
+					<div className={headerStyle.header__smallScreen__menu}>
+						{/* <div className="header__small-screen-menu"> */}
 						<div
 							className="header__small-screen-menu--close"
 							onClick={() => toggleMenu()}
