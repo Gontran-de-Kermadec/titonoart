@@ -103,7 +103,7 @@ const Bar = () => {
 						img={carib1}
 						imgArr={carib1Array}
 						futTitle="CF Caribbean selection 1/4"
-						futAvailability="Disponible"
+						futAvailability="Acquis"
 					/>
 					<CreationCard
 						img={carib2}
