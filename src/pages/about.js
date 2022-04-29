@@ -1,3 +1,4 @@
+import Link from "next/link";
 function About() {
 	return (
 		<div className="about">
@@ -18,37 +19,46 @@ function About() {
 					Art ajoute une nouvelle touche d'émotion.
 				</p>
 			</div>
-			{/* <div>
+			<div>
 				<div className="about__subsections">
-					<Link className="about__menu" to="/about/origin">
-						<h3>L'origine</h3>
-						<div className="about__menu--img">
-							<img className="img-1" src={aboutMenu} alt="" />
-						</div>
+					<Link className="about__menu" href="/about/origin" passHref>
+						<a href="replace">
+							<h3>L'origine</h3>
+							<div className="about__menu--img">
+								{/* <img className="img-1" src={aboutMenu} alt="" /> */}
+							</div>
+						</a>
 					</Link>
-					<Link to="/about/support" className="about__menu">
-						<h3>Notre support</h3>
-						<div className="about__menu--img">
-							<img className="img-2" src={aboutMenu} alt="" />
-						</div>
+					<Link href="/about/support" className="about__menu" passHref>
+						<a href="replace">
+							<h3>Notre support</h3>
+							<div className="about__menu--img">
+								{/* <img className="img-2" src={aboutMenu} alt="" /> */}
+							</div>
+						</a>
 					</Link>
-					<Link to="/about/valeurs" className="about__menu">
-						<h3>Nos valeurs</h3>
-						<div className="about__menu--img">
-							<img className="img-3" src={aboutMenu} alt="" />
-						</div>
+					<Link href="/about/valeurs" className="about__menu" passHref>
+						<a href="replace">
+							<h3>Nos valeurs</h3>
+							<div className="about__menu--img">
+								{/* <img className="img-3" src={aboutMenu} alt="" /> */}
+							</div>
+						</a>
 					</Link>
-					<Link to="/about/demarche" className="about__menu">
-						<h3>
-							Notre démarche :<br />
-							Eco - responsable
-						</h3>
-						<div className="about__menu--img">
+					{/* <Link to="/about/demarche" className="about__menu"> */}
+					<Link href="/about/demarche" className="about__menu" passHref>
+						<a href="replace">
+							<h3>
+								Notre démarche :<br />
+								Eco - responsable
+							</h3>
+							{/* <div className="about__menu--img">
 							<img className="img-4" src={aboutMenu} alt="" />
-						</div>
+						</div> */}
+						</a>
 					</Link>
 				</div>
-			</div> */}
+			</div>
 			{/* <Footer /> */}
 		</div>
 	);
