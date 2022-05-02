@@ -1,10 +1,13 @@
 /*style all screens*/
-/* header {
+.header {
 	margin-bottom: 2rem;
-} */
-/* header nav {
+}
+.nav {
 	font-family: "Staatliches", cursive;
-} */
+}
+.header__slogan {
+	font-family: "Courgette", cursive;
+}
 .header__largeScreen,
 .header__largeScreen ul,
 .header__smallScreen {
@@ -30,7 +33,7 @@
 	height: 90%;
 	/* margin-top: -1.6rem; */
 }
-.header__largeScreen nav {
+.header__largeScreen .nav {
 	width: 80%;
 }
 .header__largeScreen ul {
@@ -81,7 +84,7 @@
 		align-items: center;
 		height: 100%;
 	} */
-	.header__largeScreen .visible nav {
+	.header__largeScreen .visible .nav {
 		display: block;
 	}
 	.header__smallScreen {
@@ -114,23 +117,28 @@
 		-o-transition: 0.5s linear;
 		transition: 0.5s linear;
 	}
-	.header__smallScreen-menu.visible {
+	.header__smallScreen-menu.visible,
+	.header__smallScreen__menu.visible {
 		left: 0;
 		-webkit-transition: 0.5s linear;
 		-o-transition: 0.5s linear;
 		transition: 0.5s linear;
 	}
-	.header__smallScreen-menu--nav {
+	.header__smallScreen-menu--nav,
+	.header__smallScreen__menuNav {
 		text-align: left;
 	}
-	.header__smallScreen-menu--close {
+	.header__smallScreen-menu--close,
+	.header__smallScreen__menuClose {
 		text-align: right;
 		margin: 0.5rem;
 	}
-	.header__smallScreen-menu--close svg {
+	.header__smallScreen-menu--close svg,
+	.header__smallScreen__menuClose svg {
 		width: 1rem;
 	}
-	.header__smallScreen-menu--nav li {
+	.header__smallScreen-menu--nav li,
+	.header__smallScreen__menuNav li {
 		font-size: 2rem;
 		border-bottom: solid 1px;
 		text-align: center;
@@ -152,7 +160,7 @@
 		max-width: 12rem;
 		height: auto;
 	}
-	.header__largeScreen nav {
+	.header__largeScreen .nav {
 		width: 100%;
 	}
 	.header__slogan {

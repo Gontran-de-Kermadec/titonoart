@@ -1,5 +1,6 @@
 // import App from 'next/app'
 import Layout from "../components/layout";
+import "../index.css";
 
 function MyApp({ Component, pageProps }) {
 	// return <Component {...pageProps} />;

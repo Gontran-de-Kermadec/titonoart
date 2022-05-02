@@ -18,6 +18,7 @@ function Home() {
 		<div className="homepage">
 			<Carousel imgs={imgArray} mode="auto" />
 			<p id="homepage__sentence">
+				{/* <p id="homepage__sentence"> */}
 				Décorez votre intérieur en faisant l’acquisition d’une œuvre artistique
 				originale.
 			</p>
