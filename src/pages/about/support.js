@@ -1,3 +1,8 @@
+import aboutStyle from "../../style/About.module.css";
+import PrevNextNav from "../../components/Prevnextnav";
+import Next from "../../components/utils/Next";
+import Prev from "../../components/utils/Prev";
+
 export default function Support() {
 	const infos = {
 		direction: "both",
@@ -6,10 +11,10 @@ export default function Support() {
 		devis: false,
 	};
 	return (
-		<div className="about__subsection">
+		<div className={aboutStyle.about__subsection}>
 			<h3>Notre support : Le Fût de Chêne</h3>
-			<div className="about__subsection--flex">
-				{/* <Prev route="/about/origin" btnName="Origine" /> */}
+			<div className={aboutStyle.about__subsection__flex}>
+				<Prev route="/about/origin" btnName="Origine" />
 				<div>
 					<p>
 						Nous avons sélectionné une tonnellerie française familiale pour son
@@ -28,15 +33,15 @@ export default function Support() {
 						une pièce artistique unique et de valoriser un métier souvent
 						oublié, celui de tonnelier.
 					</p>
-					<div className="fut__support--img">
-						{/* <img src={fut_support} alt="fut" /> */}
+					<div className={aboutStyle.fut__support__img}>
+						{/* <div className="fut__support--img"> */}
+						<img src="/images/fut_support.jpg" alt="fut" />
 					</div>
 				</div>
-				{/* <Next route="/about/valeurs" btnName="Nos valeurs" /> */}
+				<Next route="/about/valeurs" btnName="Nos valeurs" />
 			</div>
 
-			{/* <PrevNextNav propsInfos={infos} /> */}
-			{/* <Footer /> */}
+			<PrevNextNav propsInfos={infos} />
 		</div>
 	);
 }

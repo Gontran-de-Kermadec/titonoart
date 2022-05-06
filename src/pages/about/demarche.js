@@ -1,3 +1,7 @@
+import PrevNextNav from "../../components/Prevnextnav";
+import Prev from "../../components/utils/Prev";
+import aboutStyle from "../../style/About.module.css";
+
 export default function Demarche() {
 	const navigationInfos = {
 		direction: "prev",
@@ -6,10 +10,17 @@ export default function Demarche() {
 		devis: false,
 	};
 	return (
-		<div className="about__subsection about__subsection--demarche">
+		<div
+			className={
+				aboutStyle.about__subsection +
+				" " +
+				aboutStyle.about__subsection__demarche
+			}
+		>
+			{/* <div className="about__subsection about__subsection--demarche"> */}
 			<h3>Notre éthique : Eco-responsable</h3>
-			<div className="about__subsection--flex">
-				{/* <Prev route="/about/valeurs" btnName="Nos valeurs" /> */}
+			<div className={aboutStyle.about__subsection__flex}>
+				<Prev route="/about/valeurs" btnName="Nos valeurs" />
 				<div>
 					<p>
 						Le bois est la matière première de nos barriques. Les forêts sont
@@ -18,11 +29,11 @@ export default function Demarche() {
 						s’engage auprès de REFOREST'ACTION.
 					</p>
 					<p>Lorsque vous commandez un Ti Tono 225L, nous plantons un arbre.</p>
-					{/* <img src={plante} alt="plante verte" /> */}
+					<img src="/images/plante.png" alt="plante verte" />
 				</div>
 				<div></div>
 			</div>
-			{/* <PrevNextNav propsInfos={navigationInfos} /> */}
+			<PrevNextNav propsInfos={navigationInfos} />
 		</div>
 	);
 }

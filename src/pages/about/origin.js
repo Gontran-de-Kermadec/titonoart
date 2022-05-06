@@ -1,3 +1,8 @@
+import aboutStyle from "../../style/About.module.css";
+import PrevNextNav from "../../components/Prevnextnav";
+import Next from "../../components/utils/Next";
+// import Prev from "../../components/utils/Prev";
+
 export default function Origin() {
 	const infos = {
 		direction: "next",
@@ -6,15 +11,25 @@ export default function Origin() {
 		devis: false,
 	};
 	return (
-		<div className="about__subsection about__subsection--origin">
+		<div
+			className={
+				aboutStyle.about__subsection +
+				" " +
+				aboutStyle.about__subsection__origin
+			}
+		>
+			{/* <div className="about__subsection about__subsection--origin"> */}
 			<p>
-				<em className="about__origin--bold">
+				<em className={aboutStyle.about__origin__bold}>
+					{/* <em className="about__origin--bold"> */}
 					Créations uniques & singulières, peintes à la main avec inspiration,
 					illumineront votre intérieur.
 				</em>
 			</p>
-			<h3 className="about__origin--title">L'origine</h3>
-			<div className="about__subsection--flex">
+			<h3 className={aboutStyle.about__origin__title}>L'origine</h3>
+			{/* <h3 className="about__origin--title">L'origine</h3> */}
+			<div className={aboutStyle.about__subsection__flex}>
+				{/* <div className="about__subsection--flex"> */}
 				<div></div>
 				<div>
 					<p>
@@ -55,14 +70,20 @@ export default function Origin() {
 							PopUp Story.
 						</a>
 					</p>
-					<section className="about__origin--team">
+					<section className={aboutStyle.about__origin__team}>
+						{/* <section className="about__origin--team"> */}
 						<h3>L'équipe</h3>
-						<div className="origin__team--container">
-							<div className="origin__team--img">
+						<div className={aboutStyle.origin__team__container}>
+							{/* <div className="origin__team--container"> */}
+							{/* <div className="origin__team--img"> */}
+							<div className={aboutStyle.origin__team__img}>
+								<img src="/images/delphine.jpg" alt="Portait Delphine" />
 								{/* <img src={delphine} alt="Portait Delphine" /> */}
 							</div>
-							<div className="origin__team--infos">
-								<p className="team__infos--name">
+							{/* <div className="origin__team--infos"> */}
+							<div className={aboutStyle.origin__team__infos}>
+								<p className={aboutStyle.team__infos__name}>
+									{/* <p className="team__infos--name"> */}
 									<em>Delphine</em>
 								</p>
 								<p>
@@ -74,12 +95,17 @@ export default function Origin() {
 								</p>
 							</div>
 						</div>
-						<div className="origin__team--container">
-							<div className="origin__team--img">
+						{/* <div className="origin__team--container"> */}
+						<div className={aboutStyle.origin__team__container}>
+							{/* <div className="origin__team--img"> */}
+							<div className={aboutStyle.origin__team__img}>
 								{/* <img src={robin} alt="Portait Robin" /> */}
+								<img src="/images/robin.jpg" alt="Portait Robin" />
 							</div>
-							<div className="origin__team--infos">
-								<p className="team__infos--name">
+							<div className={aboutStyle.origin__team__infos}>
+								{/* <div className="origin__team--infos"> */}
+								<p className={aboutStyle.team__infos__name}>
+									{/* <p className="team__infos--name"> */}
 									<em>Robin</em>
 								</p>
 								<p>
@@ -100,9 +126,9 @@ export default function Origin() {
 						</div>
 					</section>
 				</div>
-				{/* <Next route="/about/support" btnName="Notre support" /> */}
+				<Next route="/about/support" btnName="Notre support" />
 			</div>
-			{/* <PrevNextNav propsInfos={infos} /> */}
+			<PrevNextNav propsInfos={infos} />
 		</div>
 	);
 }

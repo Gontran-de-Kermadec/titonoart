@@ -22,6 +22,9 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
 }
+h3 {
+	font-family: "Courgette", cursive;
+}
 p {
 	font-size: 1.2rem;
 	line-height: 2rem;

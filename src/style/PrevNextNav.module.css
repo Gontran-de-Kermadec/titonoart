@@ -17,6 +17,9 @@
 .nextbutton svg {
 	height: 2rem;
 }
+.direction__btnName {
+	margin: 0;
+}
 .prevbutton svg {
 	-webkit-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);

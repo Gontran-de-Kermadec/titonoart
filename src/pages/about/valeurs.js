@@ -1,6 +1,7 @@
 import PrevNextNav from "../../components/Prevnextnav";
 import Next from "../../components/utils/Next";
 import Prev from "../../components/utils/Prev";
+import aboutStyle from "../../style/About.module.css";
 
 export default function Valeurs() {
 	const infos = {
@@ -10,9 +11,16 @@ export default function Valeurs() {
 		devis: false,
 	};
 	return (
-		<div className="about__subsection about__subsection--valeur">
+		<div
+			className={
+				aboutStyle.about__subsection +
+				" " +
+				aboutStyle.about__subsection__valeur
+			}
+		>
+			{/* <div className="about__subsection about__subsection--valeur"> */}
 			<h3>Nos valeurs :</h3>
-			<div className="about__subsection--flex">
+			<div className={aboutStyle.about__subsection__flex}>
 				<Prev route="/about/support" btnName="Notre support" />
 				<div>
 					<p>
