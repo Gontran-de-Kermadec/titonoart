@@ -25,15 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/artiste": [
+    "/creation/art": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/artiste.js"
-    ],
-    "/creation": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/creation.js"
+      "static/chunks/pages/creation/art.js"
     ]
   },
   "ampFirstPages": []

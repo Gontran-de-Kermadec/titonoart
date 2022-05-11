@@ -1,7 +1,9 @@
 import Carousel from "../Carousel";
 import Loupe from "../utils/Loupe";
+import creationStyle from "../../style/Creation.module.css";
 
 const CreationCard = (props) => {
+	console.log(props.img.src);
 	const openCloseLightbox = (e, action) => {
 		let path =
 			e.nativeEvent.path ||
@@ -21,17 +23,26 @@ const CreationCard = (props) => {
 	};
 	const dispo = (availability) => {
 		if (availability.toLowerCase() === "acquis") {
-			return <p className="creation__subsection--availability">Acquis</p>;
+			return (
+				<p className={creationStyle.creation__subsection__availability}>
+					Acquis
+				</p>
+			);
+			// return <p className="creation__subsection--availability">Acquis</p>;
 		} else {
 			return (
-				<p className="creation__subsection--availability">
-					<span className="creation__subsection--dispo"></span>Disponible
+				<p className={creationStyle.creation__subsection__availability}>
+					{/* <p className="creation__subsection--availability"> */}
+					<span className={creationStyle.creation__subsection__dispo}></span>
+					Disponible
+					{/* <span className="creation__subsection--dispo"></span>Disponible */}
 				</p>
 			);
 		}
 	};
 	return (
-		<div className="creation__subsection--card">
+		<div className={creationStyle.creation__subsection__card}>
+			{/* <div className="creation__subsection--card"> */}
 			<figure
 				onClick={(e) => openCloseLightbox(e, "open")}
 				onTouchEnd={(e) => openCloseLightbox(e, "open")}
@@ -39,10 +50,18 @@ const CreationCard = (props) => {
 				<img src={props.img} alt="tonneau décoré" />
 				<Loupe />
 			</figure>
-			<div className="creation__subsection--lightbox false">
+			<div
+				className={
+					creationStyle.creation__subsection__lightbox +
+					" " +
+					creationStyle.false
+				}
+			>
+				{/* <div className="creation__subsection--lightbox false"> */}
 				<button
 					onClick={(e) => openCloseLightbox(e, "close")}
-					className="subcreation__lightbox--close"
+					className={creationStyle.subcreation__lightbox__close}
+					// className="subcreation__lightbox--close"
 				>
 					X
 				</button>
@@ -52,14 +71,6 @@ const CreationCard = (props) => {
 				<h3>{props.futTitle}</h3>
 				<p>{props.futDate}</p>
 				{dispo(props.futAvailability)}
-				{/* <p className="creation__subsection--availability">
-					<span
-						className={
-							"creation__subsection--" + props.futAvailability.toLowerCase()
-						}
-					></span>
-					{props.futAvailability}
-				</p> */}
 			</div>
 		</div>
 	);
