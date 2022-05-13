@@ -1,7 +1,18 @@
 {
   "/_app": "pages/_app.js",
+  "/about": "pages/about.html",
+  "/about/demarche": "pages/about/demarche.html",
+  "/about/origin": "pages/about/origin.html",
+  "/about/support": "pages/about/support.html",
+  "/about/valeurs": "pages/about/valeurs.html",
+  "/artiste": "pages/artiste.html",
+  "/creation": "pages/creation.html",
+  "/creation/art": "pages/creation/art.html",
+  "/creation/bar": "pages/creation/bar.html",
+  "/creation/deco": "pages/creation/deco.html",
+  "/": "pages/index.html",
+  "/mentions-legales": "pages/mentions-legales.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/artiste": "pages/artiste.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }
