@@ -32,7 +32,8 @@
 }
 /* .subcreation__container--devis { */
 .prev-next__navigation--devis,
-.prevNext_navigation_devis {
+.prevNext_navigation_devis,
+.prevNext__navigation__devis {
 	position: absolute;
 	top: -15px;
 	left: 50%;
@@ -46,6 +47,17 @@
 	border-radius: 0.5rem;
 	font-size: 1rem;
 }
+/* .creation__subsection__devis {
+	display: block;
+	width: 10rem;
+	margin: 1rem auto;
+	padding: 1rem;
+	background: #ddd;
+	border: solid 1px #c2c2c2;
+	color: #414141;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+} */
 @media (min-width: 1024px) {
 	.prev-next__navigation,
 	.prevNext__navigation {

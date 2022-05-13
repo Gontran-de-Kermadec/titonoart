@@ -88,7 +88,10 @@ const Art = () => {
 			</div>
 			<div>
 				<a href="mailto:titonoart@gmail.com">
-					<p className="creation__subsection--devis">Demandez un devis</p>
+					<p className={creationStyle.creation__subsection__devis}>
+						Demandez un devis
+					</p>
+					{/* <p className="creation__subsection--devis">Demandez un devis</p> */}
 				</a>
 			</div>
 			<PrevNextNav propsInfos={navigationInfos} />

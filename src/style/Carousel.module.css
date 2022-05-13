@@ -61,7 +61,8 @@
 .left__arrow {
 	transform: rotate(180deg);
 }
-.right-arrow {
+.right-arrow,
+.right__arrow {
 	right: 1em;
 }
 #arrow {
@@ -116,7 +117,8 @@
 	.left__arrow {
 		left: 0;
 	}
-	.right-arrow {
+	.right-arrow,
+	.right__arrow {
 		right: 0;
 	}
 }

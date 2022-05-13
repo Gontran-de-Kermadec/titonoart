@@ -35,7 +35,13 @@ const PrevNextNav = (props) => {
 				</Link>
 				{props.propsInfos.devis ? (
 					<a href="mailto:titonoart@gmail.com">
-						<p className={prevNextNav.prevNext_navigation_devis}>
+						<p
+							className={
+								prevNextNav.prevNext_navigation_devis +
+								" " +
+								prevNextNav.creation__subsection__devis
+							}
+						>
 							Demandez un devis
 						</p>
 						{/* <p className="prev-next__navigation--devis">Demandez un devis</p> */}
@@ -74,7 +80,14 @@ const PrevNextNav = (props) => {
 				</Link>
 				{props.propsInfos.devis ? (
 					<a href="mailto:titonoart@gmail.com">
-						<p className="subcreation__container--devis prev-next__navigation--devis">
+						<p
+							className={
+								prevNextNav.creation__subsection__devis +
+								" " +
+								prevNextNav.prevNext__navigation__devis
+							}
+						>
+							{/* <p className="subcreation__container--devis prev-next__navigation--devis"> */}
 							Demandez un devis
 						</p>
 					</a>
@@ -136,7 +149,14 @@ const PrevNextNav = (props) => {
 				</Link>
 				{props.propsInfos.devis ? (
 					<a href="mailto:titonoart@gmail.com">
-						<p className="subcreation__container--devis prev-next__navigation--devis">
+						<p
+							className={
+								prevNextNav.prevNext__navigation__devis +
+								" " +
+								prevNextNav.navigation__next
+							}
+						>
+							{/* <p className="subcreation__container--devis prev-next__navigation--devis"> */}
 							Demandez un devis
 						</p>
 					</a>

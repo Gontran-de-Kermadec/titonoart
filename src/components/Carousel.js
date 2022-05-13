@@ -63,7 +63,10 @@ function Carousel(props) {
 						<div
 							key={i}
 							className={
-								slideIndex === i ? "slide-img img-active" : "slide-img"
+								slideIndex === i
+									? carouselStyle.slide__img + " " + carouselStyle.img__active
+									: carouselStyle.slide__img
+								// slideIndex === i ? "slide-img img-active" : "slide-img"
 							}
 						>
 							<img src={img} alt="img" />
@@ -94,11 +97,15 @@ function Carousel(props) {
 					</svg>
 				</button>
 				<button
-					className="carousel__arrow right-arrow"
+					className={
+						carouselStyle.carousel__arrow + " " + carouselStyle.right__arrow
+					}
+					// className="carousel__arrow right-arrow"
 					onClick={() => nextSlide()}
 				>
 					<svg
-						className="carousel__svg"
+						className={carouselStyle.carousel__svg}
+						// className="carousel__svg"
 						xmlns="http://www.w3.org/2000/svg"
 						data-name="Layer 1"
 						viewBox="0 0 100 100"

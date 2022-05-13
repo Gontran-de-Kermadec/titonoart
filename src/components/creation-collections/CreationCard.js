@@ -10,14 +10,20 @@ const CreationCard = (props) => {
 			(e.nativeEvent.composedPath && e.nativeEvent.composedPath());
 		console.log(path);
 		if (action === "open") {
-			if (path[1].nextSibling.classList.contains("false")) {
-				path[1].nextSibling.classList.remove("false");
-				path[1].nextSibling.classList.add("true");
+			if (path[1].nextSibling.classList.contains(creationStyle.false)) {
+				// if (path[1].nextSibling.classList.contains("false")) {
+				path[1].nextSibling.classList.remove(creationStyle.false);
+				// path[1].nextSibling.classList.remove("false");
+				path[1].nextSibling.classList.add(creationStyle.true);
+				// path[1].nextSibling.classList.add("true");
 			}
 		} else if (action === "close") {
-			if (path[1].classList.contains("true")) {
-				path[1].classList.remove("true");
-				path[1].classList.add("false");
+			if (path[1].classList.contains(creationStyle.true)) {
+				// if (path[1].classList.contains("true")) {
+				path[1].classList.remove(creationStyle.true);
+				// path[1].classList.remove("true");
+				path[1].classList.add(creationStyle.false);
+				// path[1].classList.add("false");
 			}
 		}
 	};
