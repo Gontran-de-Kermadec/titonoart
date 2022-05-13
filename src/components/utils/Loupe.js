@@ -1,9 +1,6 @@
-import creationStyle from "../../style/Creation.module.css";
-
 const Loupe = () => {
 	return (
-		<div className={creationStyle.figure__svg}>
-			{/* <div className="figure__svg"> */}
+		<div className="figure__svg">
 			<svg
 				aria-hidden="true"
 				focusable="false"

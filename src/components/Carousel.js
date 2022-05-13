@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-//import "../style/Carousel.css";
-import carouselStyle from "../style/Carousel.module.css";
+import "../style/Carousel.css";
 function Carousel(props) {
 	console.log(props.imgs);
 	console.log(props.mode);
@@ -30,25 +29,16 @@ function Carousel(props) {
 	});
 	if (props.mode === "auto") {
 		return (
-			<div className={carouselStyle.carousel__auto}>
-				{/* <div className="carousel__auto"> */}
+			<div className="carousel__auto">
 				{props.imgs.map((img, i) => {
 					return (
 						<div
 							key={i}
 							className={
-								// slideIndex === i ? "slide-img img-active" : "slide-img"
-								slideIndex === i
-									? carouselStyle.slide__img + " " + carouselStyle.img__active
-									: carouselStyle.slide__img
+								slideIndex === i ? "slide-img img-active" : "slide-img"
 							}
 						>
-							{/* <img src={img} alt="img" className={"slide-img--" + i} /> */}
-							<img
-								src={img}
-								alt="img"
-								className={carouselStyle.slide_img__ + i}
-							/>
+							<img src={img} alt="img" className={"slide-img--" + i} />
 						</div>
 					);
 				})}
@@ -56,17 +46,13 @@ function Carousel(props) {
 		);
 	} else if (props.mode === "manual") {
 		return (
-			// <div className="carousel__manual">
-			<div className={carouselStyle.carousel__manual}>
+			<div className="carousel__manual">
 				{props.imgs.map((img, i) => {
 					return (
 						<div
 							key={i}
 							className={
-								slideIndex === i
-									? carouselStyle.slide__img + " " + carouselStyle.img__active
-									: carouselStyle.slide__img
-								// slideIndex === i ? "slide-img img-active" : "slide-img"
+								slideIndex === i ? "slide-img img-active" : "slide-img"
 							}
 						>
 							<img src={img} alt="img" />
@@ -74,15 +60,11 @@ function Carousel(props) {
 					);
 				})}
 				<button
-					className={
-						carouselStyle.carousel__arrow + " " + carouselStyle.left__arrow
-					}
-					// className="carousel__arrow left-arrow"
+					className="carousel__arrow left-arrow"
 					onClick={() => prevSlide()}
 				>
 					<svg
-						// className="carousel__svg"
-						className={carouselStyle.carousel__svg}
+						className="carousel__svg"
 						xmlns="http://www.w3.org/2000/svg"
 						data-name="Layer 1"
 						viewBox="0 0 100 100"
@@ -97,15 +79,11 @@ function Carousel(props) {
 					</svg>
 				</button>
 				<button
-					className={
-						carouselStyle.carousel__arrow + " " + carouselStyle.right__arrow
-					}
-					// className="carousel__arrow right-arrow"
+					className="carousel__arrow right-arrow"
 					onClick={() => nextSlide()}
 				>
 					<svg
-						className={carouselStyle.carousel__svg}
-						// className="carousel__svg"
+						className="carousel__svg"
 						xmlns="http://www.w3.org/2000/svg"
 						data-name="Layer 1"
 						viewBox="0 0 100 100"

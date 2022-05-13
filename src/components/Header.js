@@ -1,54 +1,32 @@
-// import "../style/Header.css";
-import headerStyle from "../style/Header.module.css";
-// import "../style/Icons.css";
-// import Logo from "../images/logo.svg";
-// import { Link } from "react-router-dom";
-// import Image from "next/image";
+import "../style/Header.css";
+import "../style/Icons.css";
+import Logo from "../images/logo.svg";
+import { Link } from "react-router-dom";
 import Icons from "./Icons";
-import Link from "next/link";
 
 function Header() {
 	const toggleMenu = () => {
 		document
-			// .querySelector(".header__small-screen-menu")
-			.querySelector(`.${headerStyle.header__smallScreen__menu}`)
-			.classList.toggle(`${headerStyle.visible}`);
-		// .classList.toggle("visible");
-		// console.log(
-		// 	document.querySelector(`.${headerStyle.header__smallScreen__menu}`)
-		// );
+			.querySelector(".header__small-screen-menu")
+			.classList.toggle("visible");
 	};
 	return (
 		<div>
-			<header role="banner" className={headerStyle.header}>
-				{/* <div className="header__large-screen"> */}
-				<div className={headerStyle.header__largeScreen}>
-					{/* <Link to="/" className={headerStyle.header__logo}>
+			<header role="banner">
+				<div className="header__large-screen">
+					<Link to="/" className="header__logo">
 						<img src={Logo} alt="Logo de TiTonoArt" />
-					</Link> */}
-					{/* <div className={headerStyle.header__logo}> */}
-					<Link href="/" passHref>
-						<a href="replace" className={headerStyle.header__logo}>
-							<img src="/images/logo.svg" alt="Logo de TiTonoArt" />
-						</a>
 					</Link>
-					{/* </div> */}
-					<nav role="navigation" className={headerStyle.nav}>
+					<nav role="navigation">
 						<ul>
-							<Link href="/about" passHref>
-								<a href="replace">
-									<li>À propos</li>
-								</a>
+							<Link to="/about">
+								<li>À propos</li>
 							</Link>
-							<Link href="/artiste" passHref>
-								<a href="replace">
-									<li>Artiste</li>
-								</a>
+							<Link to="/artiste">
+								<li>Artiste</li>
 							</Link>
-							<Link href="/creation" passHref>
-								<a href="replace">
-									<li>Créations</li>
-								</a>
+							<Link to="/creation">
+								<li>Créations</li>
 							</Link>
 							<li>
 								<Icons location="header" />
@@ -56,33 +34,28 @@ function Header() {
 						</ul>
 					</nav>
 				</div>
-				{/* <p className="header__slogan"> */}
-				<p className={headerStyle.header__slogan}>
+				<p className="header__slogan">
 					"Fûts de chêne français transformés en véritables oeuvres d'art"
 				</p>
 				{/* section consacrée au petits ecrans */}
-				{/* <div className="header__small-screen"> */}
-				<div className={headerStyle.header__smallScreen}>
-					<Link href="/" className="header__logo" passHref>
-						{/* <Link href="/" className="header__logo"> */}
-						<a href="replace" className={headerStyle.header__logo}>
-							<svg
-								className={headerStyle.mobile__svg}
-								// className="mobile__svg"
-								version="1.0"
-								xmlns="http://www.w3.org/2000/svg"
-								width="120"
-								height="120"
-								viewBox="0 0 2800 1500"
-								preserveAspectRatio="xMidYMid meet"
+				<div className="header__small-screen">
+					<Link to="/" className="header__logo">
+						<svg
+							className="mobile__svg"
+							version="1.0"
+							xmlns="http://www.w3.org/2000/svg"
+							width="120"
+							height="120"
+							viewBox="0 0 2800 1500"
+							preserveAspectRatio="xMidYMid meet"
+						>
+							<g
+								transform="translate(-650,2480) scale(0.12,-0.14)"
+								fill="#000000"
+								stroke="none"
 							>
-								<g
-									transform="translate(-650,2480) scale(0.12,-0.14)"
-									fill="#000000"
-									stroke="none"
-								>
-									<path
-										d="M17250 17397 c-3 -3 -118 -10 -255 -16 -138 -6 -295 -16 -350 -21
+								<path
+									d="M17250 17397 c-3 -3 -118 -10 -255 -16 -138 -6 -295 -16 -350 -21
 -55 -6 -172 -18 -260 -26 -88 -8 -209 -21 -270 -28 -60 -8 -166 -21 -235 -30
 -69 -9 -143 -20 -165 -25 -22 -6 -58 -13 -80 -16 -212 -30 -646 -120 -920
 -190 -77 -20 -167 -42 -200 -51 -33 -8 -73 -19 -90 -25 -16 -5 -70 -21 -120
@@ -103,9 +76,9 @@ function Header() {
 22 390 8 177 12 167 -76 185 -30 7 -100 22 -155 34 -195 42 -258 54 -555 106
 -230 39 -530 79 -745 99 -88 8 -209 19 -270 25 -203 20 -507 32 -880 37 -203
 3 -372 2 -375 0z"
-									/>
-									<path
-										d="M20987 16833 c-3 -5 -8 -775 -12 -1713 -3 -938 -10 -2038 -15 -2445
+								/>
+								<path
+									d="M20987 16833 c-3 -5 -8 -775 -12 -1713 -3 -938 -10 -2038 -15 -2445
 -6 -407 -10 -1189 -10 -1737 l-1 -998 25 -47 c37 -75 50 -155 50 -308 -1 -153
 -17 -238 -58 -310 -21 -36 -24 -57 -30 -217 l-7 -178 259 0 259 0 7 53 c3 28
 6 101 6 162 0 107 -1 111 -39 190 -82 169 -83 452 -1 616 17 35 35 68 40 74
@@ -127,9 +100,9 @@ function Header() {
 -219 170 -47 12 -102 29 -123 36 -42 15 -73 18 -80 7z m1982 -6963 c32 -16 71
 -75 78 -114 18 -114 -65 -204 -180 -193 -158 14 -197 234 -54 307 44 22 115
 23 156 0z"
-									/>
-									<path
-										d="M11758 15857 c-54 -34 -139 -86 -190 -116 -90 -52 -550 -354 -673
+								/>
+								<path
+									d="M11758 15857 c-54 -34 -139 -86 -190 -116 -90 -52 -550 -354 -673
 -442 -724 -514 -1377 -1109 -1931 -1759 -189 -222 -315 -383 -493 -630 -641
 -889 -1114 -1829 -1426 -2834 -78 -252 -169 -600 -211 -801 -35 -170 -73 -372
 -74 -387 0 -5 65 -8 145 -8 l145 0 0 25 c0 37 20 157 45 271 19 84 21 111 13
@@ -141,9 +114,9 @@ c0 15 2 275 5 577 2 303 6 584 9 625 3 41 10 509 16 1040 6 531 15 1125 20
 1320 5 195 13 691 16 1102 4 411 10 750 13 755 17 24 371 296 546 420 55 39
 183 126 285 195 102 68 212 142 245 165 95 64 183 117 272 164 l83 44 2 263
 c1 144 2 279 3 299 0 20 -4 38 -10 39 -5 2 -54 -25 -107 -59z"
-									/>
-									<path
-										d="M17629 14330 c-552 -35 -1110 -269 -1551 -650 -133 -114 -205 -190
+								/>
+								<path
+									d="M17629 14330 c-552 -35 -1110 -269 -1551 -650 -133 -114 -205 -190
 -333 -349 -124 -155 -208 -289 -310 -496 -102 -208 -146 -324 -196 -523 -65
 -258 -89 -449 -88 -702 1 -598 186 -1152 547 -1640 106 -143 379 -419 517
 -521 194 -145 389 -257 600 -345 128 -53 368 -125 480 -145 28 -4 91 -15 140
@@ -155,22 +128,22 @@ c1 144 2 279 3 299 0 20 -4 38 -10 39 -5 2 -54 -25 -107 -59z"
 -346 -709 -1014 -1187 -1795 -1285 -198 -25 -355 -25 -553 0 -672 85 -1263
 453 -1639 1019 -251 379 -382 793 -395 1251 -9 310 31 574 128 857 234 680
 779 1223 1459 1455 322 109 691 145 1025 98z"
-									/>
-									<path
-										d="M12265 13708 c-76 -10 -146 -32 -210 -65 -80 -41 -83 -46 -73 -101 5
+								/>
+								<path
+									d="M12265 13708 c-76 -10 -146 -32 -210 -65 -80 -41 -83 -46 -73 -101 5
 -26 13 -72 18 -102 4 -30 20 -120 35 -200 14 -80 32 -183 40 -229 8 -47 18
 -88 22 -92 9 -8 241 -15 378 -11 l91 2 12 58 c55 274 76 379 88 452 7 47 18
 105 24 130 10 41 9 46 -12 62 -45 35 -131 70 -206 83 -117 21 -142 22 -207 13z"
-									/>
-									<path
-										d="M12092 12698 c-9 -9 -12 -71 -12 -217 l0 -205 25 -21 c32 -26 53
+								/>
+								<path
+									d="M12092 12698 c-9 -9 -12 -71 -12 -217 l0 -205 25 -21 c32 -26 53
 -107 66 -260 16 -180 -4 -305 -64 -408 l-25 -42 -7 -615 c-3 -338 -7 -937 -8
 -1330 l-2 -715 246 -3 246 -2 6 57 c3 32 6 573 6 1203 1 630 4 1201 7 1270 6
 120 6 128 -18 175 -52 103 -62 157 -61 340 0 146 4 180 23 245 13 44 32 84 46
 97 24 22 24 24 24 233 l0 210 -243 0 c-176 0 -246 -3 -255 -12z"
-									/>
-									<path
-										d="M25840 12514 c-203 -30 -355 -77 -535 -164 -468 -226 -806 -636 -948
+								/>
+								<path
+									d="M25840 12514 c-203 -30 -355 -77 -535 -164 -468 -226 -806 -636 -948
 -1150 -81 -291 -80 -657 2 -961 93 -345 310 -680 591 -914 205 -170 453 -292
 760 -371 99 -26 118 -27 340 -28 256 0 292 4 485 60 320 94 560 238 797 480
 337 345 521 820 505 1301 -8 226 -32 363 -99 558 -214 627 -769 1091 -1418
@@ -180,13 +153,13 @@ c1 144 2 279 3 299 0 20 -4 38 -10 39 -5 2 -54 -25 -107 -59z"
 -133 33 -203 58 -325 116 -395 190 -679 549 -784 994 -47 196 -47 487 0 659
 10 39 26 97 34 127 94 349 416 717 769 880 146 68 331 121 466 134 94 9 316
 -4 405 -23z"
-									/>
-									<path
-										d="M6522 8532 c-9 -6 -12 -36 -10 -113 l3 -104 10695 0 10695 0 3 104
+								/>
+								<path
+									d="M6522 8532 c-9 -6 -12 -36 -10 -113 l3 -104 10695 0 10695 0 3 104
 c2 77 -1 107 -10 113 -17 10 -21359 10 -21376 0z"
-									/>
-									<path
-										d="M6517 8003 c-4 -3 -7 -397 -7 -874 0 -781 2 -867 16 -873 9 -3 314
+								/>
+								<path
+									d="M6517 8003 c-4 -3 -7 -397 -7 -874 0 -781 2 -867 16 -873 9 -3 314
 -6 679 -6 l664 0 113 73 c831 541 2280 926 3973 1056 493 39 691 45 1295 45
 602 0 795 -6 1295 -45 1696 -129 3149 -517 3988 -1065 l98 -64 4627 0 c2545 0
 4633 4 4640 8 10 7 12 189 10 878 l-3 869 -10691 3 c-5880 1 -10694 -1 -10697
@@ -203,28 +176,18 @@ l0 26 673 0 c459 0 685 -4 712 -11z m-3585 -671 c260 -370 474 -678 477 -685
 9 0 15 90 92 128 109 30 13 84 17 270 22 l233 5 -193 277 c-106 153 -195 277
 -198 278 -3 0 -171 -236 -374 -525 l-367 -525 -111 0 c-87 0 -109 3 -105 13 9
 23 951 1357 958 1357 4 0 220 -302 479 -672z"
-									/>
-								</g>
-							</svg>
-						</a>
+								/>
+							</g>
+						</svg>
 					</Link>
-					<div
-						className={headerStyle.mobile__lines}
-						onClick={() => toggleMenu()}
-					>
-						{/* <div className="mobile__lines" onClick={() => toggleMenu()}> */}
-						<div className={headerStyle.line}></div>
-						<div className={headerStyle.line}></div>
-						<div className={headerStyle.line}></div>
-						{/* <div className="line"></div>
+					<div className="mobile__lines" onClick={() => toggleMenu()}>
 						<div className="line"></div>
-						<div className="line"></div> */}
+						<div className="line"></div>
+						<div className="line"></div>
 					</div>
-					<div className={headerStyle.header__smallScreen__menu}>
-						{/* <div className="header__small-screen-menu"> */}
+					<div className="header__small-screen-menu">
 						<div
-							className={headerStyle.header__smallScreen__menuClose}
-							// className="header__small-screen-menu--close"
+							className="header__small-screen-menu--close"
 							onClick={() => toggleMenu()}
 						>
 							<svg
@@ -242,33 +205,17 @@ l0 26 673 0 c459 0 685 -4 712 -11z m-3585 -671 c260 -370 474 -678 477 -685
 								></path>
 							</svg>
 						</div>
-						<nav className={headerStyle.header__smallScreen__menuNav}>
-							{/* <nav className="header__small-screen-menu--nav"> */}
+						<nav className="header__small-screen-menu--nav">
 							<ul>
-								<Link href="/about" passHref>
-									<a href="replace">
-										<li onClick={() => toggleMenu()}>À propos</li>
-									</a>
-								</Link>
-								{/* <p to="/about">
+								<Link to="/about">
 									<li onClick={() => toggleMenu()}>À propos</li>
-								</p> */}
-								<Link href="/artiste" passHref>
-									<a href="replace">
-										<li onClick={() => toggleMenu()}>Artiste</li>
-									</a>
 								</Link>
-								{/* <p to="/artiste">
+								<Link to="/artiste">
 									<li onClick={() => toggleMenu()}>Artiste</li>
-								</p> */}
-								<Link href="/creation" passHref>
-									<a href="replace">
-										<li onClick={() => toggleMenu()}>Créations</li>
-									</a>
 								</Link>
-								{/* <p to="/creation">
+								<Link to="/creation">
 									<li onClick={() => toggleMenu()}>Créations</li>
-								</p> */}
+								</Link>
 							</ul>
 						</nav>
 					</div>

@@ -1,27 +1,16 @@
-// import "../style/Footer.css";
-import footerStyle from "../style/Footer.module.css";
-// import { Link } from "react-router-dom";
-import Link from "next/link";
-
+import "../style/Footer.css";
+import { Link } from "react-router-dom";
 const Footer = () => {
 	return (
-		// <div className="footer">
-		<div className={footerStyle.footer}>
-			<div className={footerStyle.footer__flex}>
-				{/* <div className="footer__flex"> */}
-				<div className={footerStyle.footer__legals}>
-					{/* <div className="footer__legals"> */}
-					<Link href="/mentions-legales" passHref>
-						{/* <Link href="/mentions-legales" className="mentions" passHref> */}
-						<a href="replace" className={footerStyle.mentions}>
-							Mentions légales
-							<span className={footerStyle.footer__underline}></span>
-							{/* <span className="footer__underline"></span> */}
-						</a>
+		<div className="footer">
+			<div className="footer__flex">
+				<div className="footer__legals">
+					<Link to="/mentions-legales" className="mentions">
+						Mentions légales
+						<span className="footer__underline"></span>
 					</Link>
 				</div>
-				<div className={footerStyle.footer__socials}>
-					{/* <div className="footer__socials"> */}
+				<div className="footer__socials">
 					<p>
 						Contactez-nous:{" "}
 						<a href="mailto:titonoart@gmail.com">titonoart@gmail.com</a>
