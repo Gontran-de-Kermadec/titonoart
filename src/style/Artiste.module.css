@@ -1,6 +1,6 @@
-/* .artiste h2 {
-	margin: 3rem 0;
-} */
+.artiste h2 {
+	margin-bottom: 2rem;
+}
 .artiste__feature {
 	display: flex;
 	justify-content: space-around;

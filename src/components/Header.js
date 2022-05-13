@@ -245,24 +245,30 @@ l0 26 673 0 c459 0 685 -4 712 -11z m-3585 -671 c260 -370 474 -678 477 -685
 						<nav className={headerStyle.header__smallScreen__menuNav}>
 							{/* <nav className="header__small-screen-menu--nav"> */}
 							<ul>
-								<p to="/about">
-									<li onClick={() => toggleMenu()}>À propos</li>
-								</p>
-								<p to="/artiste">
-									<li onClick={() => toggleMenu()}>Artiste</li>
-								</p>
-								<p to="/creation">
-									<li onClick={() => toggleMenu()}>Créations</li>
-								</p>
-								{/* <Link to="/about">
-									<li onClick={() => toggleMenu()}>À propos</li>
+								<Link href="/about" passHref>
+									<a href="replace">
+										<li onClick={() => toggleMenu()}>À propos</li>
+									</a>
 								</Link>
-								<Link to="/artiste">
-									<li onClick={() => toggleMenu()}>Artiste</li>
+								{/* <p to="/about">
+									<li onClick={() => toggleMenu()}>À propos</li>
+								</p> */}
+								<Link href="/artiste" passHref>
+									<a href="replace">
+										<li onClick={() => toggleMenu()}>Artiste</li>
+									</a>
 								</Link>
-								<Link to="/creation">
+								{/* <p to="/artiste">
+									<li onClick={() => toggleMenu()}>Artiste</li>
+								</p> */}
+								<Link href="/creation" passHref>
+									<a href="replace">
+										<li onClick={() => toggleMenu()}>Créations</li>
+									</a>
+								</Link>
+								{/* <p to="/creation">
 									<li onClick={() => toggleMenu()}>Créations</li>
-								</Link> */}
+								</p> */}
 							</ul>
 						</nav>
 					</div>

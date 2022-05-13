@@ -32,14 +32,14 @@ export default function Creation() {
 								{/* <div className="creation__img-container"> */}
 								<img
 									// src={voilier}
-									src="/images/voilier.jpg"
+									src="/images/voilier0.jpg"
 									// onMouseEnter={(e) => (e.currentTarget.src = terre1)}
 									onMouseEnter={(e) =>
-										(e.currentTarget.src = "/images/terre1.jpg")
+										(e.currentTarget.src = "/images/terre01.jpg")
 									}
 									// onMouseLeave={(e) => (e.currentTarget.src = voilier)}
 									onMouseLeave={(e) =>
-										(e.currentTarget.src = "/images/voilier.jpg")
+										(e.currentTarget.src = "/images/voilier0.jpg")
 									}
 									alt="tonneau d'un voilier"
 								></img>

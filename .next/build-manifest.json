@@ -25,20 +25,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/creation": [
+    "/about": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/creation.js"
+      "static/chunks/pages/about.js"
     ],
-    "/creation/bar": [
+    "/about/origin": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/creation/bar.js"
+      "static/chunks/pages/about/origin.js"
     ],
-    "/creation/deco": [
+    "/about/support": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/creation/deco.js"
+      "static/chunks/pages/about/support.js"
     ]
   },
   "ampFirstPages": []

@@ -2,6 +2,9 @@
 .about__introduction p {
 	margin: 1rem 6rem;
 }
+.about__introduction h2 {
+	margin-bottom: 2rem;
+}
 .about__menu {
 	position: relative;
 	display: flex;
