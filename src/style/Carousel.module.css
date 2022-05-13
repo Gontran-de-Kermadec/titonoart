@@ -1,0 +1,135 @@
+.carousel__auto,
+.carousel__manual {
+	position: relative;
+	overflow: hidden;
+	height: 31.25rem;
+}
+.carousel__auto .slide-img,
+.carousel__auto .slide__img {
+	height: 100%;
+}
+.carousel__auto .slide-img img,
+.carousel__auto .slide__img img {
+	width: 100vw;
+}
+.carousel__manual {
+	width: 100vw;
+	height: 100vh;
+}
+.slide-img,
+.slide__img {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	z-index: -100;
+	transition: opacity 0.5s;
+}
+.carousel__manual .slide-img,
+.carousel__manual .slide__img {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 90vh;
+}
+.carousel__manual .slide-img img,
+.carousel__manual .slide__img img {
+	height: 100%;
+}
+.img-active,
+.img__active {
+	transition: opacity 0.5s;
+	opacity: 1;
+}
+.carousel__arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.carousel__arrow .fas {
+	transform: scale(5);
+	color: black;
+}
+.left-arrow,
+.left__arrow {
+	left: 1em;
+}
+.left-arrow svg,
+.left__arrow {
+	transform: rotate(180deg);
+}
+.right-arrow,
+.right__arrow {
+	right: 1em;
+}
+#arrow {
+	color: blue;
+	width: 100px;
+}
+.carousel__svg {
+	width: 150px;
+}
+
+/*mobile section*/
+@media (max-width: 321px) {
+	.carousel__auto {
+		height: 13.25rem;
+	}
+}
+@media (min-width: 321px) and (max-width: 376px) {
+	.carousel__auto {
+		height: 15.25rem;
+	}
+}
+@media (min-width: 376px) and (max-width: 600px) {
+	.carousel__auto {
+		height: 17.25rem;
+	}
+}
+@media (min-width: 601px) and (max-width: 768px) {
+	.carousel__auto {
+		height: 26.25rem;
+	}
+}
+@media (max-width: 426px) {
+	.carousel__svg {
+		width: 50px;
+	}
+	.carousel__svg polygon {
+		fill: #c2c2c2;
+	}
+	.carousel__manual .slide-img,
+	.carousel__manual .slide__img {
+		height: 85vh;
+	}
+}
+/*tablet section*/
+@media (min-width: 425px) and (max-width: 768px) {
+	.carousel__svg {
+		width: 100px;
+	}
+}
+@media (max-width: 768px) {
+	.left-arrow,
+	.left__arrow {
+		left: 0;
+	}
+	.right-arrow,
+	.right__arrow {
+		right: 0;
+	}
+}
+/*large screen*/
+@media (min-width: 1024px) {
+	.slide-img--4,
+	.slide_img__4 {
+		object-position: 50% 70%;
+	}
+	.slide-img--2,
+	.slide_img__2 {
+		object-position: 50% 80%;
+	}
+}

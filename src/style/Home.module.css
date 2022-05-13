@@ -1,0 +1,15 @@
+#homepage__sentence {
+	margin: 2rem 0;
+}
+.homepage__partenaire p,
+.homepage__partenaire a {
+	margin: 1rem;
+}
+.homepage__partenaire p,
+.homepage__contact p {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.homepage__contact {
+	margin: 3rem;
+}

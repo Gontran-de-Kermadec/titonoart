@@ -1,0 +1,24 @@
+.legal {
+	margin: 4rem 2rem;
+}
+.legal > a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 1.2rem;
+	padding: 1rem;
+}
+.legal h1 {
+	font-size: 3rem;
+	margin: 2rem 0;
+	/* font-family: "Philosopher", sans-serif; */
+}
+.legal h2 {
+	margin: 1rem 0;
+	/* font-family: "Philosopher", sans-serif; */
+}
+@media (min-width: 1024px) {
+	.legal {
+		margin: 4rem;
+	}
+}

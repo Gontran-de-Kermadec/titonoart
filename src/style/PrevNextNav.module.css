@@ -1,0 +1,66 @@
+.prev-next__navigation,
+.prevNext__navigation {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem;
+}
+.navigation--next,
+.navigation__next {
+	justify-content: flex-end;
+}
+.prevbutton,
+.nextbutton {
+	line-height: 1.2rem;
+}
+.prevbutton svg,
+.nextbutton svg {
+	height: 2rem;
+}
+.direction__btnName {
+	margin: 0;
+}
+.prevbutton svg {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.prevbutton p,
+.nextbutton p {
+	font-size: 1.2rem;
+	margin: 0;
+}
+/* .subcreation__container--devis { */
+.prev-next__navigation--devis,
+.prevNext_navigation_devis,
+.prevNext__navigation__devis {
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 10rem;
+	margin: 1rem auto;
+	padding: 1rem;
+	background: #ddd;
+	border: solid 1px #c2c2c2;
+	color: #414141;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+}
+/* .creation__subsection__devis {
+	display: block;
+	width: 10rem;
+	margin: 1rem auto;
+	padding: 1rem;
+	background: #ddd;
+	border: solid 1px #c2c2c2;
+	color: #414141;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+} */
+@media (min-width: 1024px) {
+	.prev-next__navigation,
+	.prevNext__navigation {
+		display: none;
+	}
+}
